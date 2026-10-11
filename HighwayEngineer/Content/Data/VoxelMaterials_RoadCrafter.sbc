@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <VoxelMaterials>
+        <!--
+            Bridge material, from Digi's Concrete mod (https://steamcommunity.com/sharedfiles/filedetails/?id=396679430).
+            Added as standalone material to avoid a dependency on that mod, which is not required for HighwayEngineer.
+        -->
+        <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+            <Id>
+                <TypeId>VoxelMaterialDefinition</TypeId>
+                <SubtypeId>HighwayEngineer_Concrete</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_HighwayEngineer_Concrete</DisplayName>
+            <MinedOre>Stone</MinedOre>
+            <!--<MinedOre>Concrete</MinedOre>-->
+            <MinedOreRatio>0.1</MinedOreRatio>
+            <CanBeHarvested>true</CanBeHarvested>
+            <IsRare>false</IsRare>
+            <MaterialTypeName>Rock</MaterialTypeName>
+            <SpawnsInAsteroids>false</SpawnsInAsteroids>
+            <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+            <IsIndestructible>false</IsIndestructible>
+            <DamageRatio>0.2</DamageRatio>
+            <SpecularPower>0</SpecularPower>
+            <SpecularShininess>0</SpecularShininess>
+            <MinVersion>99999</MinVersion>
+
+            <ColorMetalXZnY>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalXZnY>
+            <ColorMetalXZnYFar1>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalXZnYFar1>
+            <ColorMetalXZnYFar2>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalXZnYFar2>
+            <ColorMetalY>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalY>
+            <ColorMetalYFar1>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalYFar1>
+            <ColorMetalYFar2>Textures\Voxels\HighwayEngineer_Concrete_cm.dds</ColorMetalYFar2>
+
+            <NormalGlossXZnY>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossXZnY>
+            <NormalGlossXZnYFar1>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossXZnYFar1>
+            <NormalGlossXZnYFar2>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossXZnYFar2>
+            <NormalGlossY>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossY>
+            <NormalGlossYFar1>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossYFar1>
+            <NormalGlossYFar2>Textures\Voxels\HighwayEngineer_Concrete_ng.dds</NormalGlossYFar2>
+
+            <InitialScale>3</InitialScale>
+            <Scale>10</Scale>
+            <ScaleFar1>50</ScaleFar1>
+            <ScaleFar2>100</ScaleFar2>
+
+            <Far3Distance>7000</Far3Distance>
+            <Far3Color>
+                <X>0.4</X>
+                <Y>0.4</Y>
+                <Z>0.4</Z>
+                <W>1.0</W>
+            </Far3Color>
+        </VoxelMaterial>
+
+
+        <!--
+            Asphalt and gravel: definitions and textures copied from the mod "ATA FSE Voxels",
+            https://steamcommunity.com/sharedfiles/filedetails/?id=2889899250 (its Stone_03 and
+            SmallMoonRocks materials). That mod can't be a dependency: it replaces the game's own
+            voxel materials (Stone_03, Stone_04, MoonRocks, SmallMoonRocks) instead of adding new
+            ones, so they are added here under HighwayEngineer_ subtypes, textures renamed to match.
+        -->
+        <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+            <Id>
+                <TypeId>VoxelMaterialDefinition</TypeId>
+                <SubtypeId>HighwayEngineer_Asphalt</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_HighwayEngineer_Asphalt</DisplayName>
+            <MaterialTypeName>Rock</MaterialTypeName>
+            <MinedOre>Stone</MinedOre>
+            <MinedOreRatio>5</MinedOreRatio>
+            <CanBeHarvested>true</CanBeHarvested>
+            <SpawnsInAsteroids>false</SpawnsInAsteroids>
+            <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+            <IsRare>false</IsRare>
+
+            <VoxelHandPreview>Textures\Voxels\HighwayEngineer_Asphalt_tl.dds</VoxelHandPreview>
+            <ColorMetalXZnY>Textures\Voxels\HighwayEngineer_Asphalt_cm.dds</ColorMetalXZnY>
+            <NormalGlossXZnY>Textures\Voxels\HighwayEngineer_Asphalt_ng.dds</NormalGlossXZnY>
+            <ExtXZnY>Textures\Voxels\HighwayEngineer_Asphalt_add.dds</ExtXZnY>
+
+            <SimpleTilingSetup>
+                <InitialScale>3</InitialScale>
+                <ScaleMultiplier>5</ScaleMultiplier>
+                <InitialDistance>5</InitialDistance>
+                <DistanceMultiplier>4</DistanceMultiplier>
+                <Far1Distance>14</Far1Distance>
+                <Far1Scale>12</Far1Scale>
+                <Far2Distance>150</Far2Distance>
+                <Far2Scale>80</Far2Scale>
+            </SimpleTilingSetup>
+
+            <InitialScale>1.5</InitialScale>
+            <ScaleMultiplier>5</ScaleMultiplier>
+            <InitialDistance>5</InitialDistance>
+            <DistanceMultiplier>4</DistanceMultiplier>
+            <TilingScale>24</TilingScale>
+            <Far1Distance>14</Far1Distance>
+            <Far1Scale>12</Far1Scale>
+            <ColorMetalXZnYFar2>Textures\Voxels\HighwayEngineer_Asphalt_cm.dds</ColorMetalXZnYFar2>
+            <NormalGlossXZnYFar2>Textures\Voxels\HighwayEngineer_Asphalt_ng.dds</NormalGlossXZnYFar2>
+            <ExtXZnYFar2>Textures\Voxels\HighwayEngineer_Asphalt_add.dds</ExtXZnYFar2>
+            <Far2Distance>150</Far2Distance>
+            <Far2Scale>80</Far2Scale>
+            <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+        </VoxelMaterial>
+
+        <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+            <Id>
+                <TypeId>VoxelMaterialDefinition</TypeId>
+                <SubtypeId>HighwayEngineer_Gravel</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_HighwayEngineer_Gravel</DisplayName>
+            <MaterialTypeName>Sand</MaterialTypeName>
+            <MinedOre>Stone</MinedOre>
+            <MinedOreRatio>5</MinedOreRatio>
+            <CanBeHarvested>true</CanBeHarvested>
+            <SpawnsInAsteroids>false</SpawnsInAsteroids>
+            <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+            <IsRare>false</IsRare>
+
+            <VoxelHandPreview>Textures\Voxels\HighwayEngineer_Gravel_tl.dds</VoxelHandPreview>
+            <ColorMetalXZnY>Textures\Voxels\HighwayEngineer_Gravel_cm.dds</ColorMetalXZnY>
+            <NormalGlossXZnY>Textures\Voxels\HighwayEngineer_Gravel_ng.dds</NormalGlossXZnY>
+            <ExtXZnY>Textures\Voxels\HighwayEngineer_Gravel_add.dds</ExtXZnY>
+
+            <SimpleTilingSetup>
+                <InitialScale>3</InitialScale>
+                <ScaleMultiplier>5</ScaleMultiplier>
+                <InitialDistance>5</InitialDistance>
+                <DistanceMultiplier>4</DistanceMultiplier>
+                <Far1Distance>14</Far1Distance>
+                <Far1Scale>12</Far1Scale>
+                <Far2Distance>150</Far2Distance>
+                <Far2Scale>80</Far2Scale>
+            </SimpleTilingSetup>
+
+            <InitialScale>1.5</InitialScale>
+            <ScaleMultiplier>5</ScaleMultiplier>
+            <InitialDistance>5</InitialDistance>
+            <DistanceMultiplier>4</DistanceMultiplier>
+            <TilingScale>24</TilingScale>
+            <Far1Distance>14</Far1Distance>
+            <Far1Scale>12</Far1Scale>
+            <ColorMetalXZnYFar2>Textures\Voxels\HighwayEngineer_Gravel_cm.dds</ColorMetalXZnYFar2>
+            <NormalGlossXZnYFar2>Textures\Voxels\HighwayEngineer_Gravel_ng.dds</NormalGlossXZnYFar2>
+            <ExtXZnYFar2>Textures\Voxels\HighwayEngineer_Gravel_add.dds</ExtXZnYFar2>
+            <Far2Distance>150</Far2Distance>
+            <Far2Scale>80</Far2Scale>
+            <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+            <ParticleEffect>Collision_Meteor</ParticleEffect>
+            <Friction>0.66</Friction>
+        </VoxelMaterial>
+    </VoxelMaterials>
+</Definitions>

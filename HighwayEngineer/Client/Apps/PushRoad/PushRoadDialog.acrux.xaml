@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Confirmation for pushing the draft road: what will be built, what it costs (local
+  estimate first, replaced by the server's quote, as an invoice) and Push / Cancel.
+  Hosted in a non-dismissable Popup centred on the planner. Everything shown is bound
+  to PushRoadDialogViewModel, including the sizes scaled with the planner.
+-->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.PushRoad"
+    xmlns:controls="using:HighwayEngineer.Client.Gui.UserControls"
+    xmlns:ext="using:HighwayEngineer.Client.Apps.Views.Extensions"
+    xmlns:layout="using:Acrux.Layout"
+    x:Class="HighwayEngineer.Client.Apps.PushRoad.PushRoadDialog"
+    x:DataType="local:PushRoadDialogViewModel">
+  <Border Classes="road-dialog" Width="{Binding DialogWidth}" Padding="{Binding Padding}">
+    <StackPanel Spacing="{Binding Spacing}">
+      <TextBlock Classes="road-dialog-title" Text="{ext:loc HighwayEngineer_PushRoad_Title}" FontSize="0.8" />
+      <Border Classes="road-dialog-separator" Height="1" />
+      <TextBlock Text="{Binding Summary}" FontSize="0.55" TextWrapping="Wrap" Foreground="#FFD6DEE3" />
+
+      <!-- Road settings and the material as icon + value items, each at its own width, wrapping to the dialog's width. -->
+      <StackPanel>
+        <WrapPanel ItemSpacing="{Binding DetailSpacing}" LineSpacing="{Binding Spacing}">
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_Width}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Width" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding WidthText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_Depth}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Height" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding DepthText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_BridgeStyle}" IsVisible="{Binding IsBridge}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Bridge" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding DesignText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_Common_BridgeMaterial}" IsVisible="{Binding IsBridge}">
+            <controls:MaterialThumbnail Material="{Binding StructureMaterial}" Size="{Binding IconSize}" Margin="{Binding IconMargin}" />
+            <TextBlock Text="{Binding StructureMaterialName}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_MaxSlope}" IsVisible="{Binding IsRoad}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Angle" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding SlopeText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_SegmentDistance}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Distance" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding DistanceText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_EmbankmentAngle}" IsVisible="{Binding HasEmbankment}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Embankment" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding EmbankmentText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_Nodes}" IsVisible="{Binding IsRoad}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Nodes" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding NodesText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_TotalLength}">
+            <Border Classes="map-icon" Width="{Binding IconSize}" Height="{Binding IconSize}" Margin="{Binding IconMargin}">
+              <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Road" Stretch="Uniform" /></Border.OpacityMask>
+            </Border>
+            <TextBlock Text="{Binding LengthText}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" ToolTip.Tip="{ext:loc HighwayEngineer_Common_Material}">
+            <controls:MaterialThumbnail Material="{Binding Material}" Size="{Binding IconSize}" Margin="{Binding IconMargin}" />
+            <TextBlock Text="{Binding MaterialName}" FontSize="0.6" VerticalAlignment="Center" Foreground="#FFFFFFFF" />
+          </StackPanel>
+        </WrapPanel>
+      </StackPanel>
+
+      <!-- Service provider: the faction whose nearest station takes the contract, with its logo
+           (a circle in the faction colour and the logo tinted with the icon colour, as the Minimap mod). -->
+      <StackPanel Orientation="Horizontal" IsVisible="{Binding HasProvider}" ToolTip.Tip="{ext:loc HighwayEngineer_PushRoad_ServiceProvider}">
+        <layout:Panel Width="{Binding ProviderLogoSize}" Height="{Binding ProviderLogoSize}" Margin="{Binding IconMargin}">
+          <Border Background="{Binding ProviderBackground}" CornerRadius="{Binding ProviderLogoRadius}" />
+          <Border Background="{Binding ProviderIconBrush}" Margin="{Binding ProviderLogoInset}"
+                  OpacityMask="{Binding ProviderIcon, Converter={StaticResource iconMask}}" />
+        </layout:Panel>
+        <StackPanel VerticalAlignment="Center">
+          <TextBlock Text="{Binding ProviderName}" FontSize="0.6" Foreground="#FFFFFFFF" />
+          <TextBlock Text="{Binding ProviderStation}" FontSize="0.5" Foreground="#FFAAB6BE" />
+        </StackPanel>
+      </StackPanel>
+
+      <TextBlock Text="{ext:loc HighwayEngineer_PushRoad_ConstructionCost}" FontSize="0.6" Foreground="#FFFFFFFF" />
+      <!-- Invoice: icon | item | quantity | unit price | total. Header and rows share column sizes. -->
+      <Border Classes="road-invoice">
+        <StackPanel Margin="{Binding InvoicePadding}">
+          <Grid ColumnDefinitions="Auto,2*,2*,1.6*,1.6*">
+            <Border Grid.Column="0" Width="{Binding InvoiceIconSize}" Margin="{Binding InvoiceIconMargin}" />
+            <TextBlock Grid.Column="1" Text="{ext:loc HighwayEngineer_PushRoad_Invoice_Item}" Classes="road-invoice-header" />
+            <TextBlock Grid.Column="2" Text="{ext:loc HighwayEngineer_PushRoad_Invoice_Quantity}" Classes="road-invoice-header" HorizontalAlignment="Right" />
+            <TextBlock Grid.Column="3" Text="{ext:loc HighwayEngineer_PushRoad_Invoice_UnitPrice}" Classes="road-invoice-header" HorizontalAlignment="Right" />
+            <TextBlock Grid.Column="4" Text="{ext:loc HighwayEngineer_PushRoad_Invoice_Total}" Classes="road-invoice-header" HorizontalAlignment="Right" />
+          </Grid>
+          <Border Classes="road-invoice-rule" Height="1" Margin="{Binding RuleMargin}" />
+          <ItemsControl ItemsSource="{Binding Lines}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="local:InvoiceCellViewModel">
+                <Grid ColumnDefinitions="Auto,2*,2*,1.6*,1.6*">
+                  <Border Grid.Column="0" Width="{Binding IconSize}" Height="{Binding IconSize}"
+                          Margin="{Binding IconMargin}" VerticalAlignment="Center"
+                          Background="{Binding Icon, Converter={StaticResource iconImage}}" />
+                  <TextBlock Grid.Column="1" Text="{Binding Item}" FontSize="0.6" Foreground="#FFFFFFFF"
+                             VerticalAlignment="Center" />
+                  <TextBlock Grid.Column="2" Text="{Binding Quantity}" FontSize="0.55" Foreground="#FFFFFFFF"
+                             VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                  <TextBlock Grid.Column="3" Text="{Binding UnitPrice}" FontSize="0.55" Foreground="#FFAAB6BE"
+                             VerticalAlignment="Center" HorizontalAlignment="Right" TextAlignment="Right" />
+                  <!-- The total with its currency icon at half size, aligned to the bottom of the text. -->
+                  <StackPanel Grid.Column="4" Orientation="Horizontal" HorizontalAlignment="Right"
+                              VerticalAlignment="Center" Spacing="2">
+                    <TextBlock Text="{Binding Total}" FontSize="0.62" Foreground="#FFF5C650" VerticalAlignment="Center" />
+                    <!-- Masked with the money colour of the total, sitting on its baseline. -->
+                    <Border Width="{Binding CurrencyIconSize}" Height="{Binding CurrencyIconSize}"
+                            VerticalAlignment="Bottom" IsVisible="{Binding HasTotalIcon}" Background="#FFF5C650"
+                            OpacityMask="{Binding TotalIcon, Converter={StaticResource iconMask}}" />
+                  </StackPanel>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </Border>
+      <TextBlock Text="{Binding QuoteStatus}" FontSize="0.5" TextWrapping="Wrap" Foreground="#FFAAB6BE" />
+      <!-- In-game calendar time (one sun rotation = 24 h), like the LCD mod's clock. -->
+      <StackPanel Orientation="Horizontal" Spacing="4" IsVisible="{Binding HasValidUntil}">
+        <TextBlock Text="{ext:loc HighwayEngineer_PushRoad_ValidUntil}" FontSize="0.5" Foreground="#FFAAB6BE" />
+        <TextBlock Text="{Binding ValidUntil, Converter={StaticResource gameDateTime}}" FontSize="0.5" Foreground="#FFFFFFFF" />
+      </StackPanel>
+
+      <TextBlock Text="{ext:loc HighwayEngineer_PushRoad_NoDeliveryEstimate}" FontSize="0.5" Foreground="#FFAAB6BE" />
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+        <Button Classes="road-dialog-button" Command="{Binding CancelCommand}"
+                Width="{Binding ButtonWidth}" Height="{Binding ButtonHeight}">
+          <TextBlock Text="{ext:loc HighwayEngineer_Common_Cancel}" FontSize="0.6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+        <Button Classes="road-dialog-button accent" Command="{Binding PushCommand}" IsEnabled="{Binding CanPush}"
+                Background="{Binding PushBackground}" Width="{Binding ButtonWidth}" Height="{Binding ButtonHeight}">
+          <TextBlock Text="{ext:loc HighwayEngineer_PushRoad_Push}" FontSize="0.6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+      </StackPanel>
+    </StackPanel>
+  </Border>
+</UserControl>

@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_HighwayEngineer_Asphalt" xml:space="preserve">
+    <value>アスファルト</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Concrete" xml:space="preserve">
+    <value>コンクリート</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Gravel" xml:space="preserve">
+    <value>砂利</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_RoadConstruction" xml:space="preserve">
+    <value>道路建設</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeBuilding" xml:space="preserve">
+    <value>橋を建設中...</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_Many" xml:space="preserve">
+    <value>橋のボクセルマップを {0} 個削除しました。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_None" xml:space="preserve">
+    <value>削除する橋はありません。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_One" xml:space="preserve">
+    <value>橋のボクセルマップを {0} 個削除しました。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeMalformed" xml:space="preserve">
+    <value>橋のリクエストが不正です。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_Many" xml:space="preserve">
+    <value>{0} 件の道路契約を完了しました。建設されます。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_None" xml:space="preserve">
+    <value>納品または支払いを待っている道路契約はありません。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_One" xml:space="preserve">
+    <value>{0} 件の道路契約を完了しました。建設されます。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOff" xml:space="preserve">
+    <value>無料道路オフ：見積もりは通常価格になります。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOn" xml:space="preserve">
+    <value>無料道路オン：見積もりにクレジットも資材もかかりません。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_NotAdmin" xml:space="preserve">
+    <value>/road {0} は管理者のみ使用できます。</value>
+  </data>
+  <data name="HighwayEngineer_Admin_UnknownCommand" xml:space="preserve">
+    <value>不明な道路コマンド「{0}」です。</value>
+  </data>
+  <data name="HighwayEngineer_Api_Incompatible" xml:space="preserve">
+    <value>Voxel Cubemap API {0} は互換性がありません。道路の建設と撤去にはバージョン {1} 以降が必要です。</value>
+  </data>
+  <data name="HighwayEngineer_Api_NotFound" xml:space="preserve">
+    <value>Voxel Cubemap API が見つかりません。道路を建設・撤去するには Procedural Voxel Cubemap API（{0} 以降）を有効にしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Api_Ready" xml:space="preserve">
+    <value>HighwayEngineer：Voxel Cubemap API {0} 準備完了</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnavailableSeeChat" xml:space="preserve">
+    <value>HighwayEngineer：Voxel API が利用できません。チャットを確認してください</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnknownVersion" xml:space="preserve">
+    <value>Voxel Cubemap API（不明なバージョン）は互換性がありません。道路の建設と撤去にはバージョン {0} 以降が必要です。</value>
+  </data>
+  <data name="HighwayEngineer_Api_ValidateFailed" xml:space="preserve">
+    <value>Voxel Cubemap API を検証できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Distance" xml:space="preserve">
+    <value>距離 {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Earthwork" xml:space="preserve">
+    <value>土工 {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Inclination" xml:space="preserve">
+    <value>勾配 {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Arch" xml:space="preserve">
+    <value>アーチ</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Auto" xml:space="preserve">
+    <value>自動（最安）</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Beam" xml:space="preserve">
+    <value>桁</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegment" xml:space="preserve">
+    <value>区間 {0} の橋が{1}。プッシュ無効</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegments" xml:space="preserve">
+    <value>区間 {0}-{1} の橋が{2}。プッシュ無効</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_IntoTerrain" xml:space="preserve">
+    <value>区間 {0} で地形に埋まっています（ノードを持ち上げてください）</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooHigh" xml:space="preserve">
+    <value>橋脚には地形から {0} m 以上高すぎます（アーチを使ってください）</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooShort" xml:space="preserve">
+    <value>{0} m より短いです</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooSteep" xml:space="preserve">
+    <value>{0:0.#}° を超えて上っています</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_PavementMaterial" xml:space="preserve">
+    <value>路面の素材</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_Style" xml:space="preserve">
+    <value>形式</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_ArchNoFit" xml:space="preserve">
+    <value>ここにはアーチ橋が収まりません：{0}。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Bends" xml:space="preserve">
+    <value>谷の上で床版が曲がりすぎてアーチにできません（ライズはスパンの {0:0.00}、適合範囲 {1}-{2}）</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Shallow" xml:space="preserve">
+    <value>谷が浅すぎてアーチにできません</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_ShallowNarrow" xml:space="preserve">
+    <value>谷が浅すぎるか狭すぎてアーチにできません</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Terrain" xml:space="preserve">
+    <value>アーチの位置に地形がはみ出しています</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BendTooTight" xml:space="preserve">
+    <value>この幅の床版には、橋上の道路のカーブがきつすぎます。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuildFailed" xml:space="preserve">
+    <value>橋を建設できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuiltWithSummary" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_Many" xml:space="preserve">
+    <value>{2} のアーチ橋を建設しました：長さ {0} m、幅 {1} m、{3} で充填、床版の下 {4} m まで、{5} 区間。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_One" xml:space="preserve">
+    <value>{2} のアーチ橋を建設しました：長さ {0} m、幅 {1} m、{3} で充填、床版の下 {4} m まで、{5} 区間。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_Many" xml:space="preserve">
+    <value>{2} の桁橋を建設しました：長さ {0} m、幅 {1} m、{3} で充填、床版の下 {4} m まで、{5} 区間。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_One" xml:space="preserve">
+    <value>{2} の桁橋を建設しました：長さ {0} m、幅 {1} m、{3} で充填、床版の下 {4} m まで、{5} 区間。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Busy" xml:space="preserve">
+    <value>すでに橋を建設中です。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_DeckTooSteep" xml:space="preserve">
+    <value>橋のノード {0} と {1} の間の床版が急すぎます。この橋の最大勾配は {2:0.#}° です。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_EndsTooSteep" xml:space="preserve">
+    <value>両端の高低差が大きすぎます。この橋の最大勾配は {0:0.#}° です。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_IntoTerrain" xml:space="preserve">
+    <value>橋の {0} m 地点で床版が地形に埋まっています。そこでノードを持ち上げてください。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_MillionCubicMeters" xml:space="preserve">
+    <value>{0:0.0} 百万 m³</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoLength" xml:space="preserve">
+    <value>橋に長さがありません。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoMaterial" xml:space="preserve">
+    <value>ボクセル素材が定義されていません。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoPlanet" xml:space="preserve">
+    <value>橋は惑星上にしか建設できません。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurface" xml:space="preserve">
+    <value>橋の下の地形の高さを読み取れませんでした。惑星はそこに地表がないと報告しています。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurfaceEnds" xml:space="preserve">
+    <value>橋の両端の地形の高さを読み取れませんでした。惑星はそこに地表がないと報告しています。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_PlanFailed" xml:space="preserve">
+    <value>橋を計画できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperArch" xml:space="preserve">
+    <value>形式：アーチ（安い方。床版下のコンクリート {0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperBeam" xml:space="preserve">
+    <value>形式：桁（安い方。床版下のコンクリート {0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenArch" xml:space="preserve">
+    <value>形式：アーチ（選択どおり。床版下のコンクリート {0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenBeam" xml:space="preserve">
+    <value>形式：桁（選択どおり。床版下のコンクリート {0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_NoArch" xml:space="preserve">
+    <value>形式：桁（ここにはアーチが収まらないため：{0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHigh" xml:space="preserve">
+    <value>橋の {1} m 地点で床版が地形から {0} m 以上高い</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighForBeam" xml:space="preserve">
+    <value>{0}ため、桁橋の橋脚には高すぎます。アーチなら渡せます。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighNoArch" xml:space="preserve">
+    <value>{0}ため、橋脚には高すぎ、アーチもここには収まりません：{1}。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooShort" xml:space="preserve">
+    <value>橋は {0} m 以上必要です。この橋は {1} m です。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_UnknownDesign" xml:space="preserve">
+    <value>不明な橋の形式「{0}」です。beam、arch、auto のいずれかを使ってください。</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Arch" xml:space="preserve">
+    <value>アーチ {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Beam" xml:space="preserve">
+    <value>桁 {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volumes" xml:space="preserve">
+    <value>{0}、{1}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ApiFailed" xml:space="preserve">
+    <value>ボクセル API が道路を撤去できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Busy" xml:space="preserve">
+    <value>別のブルドーザーが作業中です。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_CannotTitle" xml:space="preserve">
+    <value>撤去できません</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Charged" xml:space="preserve">
+    <value>{0} {1:N0} SC を請求しました。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmBody" xml:space="preserve">
+    <value>{0}を惑星から撤去しますか？
+
+道路の下の地形は道路を造る前の状態に戻ります。後から造られ交差していた道路は高さが変わることがあります。橋は丸ごと撤去されます。
+
+{1}
+
+これはワールドを変更し、時間がかかることがあります。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmButton" xml:space="preserve">
+    <value>撤去</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmTitle" xml:space="preserve">
+    <value>撤去しますか？</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Costs" xml:space="preserve">
+    <value>撤去には {0:N0} SC かかります。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Done" xml:space="preserve">
+    <value>{0}を撤去しました。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Expired" xml:space="preserve">
+    <value>撤去の見積もりが期限切れです。もう一度確認してください。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_NoRecord" xml:space="preserve">
+    <value>マークした道路にボクセル API の記録がありません。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceCost" xml:space="preserve">
+    <value>{0:N0} SC かかります。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceFree" xml:space="preserve">
+    <value>費用はかかりません。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceRefund" xml:space="preserve">
+    <value>{0:N0} SC が返金されます（最近建設されたため）。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Refunded" xml:space="preserve">
+    <value>{0} {1:N0} SC を返金しました。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Running" xml:space="preserve">
+    <value>撤去中...</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningBody" xml:space="preserve">
+    <value>サーバーがマークした道路を撤去しています。作業中はこのメッセージを閉じてもかまいません。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningTitle" xml:space="preserve">
+    <value>撤去中</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_TooMany" xml:space="preserve">
+    <value>一度に撤去できるのは最大 {0} 区間です。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableBody" xml:space="preserve">
+    <value>惑星を選び、撤去する道路をマークしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableTitle" xml:space="preserve">
+    <value>撤去できません</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnknownQuote" xml:space="preserve">
+    <value>撤去の見積もりが不明です。道路をマークし直してください。</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Wait" xml:space="preserve">
+    <value>次の撤去まで {0} 秒待ってください。</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_Failed" xml:space="preserve">
+    <value>この惑星の種類とレイヤーの地図作成に失敗しました。</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_OreNoResult" xml:space="preserve">
+    <value>鉱石スキャンの結果が得られませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Chat_Sender" xml:space="preserve">
+    <value>HighwayEngineer</value>
+  </data>
+  <data name="HighwayEngineer_Command_AimGround" xml:space="preserve">
+    <value>{0} m 以内の地面に狙いを定めてください。</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeClear" xml:space="preserve">
+    <value>すべてのテスト橋を撤去します（管理者）。</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeEndMarked" xml:space="preserve">
+    <value>橋の終点をマークしました（始点から {0:0} m）。</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeMark" xml:space="preserve">
+    <value>テスト橋（管理者）：片方の端を狙って一度実行し、もう一方の端で再度実行します。形式（beam、arch、auto）、路面素材、構造素材は任意です。</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeStartMarked" xml:space="preserve">
+    <value>橋の始点をマークしました。もう一方の端を狙って /road bridgemark をもう一度実行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Command_DebugDropoff" xml:space="preserve">
+    <value>道路契約の納品ボックスを表示/非表示にします。</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffHidden" xml:space="preserve">
+    <value>納品ボックスを非表示にしました。</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffShown" xml:space="preserve">
+    <value>納品ボックスを表示しました。</value>
+  </data>
+  <data name="HighwayEngineer_Command_ForceComplete" xml:space="preserve">
+    <value>納品または支払い待ちのすべての道路契約を完了します（管理者）。</value>
+  </data>
+  <data name="HighwayEngineer_Command_Free" xml:space="preserve">
+    <value>無料道路をオン/オフします。引数なしで切り替えます（管理者）。</value>
+  </data>
+  <data name="HighwayEngineer_Common_And" xml:space="preserve">
+    <value>{0}と{1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_BridgeMaterial" xml:space="preserve">
+    <value>橋の素材</value>
+  </data>
+  <data name="HighwayEngineer_Common_Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="HighwayEngineer_Common_Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="HighwayEngineer_Common_CubicMeters" xml:space="preserve">
+    <value>{0:N0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListPair" xml:space="preserve">
+    <value>{0}、{1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListSeparator" xml:space="preserve">
+    <value>、</value>
+  </data>
+  <data name="HighwayEngineer_Common_Material" xml:space="preserve">
+    <value>素材</value>
+  </data>
+  <data name="HighwayEngineer_Common_RepaintGuideLines" xml:space="preserve">
+    <value>区画線を引き直す</value>
+  </data>
+  <data name="HighwayEngineer_Common_Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Abandoned" xml:space="preserve">
+    <value>契約を放棄しました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Bridge" xml:space="preserve">
+    <value>管理者が契約を完了しました。橋を建設中です。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Road" xml:space="preserve">
+    <value>管理者が契約を完了しました。道路を建設中です。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AwaitingPayment" xml:space="preserve">
+    <value>納品完了。支払い待ち：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BridgeEndsMissing" xml:space="preserve">
+    <value>惑星または橋の両端が見つかりませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Bridge" xml:space="preserve">
+    <value>橋を建設できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Road" xml:space="preserve">
+    <value>道路を建設できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Bridge" xml:space="preserve">
+    <value>橋が完成しました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Road" xml:space="preserve">
+    <value>道路が完成しました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Bridge" xml:space="preserve">
+    <value>納品完了。橋を建設中です。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Road" xml:space="preserve">
+    <value>納品完了。道路を建設中です。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotDestroyed" xml:space="preserve">
+    <value>道路物流デポの契約端末が破壊されたため、契約は失敗しました。支払ったクレジットは返金されません。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotGone" xml:space="preserve">
+    <value>この見積もりの道路物流デポはもうありません。道路をもう一度確認してください。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Description" xml:space="preserve">
+    <value>{0}。納品 GPS が示す道路物流デポに {1} を納品してください。分割納品も可能で、GPS の名前に受領量が表示されます。デポの契約端末を破壊すると契約は失敗します。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Failed" xml:space="preserve">
+    <value>契約は失敗しました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_GameContractGone" xml:space="preserve">
+    <value>ゲーム内の契約はもう存在しません。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemCount" xml:space="preserve">
+    <value>{1} {0:N0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemKg" xml:space="preserve">
+    <value>{1} {0:N0} kg</value>
+  </data>
+  <data name="HighwayEngineer_Contract_LimitReached" xml:space="preserve">
+    <value>有効な契約の上限に達しました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoIdentity" xml:space="preserve">
+    <value>あなたの ID が見つかりませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoProvider" xml:space="preserve">
+    <value>道路契約を受けられる派閥ステーションがありません。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotAccepted" xml:space="preserve">
+    <value>契約を受諾できませんでした（{0}）。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPosted" xml:space="preserve">
+    <value>派閥が契約を掲示できませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPostedBy" xml:space="preserve">
+    <value>{0} が契約を掲示できませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Notification" xml:space="preserve">
+    <value>道路契約：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayNotEnough" xml:space="preserve">
+    <value>Space Credits が足りません（{0:N0} SC 必要）。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayOffline" xml:space="preserve">
+    <value>支払うにはオンラインである必要があります。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_QuoteExpired" xml:space="preserve">
+    <value>見積もりが期限切れです。道路をもう一度確認してください。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Received" xml:space="preserve">
+    <value>{0} を受領</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Refunded" xml:space="preserve">
+    <value>{0} 支払ったクレジットは返金されました。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Bridge" xml:space="preserve">
+    <value>橋梁建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Road" xml:space="preserve">
+    <value>道路建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TooManyOpen" xml:space="preserve">
+    <value>すでに {0} 件の道路契約が進行中です。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TypeMissing" xml:space="preserve">
+    <value>道路契約の種類が見つかりません。</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_ArchBridge" xml:space="preserve">
+    <value>アーチ橋を建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_BeamBridge" xml:space="preserve">
+    <value>桁橋を建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridge" xml:space="preserve">
+    <value>橋を建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridges" xml:space="preserve">
+    <value>橋を {0} 基建設</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Road" xml:space="preserve">
+    <value>道路を建設（{0} 区間）</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridge" xml:space="preserve">
+    <value>道路を建設（{0} 区間、橋 1 基）</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridges" xml:space="preserve">
+    <value>道路を建設（{0} 区間、橋 {1} 基）</value>
+  </data>
+  <data name="HighwayEngineer_Depot_Label" xml:space="preserve">
+    <value>道路物流デポ
+{0}</value>
+  </data>
+  <data name="HighwayEngineer_Depot_LabelForDraft" xml:space="preserve">
+    <value>道路物流デポ
+{0}
+この道路の納品先</value>
+  </data>
+  <data name="HighwayEngineer_Error_NoTemplate" xml:space="preserve">
+    <value>この惑星には改変テンプレートがありません。</value>
+  </data>
+  <data name="HighwayEngineer_Error_PlanetGone" xml:space="preserve">
+    <value>惑星はもう存在しません。</value>
+  </data>
+  <data name="HighwayEngineer_Error_TooManyRequests" xml:space="preserve">
+    <value>リクエストが多すぎます。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Error_UnknownMaterial" xml:space="preserve">
+    <value>不明なボクセル素材「{0}」です。</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Crossing" xml:space="preserve">
+    <value>ルートが自身と交差しています</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoCurve" xml:space="preserve">
+    <value>区間 {0} に有効なカーブがありません</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoPlanet" xml:space="preserve">
+    <value>惑星にフォーカスしていません</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Slope" xml:space="preserve">
+    <value>区間 {0} が {1:0.#}° の勾配/区間の制限を超えています</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_BridgeStructure" xml:space="preserve">
+    <value>橋の構造</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_EarthMovement" xml:space="preserve">
+    <value>土工</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ExistingDepot" xml:space="preserve">
+    <value>既存のデポ</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Infrastructure" xml:space="preserve">
+    <value>道路建設インフラ</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_NotCharged" xml:space="preserve">
+    <value>請求なし</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Pavement" xml:space="preserve">
+    <value>舗装材</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ServerQuote" xml:space="preserve">
+    <value>サーバー見積もり</value>
+  </data>
+  <data name="HighwayEngineer_Item_SteelRebar" xml:space="preserve">
+    <value>鉄筋</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Biomes" xml:space="preserve">
+    <value>バイオーム</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Materials" xml:space="preserve">
+    <value>素材</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Satellite" xml:space="preserve">
+    <value>衛星</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Terrain" xml:space="preserve">
+    <value>地形</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTitle" xml:space="preserve">
+    <value>プランナーの大きさ</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTooltip" xml:space="preserve">
+    <value>このスクリーン上の道路プランナーのボタンと文字の大きさ。</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScriptTitle" xml:space="preserve">
+    <value>道路プランナー</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Intersection" xml:space="preserve">
+    <value>交差点</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Gps" xml:space="preserve">
+    <value>GPS</value>
+  </data>
+  <data name="HighwayEngineer_Marker_GpsSignals" xml:space="preserve">
+    <value>{0} 件の信号</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Node" xml:space="preserve">
+    <value>ノード {0}</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Details" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Hide" xml:space="preserve">
+    <value>非表示</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Show" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="HighwayEngineer_Planner_CartographyError" xml:space="preserve">
+    <value>地図作成：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Decoding" xml:space="preserve">
+    <value>地図をデコード中</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Footer" xml:space="preserve">
+    <value>{0}  |  {1}  |  {2}  |  ノード {3}  |  {4}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Header" xml:space="preserve">
+    <value>道路プランナー</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapReady" xml:space="preserve">
+    <value>地図の準備完了</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapNotReady" xml:space="preserve">
+    <value>マップの準備がまだできていません。</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoPlanet" xml:space="preserve">
+    <value>惑星が検出されません。</value>
+  </data>
+  <data name="HighwayEngineer_Planner_StreetViewActive" xml:space="preserve">
+    <value>ストリートビュー有効</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoBridge" xml:space="preserve">
+    <value>自動橋：谷をまたぐ下書きの区間は橋（紫）になります。区間横のバッジをクリックすると切り替わります（設定：歯車ボタン）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoRoute" xml:space="preserve">
+    <value>最初のノードから最後のノードまで自動ルート（間のノードを置き換えます）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Bulldoze" xml:space="preserve">
+    <value>撤去：建設済みの道路をクリックして撤去対象にマークします</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Cancel" xml:space="preserve">
+    <value>下書きをキャンセル（既存の道路は残ります）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmBulldoze" xml:space="preserve">
+    <value>マークした道路区間を撤去</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmRepair" xml:space="preserve">
+    <value>マークした道路区間を修理</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardBulldoze" xml:space="preserve">
+    <value>撤去のマークを破棄</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardRepair" xml:space="preserve">
+    <value>修理のマークを破棄</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Push" xml:space="preserve">
+    <value>この道路を確定してプッシュ</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Repair" xml:space="preserve">
+    <value>修理：建設済みの道路をクリックして、新しい素材または穴埋めの対象にマークします</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Roads" xml:space="preserve">
+    <value>道路のオーバーレイを表示/非表示（地形は変わりません）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Settings" xml:space="preserve">
+    <value>道路の設定</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_StreetView" xml:space="preserve">
+    <value>惑星にドラッグしてストリートビュー（観戦者権限が必要）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Water" xml:space="preserve">
+    <value>水のオーバーレイを表示/非表示（水のデータが必要）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Gps" xml:space="preserve">
+    <value>GPSマーカーの表示/非表示</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Title" xml:space="preserve">
+    <value>惑星マップ</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Accepting" xml:space="preserve">
+    <value>契約を受諾中…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_BridgeStyle" xml:space="preserve">
+    <value>橋の形式</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotBody" xml:space="preserve">
+    <value>惑星を選び、道路ノードを 2 つ以上追加してください。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotTitle" xml:space="preserve">
+    <value>道路をプッシュできません</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ConstructionCost" xml:space="preserve">
+    <value>建設費</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Depth" xml:space="preserve">
+    <value>深さ</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignBridges" xml:space="preserve">
+    <value>{0}、橋 {1} 基</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignCheapest" xml:space="preserve">
+    <value>{0}（最安）</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignMixed" xml:space="preserve">
+    <value>桁とアーチ</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_EmbankmentAngle" xml:space="preserve">
+    <value>法面の角度</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice" xml:space="preserve">
+    <value>請求書番号 #{0}、前払い {1:N0} SC。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_InvoiceExempt" xml:space="preserve">
+    <value>請求書番号 #{0}、前払い {1:N0} SC - 請求はありません。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Item" xml:space="preserve">
+    <value>項目</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Total" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_UnitPrice" xml:space="preserve">
+    <value>単価</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_MaxSlope" xml:space="preserve">
+    <value>最大勾配</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NoDeliveryEstimate" xml:space="preserve">
+    <value>納品の見積もりはありません</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NodeCount" xml:space="preserve">
+    <value>ノード {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Nodes" xml:space="preserve">
+    <value>ノード</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NotAccepted" xml:space="preserve">
+    <value>契約は受諾されませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Push" xml:space="preserve">
+    <value>プッシュ</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRejected" xml:space="preserve">
+    <value>サーバーが道路を拒否しました：{0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRequesting" xml:space="preserve">
+    <value>サーバーに見積もりを要求中…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteUnavailable" xml:space="preserve">
+    <value>サーバーの見積もりを利用できません。ローカルの見積もりを表示しています。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_SegmentDistance" xml:space="preserve">
+    <value>区間の距離</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ServiceProvider" xml:space="preserve">
+    <value>請負業者</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Bridge" xml:space="preserve">
+    <value>橋梁建設プロジェクトの請求書。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Road" xml:space="preserve">
+    <value>道路建設プロジェクトの請求書。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_RoadAndBridge" xml:space="preserve">
+    <value>道路・橋梁建設プロジェクトの請求書。</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Title" xml:space="preserve">
+    <value>計画</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_TotalLength" xml:space="preserve">
+    <value>全長</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_UnavailableTitle" xml:space="preserve">
+    <value>道路をプッシュできません</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ValidUntil" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Width" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeDone" xml:space="preserve">
+    <value>道路を撤去しました</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeFailed" xml:space="preserve">
+    <value>撤去に失敗しました</value>
+  </data>
+  <data name="HighwayEngineer_Push_FailedStatus" xml:space="preserve">
+    <value>{0}：{1}</value>
+  </data>
+  <data name="HighwayEngineer_Push_Notify" xml:space="preserve">
+    <value>HighwayEngineer：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Push_NotifySeeChat" xml:space="preserve">
+    <value>HighwayEngineer：{0}。チャットを確認してください</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairDone" xml:space="preserve">
+    <value>道路を修理しました</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairFailed" xml:space="preserve">
+    <value>修理に失敗しました</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadCommitted" xml:space="preserve">
+    <value>道路を確定しました</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadDone" xml:space="preserve">
+    <value>道路をプッシュしました</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadFailed" xml:space="preserve">
+    <value>道路のプッシュに失敗しました</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeGeometryMalformed" xml:space="preserve">
+    <value>橋の形状データが不正です。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeMismatch" xml:space="preserve">
+    <value>橋の区間が道路と一致しません。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegment" xml:space="preserve">
+    <value>区間 {0} の橋</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegments" xml:space="preserve">
+    <value>区間 {0}-{1} の橋</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeProblem" xml:space="preserve">
+    <value>{0}：{1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeSettingsRange" xml:space="preserve">
+    <value>橋の設定が許容範囲外です。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Busy" xml:space="preserve">
+    <value>サーバーは他の道路の見積もりで手一杯です。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Crossing" xml:space="preserve">
+    <value>区間 {0} が区間 {1} と交差しています。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_GeometryMalformed" xml:space="preserve">
+    <value>道路の形状データが不正です。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_LiftTooHigh" xml:space="preserve">
+    <value>橋のノードは最大 {0} m まで持ち上げられます。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_NotStone" xml:space="preserve">
+    <value>{0} からは石が採れません。クリエイティブでのみ使用できます。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetNotFound" xml:space="preserve">
+    <value>惑星が見つかりませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetRemoved" xml:space="preserve">
+    <value>惑星が削除されました。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PricingFailed" xml:space="preserve">
+    <value>道路を見積もれませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RateLimited" xml:space="preserve">
+    <value>見積もりのリクエストが多すぎます。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RoadSettingsRange" xml:space="preserve">
+    <value>道路の設定が許容範囲外です。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SegmentDegenerate" xml:space="preserve">
+    <value>区間 {0} が退化しているか、道路に続いていません。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SlopeExceeded" xml:space="preserve">
+    <value>区間 {0} が {1:0.#}° の勾配/区間の制限を超えています。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Superseded" xml:space="preserve">
+    <value>新しい見積もりリクエストに置き換えられました。</value>
+  </data>
+  <data name="HighwayEngineer_Quote_TooManySegments" xml:space="preserve">
+    <value>道路の区間は最大 {0} です。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ApiUnavailable" xml:space="preserve">
+    <value>ボクセル API を利用できません。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ContractRejected" xml:space="preserve">
+    <value>契約を作成できませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Default" xml:space="preserve">
+    <value>リクエストが拒否されました。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InsufficientCredits" xml:space="preserve">
+    <value>Space Credits が足りません。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InvalidGeometry" xml:space="preserve">
+    <value>道路の形状が無効です。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_MaterialNotAllowed" xml:space="preserve">
+    <value>この素材はここでは使用できません。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoPermission" xml:space="preserve">
+    <value>その操作は許可されていません。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoServiceProvider" xml:space="preserve">
+    <value>契約を受けられる派閥ステーションがありません。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_OutOfLimits" xml:space="preserve">
+    <value>道路がサーバーの制限を超えています。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_PushFailed" xml:space="preserve">
+    <value>道路を建設できませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_QuoteExpired" xml:space="preserve">
+    <value>見積もりが期限切れです。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RateLimited" xml:space="preserve">
+    <value>リクエストが多すぎます。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RetryIn" xml:space="preserve">
+    <value>{0}（{1} 秒後に再試行）</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SelfCrossing" xml:space="preserve">
+    <value>道路が自身と交差しています。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ServerBusy" xml:space="preserve">
+    <value>サーバーがビジー状態です。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SlopeExceeded" xml:space="preserve">
+    <value>区間が勾配の制限を超えています。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Superseded" xml:space="preserve">
+    <value>新しいリクエストに置き換えられました。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_TooManyContracts" xml:space="preserve">
+    <value>進行中の道路契約が多すぎます。</value>
+  </data>
+  <data name="HighwayEngineer_Reject_UnknownContract" xml:space="preserve">
+    <value>その契約はもう存在しません。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ApiFailed" xml:space="preserve">
+    <value>ボクセル API が道路を再舗装できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeNoRecord" xml:space="preserve">
+    <value>マークした橋に建設時の記録がないため、再建できません。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeReplanFailed" xml:space="preserve">
+    <value>橋を再計画できませんでした：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeUnreadable" xml:space="preserve">
+    <value>マークした橋の形状を読み取れませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Busy" xml:space="preserve">
+    <value>別の修理が進行中です。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_CannotTitle" xml:space="preserve">
+    <value>修理できません</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Confirm" xml:space="preserve">
+    <value>修理</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmBody" xml:space="preserve">
+    <value>{0}を修理しますか？
+
+これはワールドを変更し、時間がかかることがあります。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmTitle" xml:space="preserve">
+    <value>修理しますか？</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc" xml:space="preserve">
+    <value>{0}：{1}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_Many" xml:space="preserve">
+    <value>橋 {0} 基</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_One" xml:space="preserve">
+    <value>橋 {0} 基</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_GuideLines" xml:space="preserve">
+    <value>区画線を引き直し</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Holes" xml:space="preserve">
+    <value>穴埋め</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Paved" xml:space="preserve">
+    <value>{0} で舗装</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_Many" xml:space="preserve">
+    <value>道路 {0} 区間</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_One" xml:space="preserve">
+    <value>道路 {0} 区間</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Done" xml:space="preserve">
+    <value>{0}。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Expired" xml:space="preserve">
+    <value>修理の期限が切れました。もう一度確認してください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_FillHoles" xml:space="preserve">
+    <value>穴を埋める</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Help" xml:space="preserve">
+    <value>穴埋めは道路沿いの地面（縁から 2 m 外側、下に 12 m、上に 8 m）を建設時の形に戻します。そこでボクセルで掘ったり盛ったりしたものは消え、橋は再建されます。新しい素材は道路を敷き直し、交差する場所では後から造られた道路の上に重ねます。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NewMaterial" xml:space="preserve">
+    <value>新しい素材</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NotListedYet" xml:space="preserve">
+    <value>マークした道路がまだボクセル API の一覧にありません。しばらくしてから再試行してください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NothingChosen" xml:space="preserve">
+    <value>新しい素材か穴埋めを選んでください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Running" xml:space="preserve">
+    <value>修理中...</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningBody" xml:space="preserve">
+    <value>サーバーがマークした道路を修理しています。作業中はこのメッセージを閉じてもかまいません。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningTitle" xml:space="preserve">
+    <value>修理中</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_Many" xml:space="preserve">
+    <value>{0} 区間の道路がマークされています。橋は修理時に丸ごと再建されます。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_One" xml:space="preserve">
+    <value>{0} 区間の道路がマークされています。橋は修理時に丸ごと再建されます。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Title" xml:space="preserve">
+    <value>修理</value>
+  </data>
+  <data name="HighwayEngineer_Repair_TooMany" xml:space="preserve">
+    <value>一度に修理できるのは最大 {0} 区間です。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableBody" xml:space="preserve">
+    <value>惑星を選び、修理する道路をマークしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableTitle" xml:space="preserve">
+    <value>修理できません</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnknownQuote" xml:space="preserve">
+    <value>修理が不明です。道路をマークし直してください。</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Wait" xml:space="preserve">
+    <value>次の修理まで {0} 秒待ってください。</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_AverageHeight" xml:space="preserve">
+    <value>平均高さ</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Depth" xml:space="preserve">
+    <value>深さ（m）</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_FillSides" xml:space="preserve">
+    <value>両側の切土/盛土</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_GuideLines" xml:space="preserve">
+    <value>区画線</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Width" xml:space="preserve">
+    <value>幅（m）</value>
+  </data>
+  <data name="HighwayEngineer_Route_InvalidPlanet" xml:space="preserve">
+    <value>無効な惑星です</value>
+  </data>
+  <data name="HighwayEngineer_Route_NegativeWeights" xml:space="preserve">
+    <value>ルートの重みを負にはできません</value>
+  </data>
+  <data name="HighwayEngineer_Route_NoPlanet" xml:space="preserve">
+    <value>惑星にフォーカスしていません</value>
+  </data>
+  <data name="HighwayEngineer_Route_NotFound" xml:space="preserve">
+    <value>A と B の間にルートが見つかりません</value>
+  </data>
+  <data name="HighwayEngineer_Route_SamePoints" xml:space="preserve">
+    <value>A 点と B 点が同じです</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeRange" xml:space="preserve">
+    <value>最大勾配は 0° から 90° の間にしてください</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeUnreachable" xml:space="preserve">
+    <value>すべての区間を最大勾配 {0:0.#}° 以内に収めるルートがありません。最大勾配を上げるか、区間を短くするか、A/B を動かしてください</value>
+  </data>
+  <data name="HighwayEngineer_Route_TooFar" xml:space="preserve">
+    <value>A 点と B 点が離れすぎていてルートを作れません</value>
+  </data>
+  <data name="HighwayEngineer_Route_WidthPositive" xml:space="preserve">
+    <value>道路の幅と路肩の角度は正の値にしてください</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Changed" xml:space="preserve">
+    <value>マークした道路が変更されたか、なくなりました。地図を開き直してもう一度マークしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Gone" xml:space="preserve">
+    <value>マークした道路はもう存在しません。地図を開き直してもう一度マークしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_ListingUnreadable" xml:space="preserve">
+    <value>ボクセル API の道路一覧を読み取れませんでした。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_MarksChanged" xml:space="preserve">
+    <value>マークした道路が変更されました。もう一度マークしてください。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoListing" xml:space="preserve">
+    <value>ボクセル API にはこの惑星の道路がありません。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoneMarked" xml:space="preserve">
+    <value>マークされた道路がありません。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Bulldoze" xml:space="preserve">
+    <value>マークした道路は道路契約で建設されたものではありません。撤去できるのは管理者またはホストだけです。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Repair" xml:space="preserve">
+    <value>マークした道路は道路契約で建設されたものではありません。修理できるのは管理者またはホストだけです。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Bulldoze" xml:space="preserve">
+    <value>マークした道路は別のプレイヤーが建設しました。撤去できるのはそのプレイヤーか管理者だけです。</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Repair" xml:space="preserve">
+    <value>マークした道路は別のプレイヤーが建設しました。修理できるのはそのプレイヤーか管理者だけです。</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Header" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_CenterMap" xml:space="preserve">
+    <value>地図を中央に</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_LowerNode" xml:space="preserve">
+    <value>橋のノードを下げる</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_OpenMap" xml:space="preserve">
+    <value>地図を開く</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RaiseNode" xml:space="preserve">
+    <value>橋のノードを上げる</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollLeft" xml:space="preserve">
+    <value>左にロール</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollRight" xml:space="preserve">
+    <value>右にロール</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_SurfaceView" xml:space="preserve">
+    <value>3Dビューの切り替え</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomIn" xml:space="preserve">
+    <value>ズームイン</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomOut" xml:space="preserve">
+    <value>ズームアウト</value>
+  </data>
+  <data name="HighwayEngineer_Settings_KeybindHeading" xml:space="preserve">
+    <value>キー割り当て</value>
+  </data>
+  <data name="HighwayEngineer_Settings_MaterialPlaceholder" xml:space="preserve">
+    <value>ボクセル素材</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadMarkings" xml:space="preserve">
+    <value>路面標示</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadsHeading" xml:space="preserve">
+    <value>道路</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SegmentLabel" xml:space="preserve">
+    <value>区間 {0}m</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShoulderLabel" xml:space="preserve">
+    <value>路肩 {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowGps" xml:space="preserve">
+    <value>自分の GPS を表示</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowRadio" xml:space="preserve">
+    <value>無線信号を表示</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SlopeLabel" xml:space="preserve">
+    <value>最大勾配 {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Theme" xml:space="preserve">
+    <value>テーマ</value>
+  </data>
+  <data name="HighwayEngineer_Settings_WindowTitle" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="HighwayEngineer_Station_DefaultName" xml:space="preserve">
+    <value>交易ステーション</value>
+  </data>
+  <data name="HighwayEngineer_Station_Details" xml:space="preserve">
+    <value>ステーション：{0}
+派閥：{1}
+関係：{2}
+評判：{3}</value>
+  </data>
+  <data name="HighwayEngineer_Station_DetailsTitle" xml:space="preserve">
+    <value>ステーションの詳細</value>
+  </data>
+  <data name="HighwayEngineer_Station_MoreSignals" xml:space="preserve">
+    <value>{0}
+他 {1} 個の信号</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOff" xml:space="preserve">
+    <value>自動橋オフ：区間の橋バッジを使って橋にできます</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOn" xml:space="preserve">
+    <value>自動橋オン：谷をまたぐ区間は橋（紫）になります</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoad" xml:space="preserve">
+    <value>自動道路：{0} 区間、{1:0.##} km、上り {2:0} m、土工 {3:0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRaised" xml:space="preserve">
+    <value>{0}（勾配内に収めるため勾配の重みを上げました）</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRejected" xml:space="preserve">
+    <value>自動道路は拒否されました：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeHint" xml:space="preserve">
+    <value>撤去：建設済みの道路をクリックして撤去対象にマーク、Shift+クリックで間の道路もマーク</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozePrefix" xml:space="preserve">
+    <value>撤去：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeQuoting" xml:space="preserve">
+    <value>撤去：サーバーに見積もりを要求中...</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Bridge" xml:space="preserve">
+    <value>橋の契約を受諾しました。橋を建設中です</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Road" xml:space="preserve">
+    <value>道路の契約を受諾しました。道路を建設中です</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Bridge" xml:space="preserve">
+    <value>橋の契約を受諾しました：橋の始点の納品ボックスに {0} を納品してください</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Road" xml:space="preserve">
+    <value>道路の契約を受諾しました：道路の始点の納品ボックスに {0} を納品してください</value>
+  </data>
+  <data name="HighwayEngineer_Status_CrossesItself" xml:space="preserve">
+    <value>道路が自身と交差しています。プッシュ無効</value>
+  </data>
+  <data name="HighwayEngineer_Status_DefaultHint" xml:space="preserve">
+    <value>地形をクリック：追加 - ノードを左クリック：選択 - ノードを右クリック：削除</value>
+  </data>
+  <data name="HighwayEngineer_Status_DraftCancelled" xml:space="preserve">
+    <value>下書きをキャンセルしました。既存の道路は変わりません</value>
+  </data>
+  <data name="HighwayEngineer_Status_EnterMaterial" xml:space="preserve">
+    <value>ボクセル素材のサブタイプを入力してください</value>
+  </data>
+  <data name="HighwayEngineer_Status_EntranceUpdated" xml:space="preserve">
+    <value>進入方向を更新しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_ExitUpdated" xml:space="preserve">
+    <value>退出方向を更新しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_Many" xml:space="preserve">
+    <value>{0} - 交差点 {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_One" xml:space="preserve">
+    <value>{0} - 交差点 {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarkNotConnected" xml:space="preserve">
+    <value>{0}（最後にクリックした道路とつながっていません）</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_Many" xml:space="preserve">
+    <value>{0} 区間をマーク</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_One" xml:space="preserve">
+    <value>{0} 区間をマーク</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarksDiscarded" xml:space="preserve">
+    <value>マークを破棄しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_MayExceedSlope" xml:space="preserve">
+    <value>区間 {0} が勾配/距離の制限を超えている可能性があります</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeAdded" xml:space="preserve">
+    <value>ノードを追加しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeInserted" xml:space="preserve">
+    <value>区間にノードを挿入しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLifted" xml:space="preserve">
+    <value>ノード {0} を地形から {1:0} m 持ち上げました（橋）</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLowered" xml:space="preserve">
+    <value>ノード {0} を地形に戻しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeMoved" xml:space="preserve">
+    <value>ノードを移動しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeRemoved" xml:space="preserve">
+    <value>ノードを削除しました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeSnapped" xml:space="preserve">
+    <value>ノードを既存の道路にスナップしました</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToRedo" xml:space="preserve">
+    <value>やり直す操作がありません</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToUndo" xml:space="preserve">
+    <value>元に戻す操作がありません</value>
+  </data>
+  <data name="HighwayEngineer_Status_Redo" xml:space="preserve">
+    <value>やり直し（元に戻す {0} - やり直す {1}）</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairHint" xml:space="preserve">
+    <value>修理：建設済みの道路をクリックして新しい素材または穴埋めの対象にマーク、Shift+クリックで間の道路もマーク</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairPrefix" xml:space="preserve">
+    <value>修理：{0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairQuoting" xml:space="preserve">
+    <value>修理：サーバーに問い合わせ中...</value>
+  </data>
+  <data name="HighwayEngineer_Status_RoadStillLoading" xml:space="preserve">
+    <value>この道路はまだボクセル API から読み込み中です。しばらくしてから再試行してください</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsBridge" xml:space="preserve">
+    <value>区間 {0} は橋です</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsRoad" xml:space="preserve">
+    <value>区間 {0} は道路です</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewLoading" xml:space="preserve">
+    <value>3Dビューはまだ使用できません：地形を読み込み中です</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOff" xml:space="preserve">
+    <value>平面マップビュー</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOn" xml:space="preserve">
+    <value>3Dビュー：マウスの中ボタンでドラッグしてカメラを回転・傾斜</value>
+  </data>
+  <data name="HighwayEngineer_Status_TangentHint" xml:space="preserve">
+    <value>シアンの IN ハンドルか緑の OUT ハンドルをドラッグ。地形を右クリックで選択側の向きを合わせます</value>
+  </data>
+  <data name="HighwayEngineer_Status_Undo" xml:space="preserve">
+    <value>元に戻す（元に戻す {0} - やり直す {1}）</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoDynamicTextures" xml:space="preserve">
+    <value>このレンダラーでは動的テクスチャを利用できません。</value>
+  </data>
+  <data name="HighwayEngineer_Ui_Missing" xml:space="preserve">
+    <value>道路プランナーには Acrux UI MOD が必要です。このワールドに追加してください。</value>
+  </data>
+</root>

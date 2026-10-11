@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cursor sprites for the LCD planner, as in the LCD mod (prefixed so both mods can load). -->
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <LCDTextures>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorDefault"/>
+            <SpritePath>Textures/GUI/MouseCursor.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorArrow"/>
+            <SpritePath>Textures/GUI/MouseCursor.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorHand"/>
+            <SpritePath>Textures/Sprites/MouseCursorHand.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorGrab"/>
+            <SpritePath>Textures/Sprites/MouseCursorHandGrab.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorNo"/>
+            <SpritePath>Textures/Sprites/NoEntry.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorCross"/>
+            <SpritePath>Textures/Sprites/Cross.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorWaitCursor"/>
+            <SpritePath>Textures/GUI/Icons/HUD 2017/RadialMenu.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_CursorHelp"/>
+            <SpritePath>Textures/GUI/Controls/button_info_symbol_highlight.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+    </LCDTextures>
+
+    <EntityComponents>
+        <!-- Per-surface planner settings (scale) saved on the block. -->
+        <EntityComponent xsi:type="MyObjectBuilder_ModStorageComponentDefinition">
+            <Id>
+                <TypeId>ModStorageComponent</TypeId>
+                <SubtypeId>HighwayEngineer_PlannerSettings</SubtypeId>
+            </Id>
+            <RegisteredStorageGuids>
+                <guid>8f3b6c2e-4a71-4d0e-9b52-6e1f0a7c3d94</guid>
+            </RegisteredStorageGuids>
+        </EntityComponent>
+    </EntityComponents>
+</Definitions>

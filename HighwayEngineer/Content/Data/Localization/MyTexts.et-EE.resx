@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_HighwayEngineer_Asphalt" xml:space="preserve">
+    <value>Asfalt</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Concrete" xml:space="preserve">
+    <value>Betoon</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Gravel" xml:space="preserve">
+    <value>Kruus</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_RoadConstruction" xml:space="preserve">
+    <value>Teeehitus</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeBuilding" xml:space="preserve">
+    <value>Silda ehitatakse...</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_Many" xml:space="preserve">
+    <value>Eemaldati sildade vokslikaarte: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_None" xml:space="preserve">
+    <value>Eemaldatavaid sildu pole.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_One" xml:space="preserve">
+    <value>Eemaldati sildade vokslikaarte: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeMalformed" xml:space="preserve">
+    <value>Silla päring on vigane.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_Many" xml:space="preserve">
+    <value>Lõpetati teelepinguid: {0}; need ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_None" xml:space="preserve">
+    <value>Ükski teeleping ei oota tarnet ega makset.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_One" xml:space="preserve">
+    <value>Lõpetati teelepinguid: {0}; see ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOff" xml:space="preserve">
+    <value>Tasuta teed väljas: pakkumised on tavahinnaga.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOn" xml:space="preserve">
+    <value>Tasuta teed sees: pakkumised ei maksa krediite ega materjali.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_NotAdmin" xml:space="preserve">
+    <value>Käsku /road {0} saavad kasutada ainult administraatorid.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_UnknownCommand" xml:space="preserve">
+    <value>Tundmatu teekäsk „{0}”.</value>
+  </data>
+  <data name="HighwayEngineer_Api_Incompatible" xml:space="preserve">
+    <value>Voxel Cubemap API {0} ei ühildu. Teede ehitamiseks ja eemaldamiseks on vaja versiooni {1} või uuemat.</value>
+  </data>
+  <data name="HighwayEngineer_Api_NotFound" xml:space="preserve">
+    <value>Voxel Cubemap API-d ei leitud. Teede ehitamiseks või eemaldamiseks luba Procedural Voxel Cubemap API ({0} või uuem).</value>
+  </data>
+  <data name="HighwayEngineer_Api_Ready" xml:space="preserve">
+    <value>HighwayEngineer: Voxel Cubemap API {0} valmis</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnavailableSeeChat" xml:space="preserve">
+    <value>HighwayEngineer: Voxel API pole saadaval; vaata vestlust</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnknownVersion" xml:space="preserve">
+    <value>Voxel Cubemap API (tundmatu versioon) ei ühildu. Teede ehitamiseks ja eemaldamiseks on vaja versiooni {0} või uuemat.</value>
+  </data>
+  <data name="HighwayEngineer_Api_ValidateFailed" xml:space="preserve">
+    <value>Voxel Cubemap API kontrollimine ebaõnnestus: {0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Distance" xml:space="preserve">
+    <value>Kaugus {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Earthwork" xml:space="preserve">
+    <value>Mullatööd {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Inclination" xml:space="preserve">
+    <value>Kalle {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Arch" xml:space="preserve">
+    <value>Kaar</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Auto" xml:space="preserve">
+    <value>Automaatne (odavaim)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Beam" xml:space="preserve">
+    <value>Tala</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegment" xml:space="preserve">
+    <value>Sild lõigul {0} {1}; saatmine keelatud</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegments" xml:space="preserve">
+    <value>Sild lõikudel {0}-{1} {2}; saatmine keelatud</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_IntoTerrain" xml:space="preserve">
+    <value>läheb lõigul {0} maastikku (tõsta sõlme)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooHigh" xml:space="preserve">
+    <value>on tugipostide jaoks üle {0} m maastikust kõrgemal (kasuta kaart)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooShort" xml:space="preserve">
+    <value>on lühem kui {0} m</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooSteep" xml:space="preserve">
+    <value>tõuseb üle {0:0.#}°</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_PavementMaterial" xml:space="preserve">
+    <value>Sõidutee materjal</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_Style" xml:space="preserve">
+    <value>Tüüp</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_ArchNoFit" xml:space="preserve">
+    <value>Kaarsild siia ei mahu: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Bends" xml:space="preserve">
+    <value>sillatekk paindub kuristiku kohal kaare jaoks liiga palju (tõus {0:0.00} avast; sobib {1}-{2})</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Shallow" xml:space="preserve">
+    <value>kuristik on kaare jaoks liiga madal</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_ShallowNarrow" xml:space="preserve">
+    <value>kuristik on kaare jaoks liiga madal või kitsas</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Terrain" xml:space="preserve">
+    <value>maastik ulatub kohta, kus kaar oleks</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BendTooTight" xml:space="preserve">
+    <value>Tee pöörab sillal nii laia teki jaoks liiga järsult.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuildFailed" xml:space="preserve">
+    <value>Silda ei saanud ehitada: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuiltWithSummary" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_Many" xml:space="preserve">
+    <value>Ehitati kaarsild materjalist {2}: pikkus {0} m, laius {1} m, täidetud materjaliga {3}, ulatub {4} m teki alla, lõike: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_One" xml:space="preserve">
+    <value>Ehitati kaarsild materjalist {2}: pikkus {0} m, laius {1} m, täidetud materjaliga {3}, ulatub {4} m teki alla, lõike: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_Many" xml:space="preserve">
+    <value>Ehitati talasild materjalist {2}: pikkus {0} m, laius {1} m, täidetud materjaliga {3}, ulatub {4} m teki alla, lõike: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_One" xml:space="preserve">
+    <value>Ehitati talasild materjalist {2}: pikkus {0} m, laius {1} m, täidetud materjaliga {3}, ulatub {4} m teki alla, lõike: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Busy" xml:space="preserve">
+    <value>Silda juba ehitatakse; proovi hetke pärast uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_DeckTooSteep" xml:space="preserve">
+    <value>Tekk on silla sõlmede {0} ja {1} vahel liiga järsk; see sild tohib tõusta kõige rohkem {2:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_EndsTooSteep" xml:space="preserve">
+    <value>Otste kõrguste vahe on liiga suur; see sild tohib tõusta kõige rohkem {0:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_IntoTerrain" xml:space="preserve">
+    <value>Tekk läheb {0} m pärast silla algust maastikku; tõsta seal sõlme.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_MillionCubicMeters" xml:space="preserve">
+    <value>{0:0.0} miljonit m³</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoLength" xml:space="preserve">
+    <value>Sillal pole pikkust.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoMaterial" xml:space="preserve">
+    <value>Ühtegi voksli materjali pole määratud.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoPlanet" xml:space="preserve">
+    <value>Sildu saab ehitada ainult planeedile.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurface" xml:space="preserve">
+    <value>Silla all oleva maastiku kõrgust ei saanud lugeda; planeet ei teata seal pinda.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurfaceEnds" xml:space="preserve">
+    <value>Silla otste maastiku kõrgust ei saanud lugeda; planeet ei teata seal pinda.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_PlanFailed" xml:space="preserve">
+    <value>Silda ei saanud planeerida: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperArch" xml:space="preserve">
+    <value>Tüüp: kaar, odavam ({0} betooni teki all).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperBeam" xml:space="preserve">
+    <value>Tüüp: tala, odavam ({0} betooni teki all).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenArch" xml:space="preserve">
+    <value>Tüüp: kaar, valiku järgi ({0} betooni teki all).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenBeam" xml:space="preserve">
+    <value>Tüüp: tala, valiku järgi ({0} betooni teki all).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_NoArch" xml:space="preserve">
+    <value>Tüüp: tala, sest kaar siia ei mahu ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHigh" xml:space="preserve">
+    <value>Tekk on {1} m pärast silla algust üle {0} m maastikust kõrgemal</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighForBeam" xml:space="preserve">
+    <value>{0}, talasilla tugipostide jaoks liiga kõrgel; kaar suudab selle ületada.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighNoArch" xml:space="preserve">
+    <value>{0}, tugipostide jaoks liiga kõrgel ja kaar siia ei mahu: {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooShort" xml:space="preserve">
+    <value>Sild peab olema vähemalt {0} m pikk; see on {1} m.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_UnknownDesign" xml:space="preserve">
+    <value>Tundmatu sillatüüp „{0}”; kasuta beam, arch või auto.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Arch" xml:space="preserve">
+    <value>kaar {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Beam" xml:space="preserve">
+    <value>tala {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volumes" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ApiFailed" xml:space="preserve">
+    <value>Voxel API ei suutnud teid eemaldada: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Busy" xml:space="preserve">
+    <value>Teine buldooser töötab; proovi hetke pärast uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_CannotTitle" xml:space="preserve">
+    <value>Lammutamine pole võimalik</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Charged" xml:space="preserve">
+    <value>{0} Võeti {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmBody" xml:space="preserve">
+    <value>Eemaldada planeedilt: {0}?
+
+Teede all olev maastik taastub selliseks, nagu see oli enne neid; hiljem ehitatud ristuvate teede kõrgus võib muutuda. Sillad eemaldatakse tervikuna.
+
+{1}
+
+See muudab maailma ja võib võtta aega.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmButton" xml:space="preserve">
+    <value>Lammuta</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmTitle" xml:space="preserve">
+    <value>Lammutada?</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Costs" xml:space="preserve">
+    <value>Lammutamine maksab {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Done" xml:space="preserve">
+    <value>Eemaldatud: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Expired" xml:space="preserve">
+    <value>Lammutuspakkumine aegus; kinnita uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_NoRecord" xml:space="preserve">
+    <value>Märgitud teel pole voxel API-s kirjet.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceCost" xml:space="preserve">
+    <value>See maksab {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceFree" xml:space="preserve">
+    <value>See ei maksa midagi.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceRefund" xml:space="preserve">
+    <value>Saad tagasi {0:N0} SC (need ehitati hiljuti).</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Refunded" xml:space="preserve">
+    <value>{0} Tagastati {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Running" xml:space="preserve">
+    <value>Lammutatakse...</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningBody" xml:space="preserve">
+    <value>Server eemaldab märgitud teid. Võid selle teate töö ajal sulgeda.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningTitle" xml:space="preserve">
+    <value>Lammutamine</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_TooMany" xml:space="preserve">
+    <value>Korraga saab lammutada kuni {0} lõiku.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableBody" xml:space="preserve">
+    <value>Vali planeet ja märgi eemaldatavad teed.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableTitle" xml:space="preserve">
+    <value>Lammutamine pole saadaval</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnknownQuote" xml:space="preserve">
+    <value>Lammutuspakkumine on tundmatu; märgi teed uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Wait" xml:space="preserve">
+    <value>Oota {0} s enne järgmist lammutamist.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_Failed" xml:space="preserve">
+    <value>Kaardistamine ebaõnnestus selle planeeditüübi ja kihi jaoks.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_OreNoResult" xml:space="preserve">
+    <value>Maagiskaneerimine ei andnud tulemust.</value>
+  </data>
+  <data name="HighwayEngineer_Chat_Sender" xml:space="preserve">
+    <value>HighwayEngineer</value>
+  </data>
+  <data name="HighwayEngineer_Command_AimGround" xml:space="preserve">
+    <value>Sihi maapinda {0} m raadiuses.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeClear" xml:space="preserve">
+    <value>Eemaldab kõik testsillad (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeEndMarked" xml:space="preserve">
+    <value>Silla ots märgitud, {0:0} m algusest.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeMark" xml:space="preserve">
+    <value>Testsild (admin): käivita üks kord ühte otsa sihtides ja uuesti teist; valikuliselt tüüp (beam, arch, auto), sõidutee materjal ja konstruktsiooni materjal.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeStartMarked" xml:space="preserve">
+    <value>Silla algus märgitud. Sihi teist otsa ja käivita /road bridgemark uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DebugDropoff" xml:space="preserve">
+    <value>Näitab või peidab sinu teelepingute tarnekaste.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffHidden" xml:space="preserve">
+    <value>Tarnekastid peidetud.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffShown" xml:space="preserve">
+    <value>Tarnekastid nähtaval.</value>
+  </data>
+  <data name="HighwayEngineer_Command_ForceComplete" xml:space="preserve">
+    <value>Lõpetab kõik tarnet või makset ootavad teelepingud (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Command_Free" xml:space="preserve">
+    <value>Lülitab tasuta teed sisse või välja, ilma argumendita vahetab (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Common_And" xml:space="preserve">
+    <value>{0} ja {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_BridgeMaterial" xml:space="preserve">
+    <value>Silla materjal</value>
+  </data>
+  <data name="HighwayEngineer_Common_Cancel" xml:space="preserve">
+    <value>Loobu</value>
+  </data>
+  <data name="HighwayEngineer_Common_Close" xml:space="preserve">
+    <value>Sulge</value>
+  </data>
+  <data name="HighwayEngineer_Common_CubicMeters" xml:space="preserve">
+    <value>{0:N0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListPair" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListSeparator" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="HighwayEngineer_Common_Material" xml:space="preserve">
+    <value>Materjal</value>
+  </data>
+  <data name="HighwayEngineer_Common_RepaintGuideLines" xml:space="preserve">
+    <value>Värvi teemärgistus uuesti</value>
+  </data>
+  <data name="HighwayEngineer_Common_Unknown" xml:space="preserve">
+    <value>Tundmatu</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Abandoned" xml:space="preserve">
+    <value>Lepingust loobuti.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Bridge" xml:space="preserve">
+    <value>Administraator lõpetas lepingu; silda ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Road" xml:space="preserve">
+    <value>Administraator lõpetas lepingu; teed ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AwaitingPayment" xml:space="preserve">
+    <value>Tarne lõpetatud. Ootab makset: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BridgeEndsMissing" xml:space="preserve">
+    <value>Planeeti või silla otsi ei leitud.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Bridge" xml:space="preserve">
+    <value>Silda ei saanud ehitada: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Road" xml:space="preserve">
+    <value>Teed ei saanud ehitada: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Bridge" xml:space="preserve">
+    <value>Sild on ehitatud.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Road" xml:space="preserve">
+    <value>Tee on ehitatud.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Bridge" xml:space="preserve">
+    <value>Tarne lõpetatud; silda ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Road" xml:space="preserve">
+    <value>Tarne lõpetatud; teed ehitatakse.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotDestroyed" xml:space="preserve">
+    <value>Teelogistika lao lepinguterminal hävitati; leping ebaõnnestus. Makstud krediite ei tagastata.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotGone" xml:space="preserve">
+    <value>Selle pakkumise teelogistika ladu pole enam olemas; vaata tee uuesti üle.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Description" xml:space="preserve">
+    <value>{0}. Toimeta {1} teelogistika lattu, mida tarne-GPS näitab. Osalised tarned loevad; GPS-i nimi näitab, kui palju on kohale jõudnud. Lao lepinguterminali hävitamine nurjab lepingu.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Failed" xml:space="preserve">
+    <value>Leping ebaõnnestus.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_GameContractGone" xml:space="preserve">
+    <value>Mängu lepingut pole enam olemas.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemCount" xml:space="preserve">
+    <value>{1}: {0:N0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemKg" xml:space="preserve">
+    <value>{1}: {0:N0} kg</value>
+  </data>
+  <data name="HighwayEngineer_Contract_LimitReached" xml:space="preserve">
+    <value>Oled jõudnud aktiivsete lepingute piirini.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoIdentity" xml:space="preserve">
+    <value>Sinu identiteeti ei leitud.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoProvider" xml:space="preserve">
+    <value>Ükski fraktsiooni jaam ei saa teelepingut võtta.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotAccepted" xml:space="preserve">
+    <value>Lepingut ei saanud vastu võtta ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPosted" xml:space="preserve">
+    <value>Fraktsioon ei saanud lepingut avaldada.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPostedBy" xml:space="preserve">
+    <value>{0} ei saanud lepingut avaldada.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Notification" xml:space="preserve">
+    <value>Teeleping: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayNotEnough" xml:space="preserve">
+    <value>Space Credits ei jätku (vaja {0:N0} SC).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayOffline" xml:space="preserve">
+    <value>Maksmiseks pead olema võrgus.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_QuoteExpired" xml:space="preserve">
+    <value>Pakkumine aegus; vaata tee uuesti üle.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Received" xml:space="preserve">
+    <value>Kätte saadud {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Refunded" xml:space="preserve">
+    <value>{0} Makstud krediidid tagastati.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Bridge" xml:space="preserve">
+    <value>Sillaehitus</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Road" xml:space="preserve">
+    <value>Teeehitus</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TooManyOpen" xml:space="preserve">
+    <value>Sul on juba avatud teelepinguid: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TypeMissing" xml:space="preserve">
+    <value>Teelepingu tüüp puudub.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_ArchBridge" xml:space="preserve">
+    <value>Ehita kaarsild</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_BeamBridge" xml:space="preserve">
+    <value>Ehita talasild</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridge" xml:space="preserve">
+    <value>Ehita sild</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridges" xml:space="preserve">
+    <value>Ehita sildu ({0})</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Road" xml:space="preserve">
+    <value>Ehita tee (lõike: {0})</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridge" xml:space="preserve">
+    <value>Ehita tee (lõike: {0}, sillaga)</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridges" xml:space="preserve">
+    <value>Ehita tee (lõike: {0}, sildu: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Depot_Label" xml:space="preserve">
+    <value>Teelogistika ladu
+{0}</value>
+  </data>
+  <data name="HighwayEngineer_Depot_LabelForDraft" xml:space="preserve">
+    <value>Teelogistika ladu
+{0}
+Tarne sellele teele</value>
+  </data>
+  <data name="HighwayEngineer_Error_NoTemplate" xml:space="preserve">
+    <value>Planeedil pole muutmismalli.</value>
+  </data>
+  <data name="HighwayEngineer_Error_PlanetGone" xml:space="preserve">
+    <value>Planeeti pole enam olemas.</value>
+  </data>
+  <data name="HighwayEngineer_Error_TooManyRequests" xml:space="preserve">
+    <value>Liiga palju päringuid; proovi varsti uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Error_UnknownMaterial" xml:space="preserve">
+    <value>Tundmatu voksli materjal „{0}”.</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Crossing" xml:space="preserve">
+    <value>marsruut lõikub iseendaga</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoCurve" xml:space="preserve">
+    <value>lõigul {0} pole kehtivat kõverat</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoPlanet" xml:space="preserve">
+    <value>ükski planeet pole fookuses</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Slope" xml:space="preserve">
+    <value>lõik {0} ületab {1:0.#}° kalde/lõigu piirid</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_BridgeStructure" xml:space="preserve">
+    <value>Silla konstruktsioon</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_EarthMovement" xml:space="preserve">
+    <value>Pinnase teisaldamine</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ExistingDepot" xml:space="preserve">
+    <value>Olemasolev ladu</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Infrastructure" xml:space="preserve">
+    <value>Teeehituse infrastruktuur</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_NotCharged" xml:space="preserve">
+    <value>Tasuta</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Pavement" xml:space="preserve">
+    <value>Katte materjal</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ServerQuote" xml:space="preserve">
+    <value>Serveri pakkumine</value>
+  </data>
+  <data name="HighwayEngineer_Item_SteelRebar" xml:space="preserve">
+    <value>Sarrusteras</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Biomes" xml:space="preserve">
+    <value>Bioomid</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Materials" xml:space="preserve">
+    <value>Materjalid</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Satellite" xml:space="preserve">
+    <value>Satelliit</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Terrain" xml:space="preserve">
+    <value>Maastik</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTitle" xml:space="preserve">
+    <value>Planeerija suurus</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTooltip" xml:space="preserve">
+    <value>Teeplaneerija nuppude ja teksti suurus sellel pinnal.</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScriptTitle" xml:space="preserve">
+    <value>Teeplaneerija</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Intersection" xml:space="preserve">
+    <value>Ristmik</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Gps" xml:space="preserve">
+    <value>GPS</value>
+  </data>
+  <data name="HighwayEngineer_Marker_GpsSignals" xml:space="preserve">
+    <value>{0} signaali</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Node" xml:space="preserve">
+    <value>Sõlm {0}</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Delete" xml:space="preserve">
+    <value>Kustuta</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Details" xml:space="preserve">
+    <value>Üksikasjad</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Hide" xml:space="preserve">
+    <value>Peida</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Show" xml:space="preserve">
+    <value>Näita</value>
+  </data>
+  <data name="HighwayEngineer_Planner_CartographyError" xml:space="preserve">
+    <value>Kaardistamine: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Decoding" xml:space="preserve">
+    <value>kaardi dekodeerimine</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Footer" xml:space="preserve">
+    <value>{0}  |  {1}  |  {2}  |  sõlmi: {3}  |  {4}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Header" xml:space="preserve">
+    <value>TEEPLANEERIJA</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapReady" xml:space="preserve">
+    <value>kaart valmis</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapNotReady" xml:space="preserve">
+    <value>Kaart pole veel valmis.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoPlanet" xml:space="preserve">
+    <value>Planeeti ei tuvastatud.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_StreetViewActive" xml:space="preserve">
+    <value>Street View aktiivne</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoBridge" xml:space="preserve">
+    <value>Automaatsed sillad: kuristiku kohal olevad mustandi lõigud muutuvad sildadeks (lilla); lõigu kõrval olevale märgile klõpsates saad seda vahetada (seaded: hammasratta nupp)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoRoute" xml:space="preserve">
+    <value>Automaatne marsruut esimesest viimase sõlmeni (asendab vahepealsed sõlmed)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Bulldoze" xml:space="preserve">
+    <value>Lammuta: klõpsa ehitatud teedel, et märkida need eemaldamiseks</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Cancel" xml:space="preserve">
+    <value>Tühista mustand (olemasolevad teed jäävad)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmBulldoze" xml:space="preserve">
+    <value>Eemalda märgitud teelõigud</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmRepair" xml:space="preserve">
+    <value>Paranda märgitud teelõigud</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardBulldoze" xml:space="preserve">
+    <value>Loobu lammutusmärgistest</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardRepair" xml:space="preserve">
+    <value>Loobu parandusmärgistest</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Push" xml:space="preserve">
+    <value>Kinnita ja saada see tee</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Repair" xml:space="preserve">
+    <value>Paranda: klõpsa ehitatud teedel, et märkida need uue materjali või aukude täitmise jaoks</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Roads" xml:space="preserve">
+    <value>Näita/peida teede kiht (maastik ei muutu)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Settings" xml:space="preserve">
+    <value>Tee seaded</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_StreetView" xml:space="preserve">
+    <value>Lohista planeedile Street View jaoks (vaja vaatleja õigust)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Water" xml:space="preserve">
+    <value>Näita/peida vee kiht (vaja veeandmeid)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Gps" xml:space="preserve">
+    <value>Näita/peida GPS-märgised</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Title" xml:space="preserve">
+    <value>PLANEEDIKAART</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Accepting" xml:space="preserve">
+    <value>Lepingu vastuvõtmine…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_BridgeStyle" xml:space="preserve">
+    <value>Silla tüüp</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotBody" xml:space="preserve">
+    <value>Vali planeet ja lisa vähemalt kaks teesõlme.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotTitle" xml:space="preserve">
+    <value>Teed ei saa saata</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ConstructionCost" xml:space="preserve">
+    <value>Ehituskulu</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Depth" xml:space="preserve">
+    <value>Sügavus</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignBridges" xml:space="preserve">
+    <value>{0}, sildu: {1}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignCheapest" xml:space="preserve">
+    <value>{0} (odavaim)</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignMixed" xml:space="preserve">
+    <value>Tala ja kaar</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_EmbankmentAngle" xml:space="preserve">
+    <value>Nõlvanurk</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice" xml:space="preserve">
+    <value>Arve nr {0}, ettemaks {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_InvoiceExempt" xml:space="preserve">
+    <value>Arve nr {0}, ettemaks {1:N0} SC - midagi ei võeta.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Item" xml:space="preserve">
+    <value>Kirje</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Quantity" xml:space="preserve">
+    <value>Kogus</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Total" xml:space="preserve">
+    <value>Kokku</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_UnitPrice" xml:space="preserve">
+    <value>Ühikuhind</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_MaxSlope" xml:space="preserve">
+    <value>Suurim kalle</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NoDeliveryEstimate" xml:space="preserve">
+    <value>Tarnehinnang pole saadaval</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NodeCount" xml:space="preserve">
+    <value>Sõlmi: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Nodes" xml:space="preserve">
+    <value>Sõlmed</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NotAccepted" xml:space="preserve">
+    <value>Lepingut ei võetud vastu: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Push" xml:space="preserve">
+    <value>Saada</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRejected" xml:space="preserve">
+    <value>Server lükkas tee tagasi: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRequesting" xml:space="preserve">
+    <value>Serverilt pakkumise küsimine…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteUnavailable" xml:space="preserve">
+    <value>Serveri pakkumine pole saadaval; näidatakse kohalikku hinnangut.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_SegmentDistance" xml:space="preserve">
+    <value>Lõigu pikkus</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ServiceProvider" xml:space="preserve">
+    <value>Teenusepakkuja</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Bridge" xml:space="preserve">
+    <value>Arve sillaehituse projekti eest.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Road" xml:space="preserve">
+    <value>Arve teeehituse projekti eest.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_RoadAndBridge" xml:space="preserve">
+    <value>Arve tee- ja sillaehituse projekti eest.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Title" xml:space="preserve">
+    <value>Plaan</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_TotalLength" xml:space="preserve">
+    <value>Kogupikkus</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_UnavailableTitle" xml:space="preserve">
+    <value>Tee saatmine pole saadaval</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ValidUntil" xml:space="preserve">
+    <value>Kehtib kuni</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Width" xml:space="preserve">
+    <value>Laius</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeDone" xml:space="preserve">
+    <value>Teed eemaldatud</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeFailed" xml:space="preserve">
+    <value>Lammutamine ebaõnnestus</value>
+  </data>
+  <data name="HighwayEngineer_Push_FailedStatus" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Push_Notify" xml:space="preserve">
+    <value>HighwayEngineer: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Push_NotifySeeChat" xml:space="preserve">
+    <value>HighwayEngineer: {0}; vaata vestlust</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairDone" xml:space="preserve">
+    <value>Teed parandatud</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairFailed" xml:space="preserve">
+    <value>Parandamine ebaõnnestus</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadCommitted" xml:space="preserve">
+    <value>Tee kinnitatud</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadDone" xml:space="preserve">
+    <value>Tee saadetud</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadFailed" xml:space="preserve">
+    <value>Tee saatmine ebaõnnestus</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeGeometryMalformed" xml:space="preserve">
+    <value>Silla geomeetria on vigane.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeMismatch" xml:space="preserve">
+    <value>Silla lõigud ei vasta teele.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegment" xml:space="preserve">
+    <value>Sild üle lõigu {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegments" xml:space="preserve">
+    <value>Sild üle lõikude {0}-{1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeProblem" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeSettingsRange" xml:space="preserve">
+    <value>Silla seaded on lubatud vahemikest väljas.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Busy" xml:space="preserve">
+    <value>Server on hõivatud teiste teede hindamisega.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Crossing" xml:space="preserve">
+    <value>Lõik {0} lõikub lõiguga {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_GeometryMalformed" xml:space="preserve">
+    <value>Tee geomeetria on vigane.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_LiftTooHigh" xml:space="preserve">
+    <value>Silla sõlmi saab tõsta kõige rohkem {0} m.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_NotStone" xml:space="preserve">
+    <value>{0} ei anna kivi; seda saab kasutada ainult loovrežiimis.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetNotFound" xml:space="preserve">
+    <value>Planeeti ei leitud.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetRemoved" xml:space="preserve">
+    <value>Planeet eemaldati.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PricingFailed" xml:space="preserve">
+    <value>Teed ei saanud hinnata: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RateLimited" xml:space="preserve">
+    <value>Liiga palju pakkumispäringuid; proovi varsti uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RoadSettingsRange" xml:space="preserve">
+    <value>Tee seaded on lubatud vahemikest väljas.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SegmentDegenerate" xml:space="preserve">
+    <value>Lõik {0} on mandunud või ei jätka teed.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SlopeExceeded" xml:space="preserve">
+    <value>Lõik {0} ületab {1:0.#}° kalde/lõigu piirid.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Superseded" xml:space="preserve">
+    <value>Asendatud uuema pakkumispäringuga.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_TooManySegments" xml:space="preserve">
+    <value>Teel võib olla kõige rohkem {0} lõiku.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ApiUnavailable" xml:space="preserve">
+    <value>Voxel API pole saadaval.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ContractRejected" xml:space="preserve">
+    <value>Lepingut ei saanud luua.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Default" xml:space="preserve">
+    <value>Päring lükati tagasi.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InsufficientCredits" xml:space="preserve">
+    <value>Space Credits ei jätku.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InvalidGeometry" xml:space="preserve">
+    <value>Tee geomeetria on vigane.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_MaterialNotAllowed" xml:space="preserve">
+    <value>See materjal pole siin lubatud.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoPermission" xml:space="preserve">
+    <value>Sul pole selleks õigust.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoServiceProvider" xml:space="preserve">
+    <value>Ükski fraktsiooni jaam ei saa lepingut võtta.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_OutOfLimits" xml:space="preserve">
+    <value>Tee on serveri piiridest väljas.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_PushFailed" xml:space="preserve">
+    <value>Teed ei saanud ehitada.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_QuoteExpired" xml:space="preserve">
+    <value>Pakkumine aegus.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RateLimited" xml:space="preserve">
+    <value>Liiga palju päringuid.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RetryIn" xml:space="preserve">
+    <value>{0} (proovi uuesti {1} s pärast)</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SelfCrossing" xml:space="preserve">
+    <value>Tee lõikub iseendaga.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ServerBusy" xml:space="preserve">
+    <value>Server on hõivatud.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SlopeExceeded" xml:space="preserve">
+    <value>Lõik ületab kaldepiirid.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Superseded" xml:space="preserve">
+    <value>Asendatud uuema päringuga.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_TooManyContracts" xml:space="preserve">
+    <value>Sul on liiga palju avatud teelepinguid.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_UnknownContract" xml:space="preserve">
+    <value>Seda lepingut pole enam olemas.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ApiFailed" xml:space="preserve">
+    <value>Voxel API ei suutnud teid uuesti katta: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeNoRecord" xml:space="preserve">
+    <value>Märgitud silla ehitamise kohta pole kirjet, seega ei saa seda uuesti ehitada.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeReplanFailed" xml:space="preserve">
+    <value>Silda ei saanud uuesti planeerida: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeUnreadable" xml:space="preserve">
+    <value>Märgitud silla geomeetriat ei saanud lugeda.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Busy" xml:space="preserve">
+    <value>Teine parandus on käimas; proovi hetke pärast uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_CannotTitle" xml:space="preserve">
+    <value>Parandamine pole võimalik</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Confirm" xml:space="preserve">
+    <value>Paranda</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmBody" xml:space="preserve">
+    <value>Parandada: {0}?
+
+See muudab maailma ja võib võtta aega.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmTitle" xml:space="preserve">
+    <value>Parandada?</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_Many" xml:space="preserve">
+    <value>sildu: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_One" xml:space="preserve">
+    <value>sildu: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_GuideLines" xml:space="preserve">
+    <value>teemärgistus uuesti värvitud</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Holes" xml:space="preserve">
+    <value>augud täidetud</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Paved" xml:space="preserve">
+    <value>kate: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_Many" xml:space="preserve">
+    <value>teelõike: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_One" xml:space="preserve">
+    <value>teelõike: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Done" xml:space="preserve">
+    <value>{0}.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Expired" xml:space="preserve">
+    <value>Parandus aegus; kinnita uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_FillHoles" xml:space="preserve">
+    <value>Täida augud</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Help" xml:space="preserve">
+    <value>Aukude täitmine taastab teede äärse pinnase (2 m üle servade, 12 m alla ja 8 m üles) ehitatud kujule: kõik, mis seal vokslitega kaevati või kuhjati, kaob ja sillad ehitatakse uuesti. Uus materjal laob teed uuesti, ristumiskohtades hiljem ehitatud teede peale.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NewMaterial" xml:space="preserve">
+    <value>Uus materjal</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NotListedYet" xml:space="preserve">
+    <value>Märgitud teed pole veel voxel API loendis; proovi hetke pärast uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NothingChosen" xml:space="preserve">
+    <value>Vali uus materjal või aukude täitmine.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Running" xml:space="preserve">
+    <value>Parandatakse...</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningBody" xml:space="preserve">
+    <value>Server parandab märgitud teid. Võid selle teate töö ajal sulgeda.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningTitle" xml:space="preserve">
+    <value>Parandamine</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_Many" xml:space="preserve">
+    <value>Märgitud teelõike: {0}. Parandamisel ehitatakse sillad tervikuna uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_One" xml:space="preserve">
+    <value>Märgitud teelõike: {0}. Parandamisel ehitatakse sillad tervikuna uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Title" xml:space="preserve">
+    <value>Parandus</value>
+  </data>
+  <data name="HighwayEngineer_Repair_TooMany" xml:space="preserve">
+    <value>Korraga saab parandada kuni {0} lõiku.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableBody" xml:space="preserve">
+    <value>Vali planeet ja märgi parandatavad teed.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableTitle" xml:space="preserve">
+    <value>Parandamine pole saadaval</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnknownQuote" xml:space="preserve">
+    <value>Parandus on tundmatu; märgi teed uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Wait" xml:space="preserve">
+    <value>Oota {0} s enne järgmist parandamist.</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_AverageHeight" xml:space="preserve">
+    <value>Keskmine kõrgus</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Depth" xml:space="preserve">
+    <value>Sügavus (m)</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_FillSides" xml:space="preserve">
+    <value>Külgede süvendamine/täitmine</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_GuideLines" xml:space="preserve">
+    <value>Teemärgistus</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Width" xml:space="preserve">
+    <value>Laius (m)</value>
+  </data>
+  <data name="HighwayEngineer_Route_InvalidPlanet" xml:space="preserve">
+    <value>Vigane planeet</value>
+  </data>
+  <data name="HighwayEngineer_Route_NegativeWeights" xml:space="preserve">
+    <value>Marsruudi kaalud ei tohi olla negatiivsed</value>
+  </data>
+  <data name="HighwayEngineer_Route_NoPlanet" xml:space="preserve">
+    <value>Ükski planeet pole fookuses</value>
+  </data>
+  <data name="HighwayEngineer_Route_NotFound" xml:space="preserve">
+    <value>A ja B vahel marsruuti ei leitud</value>
+  </data>
+  <data name="HighwayEngineer_Route_SamePoints" xml:space="preserve">
+    <value>Punktid A ja B on samad</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeRange" xml:space="preserve">
+    <value>Suurim kalle peab olema vahemikus 0° kuni 90°</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeUnreachable" xml:space="preserve">
+    <value>Ükski marsruut ei hoia kõiki lõike {0:0.#}° suurima kalde piires; suurenda suurimat kallet, vähenda lõiku või liiguta A/B</value>
+  </data>
+  <data name="HighwayEngineer_Route_TooFar" xml:space="preserve">
+    <value>Punktid A ja B on marsruudi jaoks liiga kaugel</value>
+  </data>
+  <data name="HighwayEngineer_Route_WidthPositive" xml:space="preserve">
+    <value>Tee laius ja peenra nurk peavad olema positiivsed</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Changed" xml:space="preserve">
+    <value>Märgitud tee on muutunud või kadunud; ava kaart uuesti ja märgi see uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Gone" xml:space="preserve">
+    <value>Märgitud teed pole enam olemas; ava kaart uuesti ja märgi see uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_ListingUnreadable" xml:space="preserve">
+    <value>Voxel API teede loendit ei saanud lugeda.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_MarksChanged" xml:space="preserve">
+    <value>Märgitud teed on muutunud; märgi need uuesti.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoListing" xml:space="preserve">
+    <value>Voxel API ei loetle sellel planeedil teid.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoneMarked" xml:space="preserve">
+    <value>Ühtegi teed pole märgitud.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Bulldoze" xml:space="preserve">
+    <value>Märgitud tee ei ole ehitatud teelepinguga; seda saab lammutada ainult administraator või host.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Repair" xml:space="preserve">
+    <value>Märgitud tee ei ole ehitatud teelepinguga; seda saab parandada ainult administraator või host.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Bulldoze" xml:space="preserve">
+    <value>Märgitud tee ehitas teine mängija; seda saab lammutada ainult tema või administraator.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Repair" xml:space="preserve">
+    <value>Märgitud tee ehitas teine mängija; seda saab parandada ainult tema või administraator.</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Header" xml:space="preserve">
+    <value>SEADED</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_CenterMap" xml:space="preserve">
+    <value>Kaart keskele</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_LowerNode" xml:space="preserve">
+    <value>Langeta silla sõlme</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_OpenMap" xml:space="preserve">
+    <value>Ava kaart</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RaiseNode" xml:space="preserve">
+    <value>Tõsta silla sõlme</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollLeft" xml:space="preserve">
+    <value>Kalluta vasakule</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollRight" xml:space="preserve">
+    <value>Kalluta paremale</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_SurfaceView" xml:space="preserve">
+    <value>Lülita 3D-vaadet</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomIn" xml:space="preserve">
+    <value>Suurenda</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomOut" xml:space="preserve">
+    <value>Vähenda</value>
+  </data>
+  <data name="HighwayEngineer_Settings_KeybindHeading" xml:space="preserve">
+    <value>KLAHVID</value>
+  </data>
+  <data name="HighwayEngineer_Settings_MaterialPlaceholder" xml:space="preserve">
+    <value>Voksli materjal</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadMarkings" xml:space="preserve">
+    <value>Teekattemärgised</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadsHeading" xml:space="preserve">
+    <value>TEED</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SegmentLabel" xml:space="preserve">
+    <value>Lõik {0}m</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShoulderLabel" xml:space="preserve">
+    <value>Peenar {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowGps" xml:space="preserve">
+    <value>Näita minu GPS-e</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowRadio" xml:space="preserve">
+    <value>Näita raadiosignaale</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SlopeLabel" xml:space="preserve">
+    <value>Max kalle {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Theme" xml:space="preserve">
+    <value>Teema</value>
+  </data>
+  <data name="HighwayEngineer_Settings_WindowTitle" xml:space="preserve">
+    <value>Seaded</value>
+  </data>
+  <data name="HighwayEngineer_Station_DefaultName" xml:space="preserve">
+    <value>Kaubandusjaam</value>
+  </data>
+  <data name="HighwayEngineer_Station_Details" xml:space="preserve">
+    <value>Jaam: {0}
+Fraktsioon: {1}
+Suhe: {2}
+Maine: {3}</value>
+  </data>
+  <data name="HighwayEngineer_Station_DetailsTitle" xml:space="preserve">
+    <value>Jaama üksikasjad</value>
+  </data>
+  <data name="HighwayEngineer_Station_MoreSignals" xml:space="preserve">
+    <value>{0}
+veel signaale: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOff" xml:space="preserve">
+    <value>Automaatsed sillad väljas: kasuta lõigu sillamärki, et teha sellest sild</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOn" xml:space="preserve">
+    <value>Automaatsed sillad sees: kuristiku kohal olevad lõigud muutuvad sildadeks (lilla)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoad" xml:space="preserve">
+    <value>Automaatne tee: lõike {0}, {1:0.##} km, tõus {2:0} m, mullatööd {3:0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRaised" xml:space="preserve">
+    <value>{0} (kalde kaalu suurendati, et püsida kalde piires)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRejected" xml:space="preserve">
+    <value>Automaatne tee lükati tagasi: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeHint" xml:space="preserve">
+    <value>Lammuta: klõpsa ehitatud teedel, et märkida need eemaldamiseks, Shift+klõps märgib vahepealsed teed</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozePrefix" xml:space="preserve">
+    <value>Lammuta: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeQuoting" xml:space="preserve">
+    <value>Lammuta: serverilt pakkumise küsimine...</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Bridge" xml:space="preserve">
+    <value>Sillaleping vastu võetud; silda ehitatakse</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Road" xml:space="preserve">
+    <value>Teeleping vastu võetud; teed ehitatakse</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Bridge" xml:space="preserve">
+    <value>Sillaleping vastu võetud: toimeta {0} silla alguses olevasse tarnekasti</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Road" xml:space="preserve">
+    <value>Teeleping vastu võetud: toimeta {0} tee alguses olevasse tarnekasti</value>
+  </data>
+  <data name="HighwayEngineer_Status_CrossesItself" xml:space="preserve">
+    <value>Tee lõikub iseendaga; saatmine keelatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_DefaultHint" xml:space="preserve">
+    <value>Klõps maastikul: lisa - vasak klõps sõlmel: vali - parem klõps sõlmel: kustuta</value>
+  </data>
+  <data name="HighwayEngineer_Status_DraftCancelled" xml:space="preserve">
+    <value>Mustand tühistati; olemasolevad teed ei muutunud</value>
+  </data>
+  <data name="HighwayEngineer_Status_EnterMaterial" xml:space="preserve">
+    <value>Sisesta voksli materjali alamtüüp</value>
+  </data>
+  <data name="HighwayEngineer_Status_EntranceUpdated" xml:space="preserve">
+    <value>Sissesõidu suund uuendatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_ExitUpdated" xml:space="preserve">
+    <value>Väljasõidu suund uuendatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_Many" xml:space="preserve">
+    <value>{0} - ristmikke: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_One" xml:space="preserve">
+    <value>{0} - ristmikke: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarkNotConnected" xml:space="preserve">
+    <value>{0} (pole ühendatud viimati klõpsatud teega)</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_Many" xml:space="preserve">
+    <value>Märgitud lõike: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_One" xml:space="preserve">
+    <value>Märgitud lõike: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarksDiscarded" xml:space="preserve">
+    <value>märgised tühistatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_MayExceedSlope" xml:space="preserve">
+    <value>Lõik {0} võib ületada kalde-/kaugusepiire</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeAdded" xml:space="preserve">
+    <value>Sõlm lisatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeInserted" xml:space="preserve">
+    <value>Sõlm lõiku lisatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLifted" xml:space="preserve">
+    <value>Sõlm {0} tõsteti {1:0} m maastikust kõrgemale (sild)</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLowered" xml:space="preserve">
+    <value>Sõlm {0} jälle maastikul</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeMoved" xml:space="preserve">
+    <value>Sõlm liigutatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeRemoved" xml:space="preserve">
+    <value>Sõlm eemaldatud</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeSnapped" xml:space="preserve">
+    <value>Sõlm kinnitati olemasoleva tee külge</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToRedo" xml:space="preserve">
+    <value>Pole midagi uuesti teha</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToUndo" xml:space="preserve">
+    <value>Pole midagi tagasi võtta</value>
+  </data>
+  <data name="HighwayEngineer_Status_Redo" xml:space="preserve">
+    <value>Tee uuesti (tagasivõtmisi: {0} - uuestitegemisi: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairHint" xml:space="preserve">
+    <value>Paranda: klõpsa ehitatud teedel, et märkida need uue materjali või aukude täitmise jaoks, Shift+klõps märgib vahepealsed teed</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairPrefix" xml:space="preserve">
+    <value>Paranda: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairQuoting" xml:space="preserve">
+    <value>Paranda: serverilt küsimine...</value>
+  </data>
+  <data name="HighwayEngineer_Status_RoadStillLoading" xml:space="preserve">
+    <value>seda teed laaditakse veel voxel API-st; proovi hetke pärast uuesti</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsBridge" xml:space="preserve">
+    <value>Lõik {0} on sild</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsRoad" xml:space="preserve">
+    <value>Lõik {0} on tee</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewLoading" xml:space="preserve">
+    <value>3D-vaade pole valmis: maastikku alles laaditakse</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOff" xml:space="preserve">
+    <value>Tasapinnaline kaardivaade</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOn" xml:space="preserve">
+    <value>3D-vaade: lohista hiire keskmise nupuga, et kaamerat pöörata ja kallutada</value>
+  </data>
+  <data name="HighwayEngineer_Status_TangentHint" xml:space="preserve">
+    <value>Lohista tsüaansinist SISSE- või rohelist VÄLJA-käepidet; parem klõps maastikul suunab valitud külge</value>
+  </data>
+  <data name="HighwayEngineer_Status_Undo" xml:space="preserve">
+    <value>Võta tagasi (tagasivõtmisi: {0} - uuestitegemisi: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoDynamicTextures" xml:space="preserve">
+    <value>Dünaamilised tekstuurid pole selles renderdajas saadaval.</value>
+  </data>
+  <data name="HighwayEngineer_Ui_Missing" xml:space="preserve">
+    <value>Teeplaneerija vajab modi Acrux UI. Lisa see sellesse maailma.</value>
+  </data>
+</root>

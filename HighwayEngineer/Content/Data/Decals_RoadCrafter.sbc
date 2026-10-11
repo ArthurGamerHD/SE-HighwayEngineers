@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Decals>
+    <!-- Texture paths use forward slashes: the game finds a mod's decal textures with File.Exists,
+         which does not take backslashes as separators on Linux. -->
+    <!-- Double yellow centre line painted along built roads (Client/Roads/RoadMarkingDecals.cs).
+         The texture spans the decal's 0.5 m width: two 0.12 m stripes with a 0.15 m gap. The code
+         stretches each decal along its road piece, so the sizes here only matter as a fallback. -->
+    <Decal>
+      <Id>
+        <TypeId>DecalDefinition</TypeId>
+        <SubtypeId>HighwayEngineer_CenterLine</SubtypeId>
+      </Id>
+      <Source>HighwayEngineer_CenterLine</Source>
+      <Target>Default</Target>
+      <Material>
+        <ColorMetalTexture>Textures/Decals/HighwayEngineer_CenterLine_cm.dds</ColorMetalTexture>
+        <AlphamaskTexture>Textures/Decals/HighwayEngineer_CenterLine_alphamask.dds</AlphamaskTexture>
+      </Material>
+      <MinSize>0.5</MinSize>
+      <MaxSize>0.5</MaxSize>
+      <Rotation>0</Rotation>
+      <Depth>1</Depth>
+      <RenderDistance>400</RenderDistance>
+    </Decal>
+    <!-- Solid white edge line near each side of the road: one 0.15 m stripe across a 0.25 m decal. -->
+    <Decal>
+      <Id>
+        <TypeId>DecalDefinition</TypeId>
+        <SubtypeId>HighwayEngineer_EdgeLine</SubtypeId>
+      </Id>
+      <Source>HighwayEngineer_EdgeLine</Source>
+      <Target>Default</Target>
+      <Material>
+        <ColorMetalTexture>Textures/Decals/HighwayEngineer_EdgeLine_cm.dds</ColorMetalTexture>
+        <AlphamaskTexture>Textures/Decals/HighwayEngineer_EdgeLine_alphamask.dds</AlphamaskTexture>
+      </Material>
+      <MinSize>0.25</MinSize>
+      <MaxSize>0.25</MaxSize>
+      <Rotation>0</Rotation>
+      <Depth>1</Depth>
+      <RenderDistance>400</RenderDistance>
+    </Decal>
+  </Decals>
+</Definitions>

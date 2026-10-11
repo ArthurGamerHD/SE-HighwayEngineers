@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Styles xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:addons="using:Acrux.Addons">
+  <!-- Minimap-specific variants layered over ADK's renderer-neutral defaults. -->
+  <!-- Icon and preview content fills the button, so it stays out of the shrink-to-fit Viewbox. -->
+  <Style Selector="Button.circular">
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="{DynamicResource surfaceContainerHighColor}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="999" />
+  </Style>
+
+  <!-- Bulldoze is destructive: a construction-amber fill makes the active tool obvious. -->
+  <Style Selector="ToggleButton.circular.bulldoze:checked">
+    <Setter Property="Background" Value="#e0a030" />
+  </Style>
+  <!-- Road visibility: road-cyan fill while roads are shown (the default). -->
+  <Style Selector="ToggleButton.circular.roads:checked">
+    <Setter Property="Background" Value="#55cdeb" />
+  </Style>
+  <!-- GPS markers: a waypoint-green fill while the player's GPS points are shown. -->
+  <Style Selector="ToggleButton.circular.gps:checked">
+    <Setter Property="Background" Value="#6fd38c" />
+  </Style>
+
+  <Style Selector="Button.close-button">
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Width" Value="34" />
+    <Setter Property="Height" Value="34" />
+    <Setter Property="CornerRadius" Value="17" />
+    <Setter Property="Background" Value="{DynamicResource surfaceContainerHighColor}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource borderVariantColor}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+
+  <Style Selector="Button.layer-preview">
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="{DynamicResource surfaceContainerHighestColor}" />
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+
+  <Style Selector="Button.context-menu-item">
+    <Setter Property="CornerRadius" Value="5" />
+    <Setter Property="HorizontalContentAlignment" Value="Left" />
+    <Setter Property="Background" Value="#00000000" />
+    <Setter Property="Foreground" Value="{DynamicResource onAccentColor}" />
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="12 0 12 0" />
+  </Style>
+  <Style Selector="Button.context-menu-item:pointerover">
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="Button.context-menu-item:pressed">
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+
+  <Style Selector="Button.layer-preview:pointerover">
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="Button.layer-preview:pressed">
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="Button.layer-preview:focus-visible">
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+
+  <Style Selector="ComboBox.settings-anchor">
+    <!-- Keep the short settings lists fully visible without scrolling. -->
+    <Setter Property="MaxDropDownHeight" Value="400" />
+    <Setter Property="Width" Value="270" />
+    <Setter Property="Height" Value="34" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="addons|KeySelector.settings-key-selector">
+    <Setter Property="Width" Value="180" />
+    <Setter Property="Height" Value="34" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="ToggleSwitch.settings-toggle">
+    <Setter Property="Width" Value="52" />
+    <Setter Property="Height" Value="30" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <Style Selector="TextBlock.settings-header">
+    <Setter Property="TextAlignment" Value="Center" />
+  </Style>
+  <Style Selector="TextBlock.settings-section-heading">
+    <Setter Property="TextAlignment" Value="Left" />
+  </Style>
+
+  <Style Selector="IntegerRangeSlider.settings-slider-row">
+    <Setter Property="Width" Value="310" />
+    <Setter Property="Height" Value="34" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style Selector="FloatRangeSlider.settings-slider-row">
+    <Setter Property="Width" Value="310" />
+    <Setter Property="Height" Value="34" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style Selector="SettingsRow.settings-row">
+    <Setter Property="MinHeight" Value="42" />
+  </Style>
+</Styles>

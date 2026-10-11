@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_HighwayEngineer_Asphalt" xml:space="preserve">
+    <value>Asfalt</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Concrete" xml:space="preserve">
+    <value>Betón</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Gravel" xml:space="preserve">
+    <value>Štrk</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_RoadConstruction" xml:space="preserve">
+    <value>Stavba cesty</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeBuilding" xml:space="preserve">
+    <value>Stavia sa most...</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_Many" xml:space="preserve">
+    <value>Odstránené voxelové mapy mostov: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_None" xml:space="preserve">
+    <value>Nie sú žiadne mosty na odstránenie.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_One" xml:space="preserve">
+    <value>Odstránené voxelové mapy mostov: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeMalformed" xml:space="preserve">
+    <value>Požiadavka na most je neplatná.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_Many" xml:space="preserve">
+    <value>Dokončené cestné zákazky: {0}; budú postavené.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_None" xml:space="preserve">
+    <value>Žiadna cestná zákazka nečaká na dodanie ani platbu.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_One" xml:space="preserve">
+    <value>Dokončené cestné zákazky: {0}; bude postavená.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOff" xml:space="preserve">
+    <value>Cesty zadarmo vypnuté: ponuky majú bežnú cenu.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOn" xml:space="preserve">
+    <value>Cesty zadarmo zapnuté: ponuky nestoja kredity ani materiál.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_NotAdmin" xml:space="preserve">
+    <value>Príkaz /road {0} môžu používať iba správcovia.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_UnknownCommand" xml:space="preserve">
+    <value>Neznámy cestný príkaz „{0}“.</value>
+  </data>
+  <data name="HighwayEngineer_Api_Incompatible" xml:space="preserve">
+    <value>Voxel Cubemap API {0} nie je kompatibilné. Stavba a odstraňovanie ciest vyžaduje verziu {1} alebo novšiu.</value>
+  </data>
+  <data name="HighwayEngineer_Api_NotFound" xml:space="preserve">
+    <value>Voxel Cubemap API sa nenašlo. Zapnite Procedural Voxel Cubemap API ({0} alebo novšie), aby ste mohli stavať alebo odstraňovať cesty.</value>
+  </data>
+  <data name="HighwayEngineer_Api_Ready" xml:space="preserve">
+    <value>HighwayEngineer: Voxel Cubemap API {0} pripravené</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnavailableSeeChat" xml:space="preserve">
+    <value>HighwayEngineer: Voxel API nie je dostupné; pozrite chat</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnknownVersion" xml:space="preserve">
+    <value>Voxel Cubemap API (neznáma verzia) nie je kompatibilné. Stavba a odstraňovanie ciest vyžaduje verziu {0} alebo novšiu.</value>
+  </data>
+  <data name="HighwayEngineer_Api_ValidateFailed" xml:space="preserve">
+    <value>Voxel Cubemap API sa nepodarilo overiť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Distance" xml:space="preserve">
+    <value>Vzdialenosť {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Earthwork" xml:space="preserve">
+    <value>Zemné práce {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Inclination" xml:space="preserve">
+    <value>Sklon {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Arch" xml:space="preserve">
+    <value>Oblúk</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Auto" xml:space="preserve">
+    <value>Automaticky (najlacnejší)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Beam" xml:space="preserve">
+    <value>Trám</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegment" xml:space="preserve">
+    <value>Most na úseku {0} {1}; odoslanie zakázané</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegments" xml:space="preserve">
+    <value>Most na úsekoch {0}-{1} {2}; odoslanie zakázané</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_IntoTerrain" xml:space="preserve">
+    <value>vedie do terénu na úseku {0} (zdvihnite uzol)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooHigh" xml:space="preserve">
+    <value>je viac ako {0} m nad terénom pre piliere (použite oblúk)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooShort" xml:space="preserve">
+    <value>je kratší ako {0} m</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooSteep" xml:space="preserve">
+    <value>stúpa o viac ako {0:0.#}°</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_PavementMaterial" xml:space="preserve">
+    <value>Materiál vozovky</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_Style" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_ArchNoFit" xml:space="preserve">
+    <value>Oblúkový most sa sem nezmestí: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Bends" xml:space="preserve">
+    <value>mostovka sa nad priepasťou príliš zakrivuje pre oblúk (vzopätie {0:0.00} rozpätia; vhodné {1}-{2})</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Shallow" xml:space="preserve">
+    <value>priepasť je pre oblúk príliš plytká</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_ShallowNarrow" xml:space="preserve">
+    <value>priepasť je pre oblúk príliš plytká alebo úzka</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Terrain" xml:space="preserve">
+    <value>terén zasahuje do miesta, kde by bol oblúk</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BendTooTight" xml:space="preserve">
+    <value>Cesta na moste zatáča príliš ostro pre takú širokú mostovku.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuildFailed" xml:space="preserve">
+    <value>Most sa nepodarilo postaviť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuiltWithSummary" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_Many" xml:space="preserve">
+    <value>Postavený oblúkový most z {2}: dĺžka {0} m, šírka {1} m, vyplnený {3}, siaha {4} m pod mostovku, úsekov: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_One" xml:space="preserve">
+    <value>Postavený oblúkový most z {2}: dĺžka {0} m, šírka {1} m, vyplnený {3}, siaha {4} m pod mostovku, úsekov: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_Many" xml:space="preserve">
+    <value>Postavený trámový most z {2}: dĺžka {0} m, šírka {1} m, vyplnený {3}, siaha {4} m pod mostovku, úsekov: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_One" xml:space="preserve">
+    <value>Postavený trámový most z {2}: dĺžka {0} m, šírka {1} m, vyplnený {3}, siaha {4} m pod mostovku, úsekov: {5}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Busy" xml:space="preserve">
+    <value>Už sa stavia iný most; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_DeckTooSteep" xml:space="preserve">
+    <value>Mostovka je medzi uzlami {0} a {1} mosta príliš strmá; tento most smie stúpať najviac o {2:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_EndsTooSteep" xml:space="preserve">
+    <value>Konce sa príliš líšia výškou; tento most smie stúpať najviac o {0:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_IntoTerrain" xml:space="preserve">
+    <value>Mostovka vedie do terénu {0} m pozdĺž mosta; zdvihnite tam uzol.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_MillionCubicMeters" xml:space="preserve">
+    <value>{0:0.0} mil. m³</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoLength" xml:space="preserve">
+    <value>Most nemá dĺžku.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoMaterial" xml:space="preserve">
+    <value>Nie je definovaný žiadny voxelový materiál.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoPlanet" xml:space="preserve">
+    <value>Mosty sa dajú stavať iba na planéte.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurface" xml:space="preserve">
+    <value>Nepodarilo sa prečítať výšku terénu pod mostom; planéta tam nehlási žiadny povrch.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurfaceEnds" xml:space="preserve">
+    <value>Nepodarilo sa prečítať výšku terénu na koncoch mosta; planéta tam nehlási žiadny povrch.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_PlanFailed" xml:space="preserve">
+    <value>Most sa nepodarilo naplánovať: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperArch" xml:space="preserve">
+    <value>Typ: oblúk, lacnejší ({0} betónu pod mostovkou).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperBeam" xml:space="preserve">
+    <value>Typ: trám, lacnejší ({0} betónu pod mostovkou).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenArch" xml:space="preserve">
+    <value>Typ: oblúk, podľa voľby ({0} betónu pod mostovkou).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenBeam" xml:space="preserve">
+    <value>Typ: trám, podľa voľby ({0} betónu pod mostovkou).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_NoArch" xml:space="preserve">
+    <value>Typ: trám, pretože sa sem oblúk nezmestí ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHigh" xml:space="preserve">
+    <value>Mostovka je {1} m pozdĺž mosta viac ako {0} m nad terénom</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighForBeam" xml:space="preserve">
+    <value>{0}, príliš vysoko pre piliere trámového mosta; oblúk to dokáže preklenúť.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighNoArch" xml:space="preserve">
+    <value>{0}, príliš vysoko pre piliere, a oblúk sa sem nezmestí: {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooShort" xml:space="preserve">
+    <value>Most musí mať aspoň {0} m; tento má {1} m.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_UnknownDesign" xml:space="preserve">
+    <value>Neznámy typ mosta „{0}“; použite beam, arch alebo auto.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Arch" xml:space="preserve">
+    <value>oblúk {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Beam" xml:space="preserve">
+    <value>trám {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volumes" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ApiFailed" xml:space="preserve">
+    <value>Voxel API nedokázalo cesty odstrániť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Busy" xml:space="preserve">
+    <value>Pracuje iný buldozér; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_CannotTitle" xml:space="preserve">
+    <value>Nedá sa zbúrať</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Charged" xml:space="preserve">
+    <value>{0} Stiahnutých {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmBody" xml:space="preserve">
+    <value>Odstrániť z planéty: {0}?
+
+Terén pod cestami sa vráti do stavu pred nimi; neskôr postavené cesty, ktoré ich križovali, môžu zmeniť výšku. Mosty sa odstraňujú celé.
+
+{1}
+
+Tým sa zmení svet a môže to chvíľu trvať.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmButton" xml:space="preserve">
+    <value>Zbúrať</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmTitle" xml:space="preserve">
+    <value>Zbúrať?</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Costs" xml:space="preserve">
+    <value>Zbúranie stojí {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Done" xml:space="preserve">
+    <value>Odstránené: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Expired" xml:space="preserve">
+    <value>Ponuka zbúrania vypršala; potvrďte znova.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_NoRecord" xml:space="preserve">
+    <value>Označená cesta nemá záznam vo voxel API.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceCost" xml:space="preserve">
+    <value>Stojí to {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceFree" xml:space="preserve">
+    <value>Nestojí to nič.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceRefund" xml:space="preserve">
+    <value>Dostanete späť {0:N0} SC (boli postavené nedávno).</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Refunded" xml:space="preserve">
+    <value>{0} Vrátených {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Running" xml:space="preserve">
+    <value>Búra sa...</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningBody" xml:space="preserve">
+    <value>Server odstraňuje označené cesty. Túto správu môžete zavrieť, kým pracuje.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningTitle" xml:space="preserve">
+    <value>Búranie</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_TooMany" xml:space="preserve">
+    <value>Naraz sa dá zbúrať najviac {0} úsekov.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableBody" xml:space="preserve">
+    <value>Vyberte planétu a označte cesty na odstránenie.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableTitle" xml:space="preserve">
+    <value>Búranie nie je dostupné</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnknownQuote" xml:space="preserve">
+    <value>Ponuka zbúrania je neznáma; označte cesty znova.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Wait" xml:space="preserve">
+    <value>Pred ďalším búraním počkajte {0} s.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_Failed" xml:space="preserve">
+    <value>Kartografia pre tento typ planéty a vrstvu zlyhala.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_OreNoResult" xml:space="preserve">
+    <value>Skenovanie rúd neprinieslo výsledok.</value>
+  </data>
+  <data name="HighwayEngineer_Chat_Sender" xml:space="preserve">
+    <value>HighwayEngineer</value>
+  </data>
+  <data name="HighwayEngineer_Command_AimGround" xml:space="preserve">
+    <value>Zamierte na zem do {0} m.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeClear" xml:space="preserve">
+    <value>Odstráni všetky testovacie mosty (správca).</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeEndMarked" xml:space="preserve">
+    <value>Koniec mosta označený, {0:0} m od začiatku.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeMark" xml:space="preserve">
+    <value>Testovací most (správca): spustite raz s mierením na jeden koniec a znova na druhý; voliteľne typ (beam, arch, auto), materiál vozovky a materiál konštrukcie.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeStartMarked" xml:space="preserve">
+    <value>Začiatok mosta označený. Zamierte na druhý koniec a znova spustite /road bridgemark.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DebugDropoff" xml:space="preserve">
+    <value>Zobrazí alebo skryje doručovacie boxy vašich cestných zákaziek.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffHidden" xml:space="preserve">
+    <value>Doručovacie boxy skryté.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffShown" xml:space="preserve">
+    <value>Doručovacie boxy zobrazené.</value>
+  </data>
+  <data name="HighwayEngineer_Command_ForceComplete" xml:space="preserve">
+    <value>Dokončí všetky cestné zákazky čakajúce na dodanie alebo platbu (správca).</value>
+  </data>
+  <data name="HighwayEngineer_Command_Free" xml:space="preserve">
+    <value>Zapne alebo vypne cesty zadarmo; bez argumentu prepne (správca).</value>
+  </data>
+  <data name="HighwayEngineer_Common_And" xml:space="preserve">
+    <value>{0} a {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_BridgeMaterial" xml:space="preserve">
+    <value>Materiál mosta</value>
+  </data>
+  <data name="HighwayEngineer_Common_Cancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="HighwayEngineer_Common_Close" xml:space="preserve">
+    <value>Zavrieť</value>
+  </data>
+  <data name="HighwayEngineer_Common_CubicMeters" xml:space="preserve">
+    <value>{0:N0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListPair" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListSeparator" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="HighwayEngineer_Common_Material" xml:space="preserve">
+    <value>Materiál</value>
+  </data>
+  <data name="HighwayEngineer_Common_RepaintGuideLines" xml:space="preserve">
+    <value>Premaľovať vodiace čiary</value>
+  </data>
+  <data name="HighwayEngineer_Common_Unknown" xml:space="preserve">
+    <value>Neznáme</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Abandoned" xml:space="preserve">
+    <value>Zákazka opustená.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Bridge" xml:space="preserve">
+    <value>Správca dokončil zákazku; most sa stavia.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Road" xml:space="preserve">
+    <value>Správca dokončil zákazku; cesta sa stavia.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AwaitingPayment" xml:space="preserve">
+    <value>Dodanie dokončené. Čaká sa na platbu: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BridgeEndsMissing" xml:space="preserve">
+    <value>Planéta alebo konce mosta sa nenašli.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Bridge" xml:space="preserve">
+    <value>Most sa nepodarilo postaviť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Road" xml:space="preserve">
+    <value>Cestu sa nepodarilo postaviť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Bridge" xml:space="preserve">
+    <value>Most bol postavený.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Road" xml:space="preserve">
+    <value>Cesta bola postavená.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Bridge" xml:space="preserve">
+    <value>Dodanie dokončené; most sa stavia.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Road" xml:space="preserve">
+    <value>Dodanie dokončené; cesta sa stavia.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotDestroyed" xml:space="preserve">
+    <value>Terminál zákaziek cestného logistického depa bol zničený; zákazka zlyhala. Zaplatené kredity sa nevracajú.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotGone" xml:space="preserve">
+    <value>Cestné logistické depo tejto ponuky už neexistuje; skontrolujte cestu znova.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Description" xml:space="preserve">
+    <value>{0}. Doručte {1} do cestného logistického depa označeného doručovacou GPS. Čiastočné dodávky sa rátajú; názov GPS ukazuje, koľko už prišlo. Zničenie terminálu zákaziek depa spôsobí zlyhanie zákazky.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Failed" xml:space="preserve">
+    <value>Zákazka zlyhala.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_GameContractGone" xml:space="preserve">
+    <value>Herná zákazka už neexistuje.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemCount" xml:space="preserve">
+    <value>{1}: {0:N0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemKg" xml:space="preserve">
+    <value>{1}: {0:N0} kg</value>
+  </data>
+  <data name="HighwayEngineer_Contract_LimitReached" xml:space="preserve">
+    <value>Dosiahli ste limit aktívnych zákaziek.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoIdentity" xml:space="preserve">
+    <value>Vaša identita sa nenašla.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoProvider" xml:space="preserve">
+    <value>Žiadna frakčná stanica nemôže prevziať cestnú zákazku.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotAccepted" xml:space="preserve">
+    <value>Zákazku sa nepodarilo prijať ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPosted" xml:space="preserve">
+    <value>Frakcia nemohla zákazku zverejniť.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPostedBy" xml:space="preserve">
+    <value>{0} nemohla zákazku zverejniť.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Notification" xml:space="preserve">
+    <value>Cestná zákazka: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayNotEnough" xml:space="preserve">
+    <value>Nedostatok Space Credits (treba {0:N0} SC).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayOffline" xml:space="preserve">
+    <value>Na zaplatenie musíte byť online.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_QuoteExpired" xml:space="preserve">
+    <value>Ponuka vypršala; skontrolujte cestu znova.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Received" xml:space="preserve">
+    <value>Prijaté {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Refunded" xml:space="preserve">
+    <value>{0} Zaplatené kredity boli vrátené.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Bridge" xml:space="preserve">
+    <value>Stavba mosta</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Road" xml:space="preserve">
+    <value>Stavba cesty</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TooManyOpen" xml:space="preserve">
+    <value>Už máte otvorené cestné zákazky: {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TypeMissing" xml:space="preserve">
+    <value>Chýba typ cestnej zákazky.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_ArchBridge" xml:space="preserve">
+    <value>Postaviť oblúkový most</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_BeamBridge" xml:space="preserve">
+    <value>Postaviť trámový most</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridge" xml:space="preserve">
+    <value>Postaviť most</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridges" xml:space="preserve">
+    <value>Postaviť mosty ({0})</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Road" xml:space="preserve">
+    <value>Postaviť cestu (úsekov: {0})</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridge" xml:space="preserve">
+    <value>Postaviť cestu (úsekov: {0}, s mostom)</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridges" xml:space="preserve">
+    <value>Postaviť cestu (úsekov: {0}, mostov: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Depot_Label" xml:space="preserve">
+    <value>Cestné logistické depo
+{0}</value>
+  </data>
+  <data name="HighwayEngineer_Depot_LabelForDraft" xml:space="preserve">
+    <value>Cestné logistické depo
+{0}
+Dodávka pre túto cestu</value>
+  </data>
+  <data name="HighwayEngineer_Error_NoTemplate" xml:space="preserve">
+    <value>Planéta nemá šablónu úprav.</value>
+  </data>
+  <data name="HighwayEngineer_Error_PlanetGone" xml:space="preserve">
+    <value>Planéta už neexistuje.</value>
+  </data>
+  <data name="HighwayEngineer_Error_TooManyRequests" xml:space="preserve">
+    <value>Príliš veľa požiadaviek; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Error_UnknownMaterial" xml:space="preserve">
+    <value>Neznámy voxelový materiál „{0}“.</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Crossing" xml:space="preserve">
+    <value>trasa križuje samu seba</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoCurve" xml:space="preserve">
+    <value>úsek {0} nemá platnú krivku</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoPlanet" xml:space="preserve">
+    <value>nie je vybraná žiadna planéta</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Slope" xml:space="preserve">
+    <value>úsek {0} prekračuje limity sklonu {1:0.#}°/úsek</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_BridgeStructure" xml:space="preserve">
+    <value>Konštrukcia mosta</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_EarthMovement" xml:space="preserve">
+    <value>Presun zeminy</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ExistingDepot" xml:space="preserve">
+    <value>Existujúce depo</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Infrastructure" xml:space="preserve">
+    <value>Infraštruktúra stavby ciest</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_NotCharged" xml:space="preserve">
+    <value>Neúčtované</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Pavement" xml:space="preserve">
+    <value>Materiál povrchu</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ServerQuote" xml:space="preserve">
+    <value>Ponuka servera</value>
+  </data>
+  <data name="HighwayEngineer_Item_SteelRebar" xml:space="preserve">
+    <value>Betonárska oceľ</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Biomes" xml:space="preserve">
+    <value>Biómy</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Materials" xml:space="preserve">
+    <value>Materiály</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Satellite" xml:space="preserve">
+    <value>Satelit</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Terrain" xml:space="preserve">
+    <value>Terén</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTitle" xml:space="preserve">
+    <value>Mierka plánovača</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTooltip" xml:space="preserve">
+    <value>Veľkosť tlačidiel a textu plánovača ciest na tomto povrchu.</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScriptTitle" xml:space="preserve">
+    <value>Plánovač ciest</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Intersection" xml:space="preserve">
+    <value>Križovatka</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Gps" xml:space="preserve">
+    <value>GPS</value>
+  </data>
+  <data name="HighwayEngineer_Marker_GpsSignals" xml:space="preserve">
+    <value>{0} signálov</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Node" xml:space="preserve">
+    <value>Uzol {0}</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Delete" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Details" xml:space="preserve">
+    <value>Podrobnosti</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Hide" xml:space="preserve">
+    <value>Skryť</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Show" xml:space="preserve">
+    <value>Zobraziť</value>
+  </data>
+  <data name="HighwayEngineer_Planner_CartographyError" xml:space="preserve">
+    <value>Kartografia: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Decoding" xml:space="preserve">
+    <value>dekódovanie kartografie</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Footer" xml:space="preserve">
+    <value>{0}  |  {1}  |  {2}  |  uzlov: {3}  |  {4}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Header" xml:space="preserve">
+    <value>PLÁNOVAČ CIEST</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapReady" xml:space="preserve">
+    <value>mapa pripravená</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapNotReady" xml:space="preserve">
+    <value>Mapa ešte nie je pripravená.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoPlanet" xml:space="preserve">
+    <value>Nezistila sa žiadna planéta.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_StreetViewActive" xml:space="preserve">
+    <value>Street View aktívne</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoBridge" xml:space="preserve">
+    <value>Automatické mosty: úseky návrhu nad priepasťou sa stanú mostami (fialové); kliknutím na odznak vedľa úseku ho prepnete (nastavenia: tlačidlo ozubeného kolesa)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoRoute" xml:space="preserve">
+    <value>Automatická trasa od prvého po posledný uzol (nahradí uzly medzi nimi)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Bulldoze" xml:space="preserve">
+    <value>Búranie: kliknite na postavené cesty a označte ich na odstránenie</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Cancel" xml:space="preserve">
+    <value>Zrušiť návrh (existujúce cesty zostanú)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmBulldoze" xml:space="preserve">
+    <value>Odstrániť označené úseky cesty</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmRepair" xml:space="preserve">
+    <value>Opraviť označené úseky cesty</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardBulldoze" xml:space="preserve">
+    <value>Zahodiť označenia na búranie</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardRepair" xml:space="preserve">
+    <value>Zahodiť označenia na opravu</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Push" xml:space="preserve">
+    <value>Potvrdiť a odoslať túto cestu</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Repair" xml:space="preserve">
+    <value>Oprava: kliknite na postavené cesty a označte ich pre nový materiál alebo zasypanie dier</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Roads" xml:space="preserve">
+    <value>Zobraziť/skryť prekrytie ciest (terén sa nemení)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Settings" xml:space="preserve">
+    <value>Nastavenia cesty</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_StreetView" xml:space="preserve">
+    <value>Potiahnite na planétu pre Street View (vyžaduje oprávnenie diváka)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Water" xml:space="preserve">
+    <value>Zobraziť/skryť prekrytie vody (vyžaduje údaje o vode)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Gps" xml:space="preserve">
+    <value>Zobraziť/skryť značky GPS</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Title" xml:space="preserve">
+    <value>MAPA PLANÉTY</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Accepting" xml:space="preserve">
+    <value>Prijíma sa zákazka…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_BridgeStyle" xml:space="preserve">
+    <value>Typ mosta</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotBody" xml:space="preserve">
+    <value>Vyberte planétu a pridajte aspoň dva uzly cesty.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotTitle" xml:space="preserve">
+    <value>Cestu nemožno odoslať</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ConstructionCost" xml:space="preserve">
+    <value>Náklady na stavbu</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Depth" xml:space="preserve">
+    <value>Hĺbka</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignBridges" xml:space="preserve">
+    <value>{0}, mostov: {1}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignCheapest" xml:space="preserve">
+    <value>{0} (najlacnejší)</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignMixed" xml:space="preserve">
+    <value>Trám a oblúk</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_EmbankmentAngle" xml:space="preserve">
+    <value>Uhol svahu</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice" xml:space="preserve">
+    <value>Faktúra č. {0}, záloha {1:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_InvoiceExempt" xml:space="preserve">
+    <value>Faktúra č. {0}, záloha {1:N0} SC - nič sa neúčtuje.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Item" xml:space="preserve">
+    <value>Položka</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Quantity" xml:space="preserve">
+    <value>Množstvo</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Total" xml:space="preserve">
+    <value>Spolu</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_UnitPrice" xml:space="preserve">
+    <value>Jedn. cena</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_MaxSlope" xml:space="preserve">
+    <value>Maximálny sklon</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NoDeliveryEstimate" xml:space="preserve">
+    <value>Odhad dodania nie je dostupný</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NodeCount" xml:space="preserve">
+    <value>Uzlov: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Nodes" xml:space="preserve">
+    <value>Uzly</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NotAccepted" xml:space="preserve">
+    <value>Zákazka neprijatá: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Push" xml:space="preserve">
+    <value>Odoslať</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRejected" xml:space="preserve">
+    <value>Server cestu odmietol: {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRequesting" xml:space="preserve">
+    <value>Žiada sa o ponuku servera…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteUnavailable" xml:space="preserve">
+    <value>Ponuka servera nie je dostupná; zobrazuje sa miestny odhad.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_SegmentDistance" xml:space="preserve">
+    <value>Dĺžka úseku</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ServiceProvider" xml:space="preserve">
+    <value>Dodávateľ</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Bridge" xml:space="preserve">
+    <value>Faktúra za projekt stavby mosta.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Road" xml:space="preserve">
+    <value>Faktúra za projekt stavby cesty.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_RoadAndBridge" xml:space="preserve">
+    <value>Faktúra za projekt stavby cesty a mosta.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Title" xml:space="preserve">
+    <value>Plán</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_TotalLength" xml:space="preserve">
+    <value>Celková dĺžka</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_UnavailableTitle" xml:space="preserve">
+    <value>Odoslanie cesty nie je dostupné</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ValidUntil" xml:space="preserve">
+    <value>Platí do</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Width" xml:space="preserve">
+    <value>Šírka</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeDone" xml:space="preserve">
+    <value>Cesty odstránené</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeFailed" xml:space="preserve">
+    <value>Búranie zlyhalo</value>
+  </data>
+  <data name="HighwayEngineer_Push_FailedStatus" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Push_Notify" xml:space="preserve">
+    <value>HighwayEngineer: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Push_NotifySeeChat" xml:space="preserve">
+    <value>HighwayEngineer: {0}; pozrite chat</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairDone" xml:space="preserve">
+    <value>Cesty opravené</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairFailed" xml:space="preserve">
+    <value>Oprava zlyhala</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadCommitted" xml:space="preserve">
+    <value>Cesta potvrdená</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadDone" xml:space="preserve">
+    <value>Cesta odoslaná</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadFailed" xml:space="preserve">
+    <value>Odoslanie cesty zlyhalo</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeGeometryMalformed" xml:space="preserve">
+    <value>Geometria mosta je neplatná.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeMismatch" xml:space="preserve">
+    <value>Úseky mosta nezodpovedajú ceste.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegment" xml:space="preserve">
+    <value>Most nad úsekom {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegments" xml:space="preserve">
+    <value>Most nad úsekmi {0}-{1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeProblem" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeSettingsRange" xml:space="preserve">
+    <value>Nastavenia mosta sú mimo povolených rozsahov.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Busy" xml:space="preserve">
+    <value>Server práve oceňuje iné cesty.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Crossing" xml:space="preserve">
+    <value>Úsek {0} križuje úsek {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_GeometryMalformed" xml:space="preserve">
+    <value>Geometria cesty je neplatná.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_LiftTooHigh" xml:space="preserve">
+    <value>Uzly mosta sa dajú zdvihnúť najviac o {0} m.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_NotStone" xml:space="preserve">
+    <value>{0} nedáva kameň; dá sa použiť iba v kreatívnom režime.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetNotFound" xml:space="preserve">
+    <value>Planéta sa nenašla.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetRemoved" xml:space="preserve">
+    <value>Planéta bola odstránená.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PricingFailed" xml:space="preserve">
+    <value>Cestu sa nepodarilo oceniť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RateLimited" xml:space="preserve">
+    <value>Príliš veľa žiadostí o ponuku; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RoadSettingsRange" xml:space="preserve">
+    <value>Nastavenia cesty sú mimo povolených rozsahov.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SegmentDegenerate" xml:space="preserve">
+    <value>Úsek {0} je degenerovaný alebo nenadväzuje na cestu.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SlopeExceeded" xml:space="preserve">
+    <value>Úsek {0} prekračuje limity sklonu {1:0.#}°/úsek.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Superseded" xml:space="preserve">
+    <value>Nahradené novšou žiadosťou o ponuku.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_TooManySegments" xml:space="preserve">
+    <value>Cesta môže mať najviac {0} úsekov.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ApiUnavailable" xml:space="preserve">
+    <value>Voxel API nie je dostupné.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ContractRejected" xml:space="preserve">
+    <value>Zákazku sa nepodarilo vytvoriť.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Default" xml:space="preserve">
+    <value>Požiadavka zamietnutá.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InsufficientCredits" xml:space="preserve">
+    <value>Nedostatok Space Credits.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InvalidGeometry" xml:space="preserve">
+    <value>Geometria cesty je neplatná.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_MaterialNotAllowed" xml:space="preserve">
+    <value>Tento materiál tu nie je povolený.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoPermission" xml:space="preserve">
+    <value>Na to nemáte oprávnenie.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoServiceProvider" xml:space="preserve">
+    <value>Žiadna frakčná stanica nemôže zákazku prevziať.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_OutOfLimits" xml:space="preserve">
+    <value>Cesta je mimo limitov servera.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_PushFailed" xml:space="preserve">
+    <value>Cestu sa nepodarilo postaviť.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_QuoteExpired" xml:space="preserve">
+    <value>Ponuka vypršala.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RateLimited" xml:space="preserve">
+    <value>Príliš veľa požiadaviek.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RetryIn" xml:space="preserve">
+    <value>{0} (znova o {1} s)</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SelfCrossing" xml:space="preserve">
+    <value>Cesta križuje samu seba.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ServerBusy" xml:space="preserve">
+    <value>Server je zaneprázdnený.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SlopeExceeded" xml:space="preserve">
+    <value>Úsek prekračuje limity sklonu.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Superseded" xml:space="preserve">
+    <value>Nahradené novšou požiadavkou.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_TooManyContracts" xml:space="preserve">
+    <value>Máte príliš veľa otvorených cestných zákaziek.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_UnknownContract" xml:space="preserve">
+    <value>Táto zákazka už neexistuje.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ApiFailed" xml:space="preserve">
+    <value>Voxel API nedokázalo cesty znova vydláždiť: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeNoRecord" xml:space="preserve">
+    <value>Pri označenom moste chýba záznam o tom, ako bol postavený, preto ho nemožno prestavať.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeReplanFailed" xml:space="preserve">
+    <value>Most sa nepodarilo znova naplánovať: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeUnreadable" xml:space="preserve">
+    <value>Geometriu označeného mosta sa nepodarilo prečítať.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Busy" xml:space="preserve">
+    <value>Prebieha iná oprava; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_CannotTitle" xml:space="preserve">
+    <value>Nedá sa opraviť</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Confirm" xml:space="preserve">
+    <value>Opraviť</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmBody" xml:space="preserve">
+    <value>Opraviť: {0}?
+
+Tým sa zmení svet a môže to chvíľu trvať.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmTitle" xml:space="preserve">
+    <value>Opraviť?</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_Many" xml:space="preserve">
+    <value>mostov: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_One" xml:space="preserve">
+    <value>mostov: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_GuideLines" xml:space="preserve">
+    <value>vodiace čiary premaľované</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Holes" xml:space="preserve">
+    <value>diery zasypané</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Paved" xml:space="preserve">
+    <value>povrch: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_Many" xml:space="preserve">
+    <value>úsekov cesty: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_One" xml:space="preserve">
+    <value>úsekov cesty: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Done" xml:space="preserve">
+    <value>{0}.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Expired" xml:space="preserve">
+    <value>Oprava vypršala; potvrďte znova.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_FillHoles" xml:space="preserve">
+    <value>Zasypať diery</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Help" xml:space="preserve">
+    <value>Zasypanie dier vráti zem pozdĺž ciest (2 m za ich okraje, 12 m nadol a 8 m nahor) do postaveného tvaru: všetko, čo tam bolo vykopané alebo navŕšené voxelmi, zmizne a mosty sa prestavajú. Nový materiál cesty znova položí, a to cez cesty postavené po nich v miestach kríženia.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NewMaterial" xml:space="preserve">
+    <value>Nový materiál</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NotListedYet" xml:space="preserve">
+    <value>Označená cesta ešte nie je v zozname voxel API; skúste to o chvíľu.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NothingChosen" xml:space="preserve">
+    <value>Zvoľte nový materiál alebo zasypanie dier.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Running" xml:space="preserve">
+    <value>Opravuje sa...</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningBody" xml:space="preserve">
+    <value>Server opravuje označené cesty. Túto správu môžete zavrieť, kým pracuje.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningTitle" xml:space="preserve">
+    <value>Oprava</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_Many" xml:space="preserve">
+    <value>Označené úseky cesty: {0}. Mosty sa pri oprave prestavujú celé.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_One" xml:space="preserve">
+    <value>Označené úseky cesty: {0}. Mosty sa pri oprave prestavujú celé.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Title" xml:space="preserve">
+    <value>Oprava</value>
+  </data>
+  <data name="HighwayEngineer_Repair_TooMany" xml:space="preserve">
+    <value>Naraz sa dá opraviť najviac {0} úsekov.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableBody" xml:space="preserve">
+    <value>Vyberte planétu a označte cesty na opravu.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableTitle" xml:space="preserve">
+    <value>Oprava nie je dostupná</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnknownQuote" xml:space="preserve">
+    <value>Oprava je neznáma; označte cesty znova.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Wait" xml:space="preserve">
+    <value>Pred ďalšou opravou počkajte {0} s.</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_AverageHeight" xml:space="preserve">
+    <value>Priemerná výška</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Depth" xml:space="preserve">
+    <value>Hĺbka (m)</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_FillSides" xml:space="preserve">
+    <value>Výkop/násyp po stranách</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_GuideLines" xml:space="preserve">
+    <value>Vodiace čiary</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Width" xml:space="preserve">
+    <value>Šírka (m)</value>
+  </data>
+  <data name="HighwayEngineer_Route_InvalidPlanet" xml:space="preserve">
+    <value>Neplatná planéta</value>
+  </data>
+  <data name="HighwayEngineer_Route_NegativeWeights" xml:space="preserve">
+    <value>Váhy trasy nesmú byť záporné</value>
+  </data>
+  <data name="HighwayEngineer_Route_NoPlanet" xml:space="preserve">
+    <value>Nie je vybraná žiadna planéta</value>
+  </data>
+  <data name="HighwayEngineer_Route_NotFound" xml:space="preserve">
+    <value>Medzi A a B sa nenašla žiadna trasa</value>
+  </data>
+  <data name="HighwayEngineer_Route_SamePoints" xml:space="preserve">
+    <value>Body A a B sú rovnaké</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeRange" xml:space="preserve">
+    <value>Maximálny sklon musí byť medzi 0° a 90°</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeUnreachable" xml:space="preserve">
+    <value>Žiadna trasa neudrží všetky úseky v rámci {0:0.#}° maximálneho sklonu; zvýšte maximálny sklon, skráťte úsek alebo posuňte A/B</value>
+  </data>
+  <data name="HighwayEngineer_Route_TooFar" xml:space="preserve">
+    <value>Body A a B sú na trasu príliš ďaleko od seba</value>
+  </data>
+  <data name="HighwayEngineer_Route_WidthPositive" xml:space="preserve">
+    <value>Šírka cesty a uhol krajnice musia byť kladné</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Changed" xml:space="preserve">
+    <value>Označená cesta sa zmenila alebo zmizla; znova otvorte mapu a označte ju.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Gone" xml:space="preserve">
+    <value>Označená cesta už neexistuje; znova otvorte mapu a označte ju.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_ListingUnreadable" xml:space="preserve">
+    <value>Zoznam ciest voxel API sa nepodarilo prečítať.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_MarksChanged" xml:space="preserve">
+    <value>Označené cesty sa zmenili; označte ich znova.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoListing" xml:space="preserve">
+    <value>Voxel API neuvádza na tejto planéte žiadne cesty.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoneMarked" xml:space="preserve">
+    <value>Nie sú označené žiadne cesty.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Bulldoze" xml:space="preserve">
+    <value>Označená cesta nebola postavená cestnou zákazkou; zbúrať ju môže iba správca alebo hostiteľ.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Repair" xml:space="preserve">
+    <value>Označená cesta nebola postavená cestnou zákazkou; opraviť ju môže iba správca alebo hostiteľ.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Bulldoze" xml:space="preserve">
+    <value>Označenú cestu postavil iný hráč; zbúrať ju môže iba on alebo správca.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Repair" xml:space="preserve">
+    <value>Označenú cestu postavil iný hráč; opraviť ju môže iba on alebo správca.</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Header" xml:space="preserve">
+    <value>NASTAVENIA</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_CenterMap" xml:space="preserve">
+    <value>Vycentrovať mapu</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_LowerNode" xml:space="preserve">
+    <value>Znížiť uzol mosta</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_OpenMap" xml:space="preserve">
+    <value>Otvoriť mapu</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RaiseNode" xml:space="preserve">
+    <value>Zvýšiť uzol mosta</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollLeft" xml:space="preserve">
+    <value>Natočiť doľava</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollRight" xml:space="preserve">
+    <value>Natočiť doprava</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_SurfaceView" xml:space="preserve">
+    <value>Prepnúť 3D pohľad</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomIn" xml:space="preserve">
+    <value>Priblížiť</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomOut" xml:space="preserve">
+    <value>Oddialiť</value>
+  </data>
+  <data name="HighwayEngineer_Settings_KeybindHeading" xml:space="preserve">
+    <value>KLÁVESY</value>
+  </data>
+  <data name="HighwayEngineer_Settings_MaterialPlaceholder" xml:space="preserve">
+    <value>Voxelový materiál</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadMarkings" xml:space="preserve">
+    <value>Vodorovné značenie</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadsHeading" xml:space="preserve">
+    <value>CESTY</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SegmentLabel" xml:space="preserve">
+    <value>Úsek {0}m</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShoulderLabel" xml:space="preserve">
+    <value>Krajnica {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowGps" xml:space="preserve">
+    <value>Zobraziť moje GPS</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowRadio" xml:space="preserve">
+    <value>Zobraziť rádiové signály</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SlopeLabel" xml:space="preserve">
+    <value>Max. sklon {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Theme" xml:space="preserve">
+    <value>Motív</value>
+  </data>
+  <data name="HighwayEngineer_Settings_WindowTitle" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="HighwayEngineer_Station_DefaultName" xml:space="preserve">
+    <value>Obchodná stanica</value>
+  </data>
+  <data name="HighwayEngineer_Station_Details" xml:space="preserve">
+    <value>Stanica: {0}
+Frakcia: {1}
+Vzťah: {2}
+Reputácia: {3}</value>
+  </data>
+  <data name="HighwayEngineer_Station_DetailsTitle" xml:space="preserve">
+    <value>Podrobnosti stanice</value>
+  </data>
+  <data name="HighwayEngineer_Station_MoreSignals" xml:space="preserve">
+    <value>{0}
+ďalších signálov: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOff" xml:space="preserve">
+    <value>Automatické mosty vypnuté: pomocou odznaku mosta pri úseku z neho urobte most</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOn" xml:space="preserve">
+    <value>Automatické mosty zapnuté: úseky nad priepasťou sa stanú mostami (fialové)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoad" xml:space="preserve">
+    <value>Automatická cesta: úsekov {0}, {1:0.##} km, stúpanie {2:0} m, zemné práce {3:0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRaised" xml:space="preserve">
+    <value>{0} (váha sklonu zvýšená, aby sa dodržal sklon)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRejected" xml:space="preserve">
+    <value>Automatická cesta zamietnutá: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeHint" xml:space="preserve">
+    <value>Búranie: kliknite na postavené cesty a označte ich na odstránenie, Shift+klik označí cesty medzi nimi</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozePrefix" xml:space="preserve">
+    <value>Búranie: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeQuoting" xml:space="preserve">
+    <value>Búranie: žiada sa o ponuku servera...</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Bridge" xml:space="preserve">
+    <value>Zákazka na most prijatá; most sa stavia</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Road" xml:space="preserve">
+    <value>Cestná zákazka prijatá; cesta sa stavia</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Bridge" xml:space="preserve">
+    <value>Zákazka na most prijatá: doručte {0} do doručovacieho boxu na začiatku mosta</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Road" xml:space="preserve">
+    <value>Cestná zákazka prijatá: doručte {0} do doručovacieho boxu na začiatku cesty</value>
+  </data>
+  <data name="HighwayEngineer_Status_CrossesItself" xml:space="preserve">
+    <value>Cesta križuje samu seba; odoslanie zakázané</value>
+  </data>
+  <data name="HighwayEngineer_Status_DefaultHint" xml:space="preserve">
+    <value>Klik na terén: pridať - ľavý klik na uzol: vybrať - pravý klik na uzol: odstrániť</value>
+  </data>
+  <data name="HighwayEngineer_Status_DraftCancelled" xml:space="preserve">
+    <value>Návrh zrušený; existujúce cesty bez zmeny</value>
+  </data>
+  <data name="HighwayEngineer_Status_EnterMaterial" xml:space="preserve">
+    <value>Zadajte podtyp voxelového materiálu</value>
+  </data>
+  <data name="HighwayEngineer_Status_EntranceUpdated" xml:space="preserve">
+    <value>Smer vjazdu aktualizovaný</value>
+  </data>
+  <data name="HighwayEngineer_Status_ExitUpdated" xml:space="preserve">
+    <value>Smer výjazdu aktualizovaný</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_Many" xml:space="preserve">
+    <value>{0} - križovatiek: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_One" xml:space="preserve">
+    <value>{0} - križovatiek: {1}</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarkNotConnected" xml:space="preserve">
+    <value>{0} (nenadväzuje na naposledy kliknutú cestu)</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_Many" xml:space="preserve">
+    <value>Označených úsekov: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_One" xml:space="preserve">
+    <value>Označených úsekov: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarksDiscarded" xml:space="preserve">
+    <value>označenia zahodené</value>
+  </data>
+  <data name="HighwayEngineer_Status_MayExceedSlope" xml:space="preserve">
+    <value>Úsek {0} môže prekračovať limity sklonu/vzdialenosti</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeAdded" xml:space="preserve">
+    <value>Uzol pridaný</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeInserted" xml:space="preserve">
+    <value>Uzol vložený do úseku</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLifted" xml:space="preserve">
+    <value>Uzol {0} zdvihnutý o {1:0} m nad terén (most)</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLowered" xml:space="preserve">
+    <value>Uzol {0} späť na teréne</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeMoved" xml:space="preserve">
+    <value>Uzol presunutý</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeRemoved" xml:space="preserve">
+    <value>Uzol odstránený</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeSnapped" xml:space="preserve">
+    <value>Uzol prichytený k existujúcej ceste</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToRedo" xml:space="preserve">
+    <value>Nie je čo zopakovať</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToUndo" xml:space="preserve">
+    <value>Nie je čo vrátiť</value>
+  </data>
+  <data name="HighwayEngineer_Status_Redo" xml:space="preserve">
+    <value>Zopakovať (vrátiť: {0} - zopakovať: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairHint" xml:space="preserve">
+    <value>Oprava: kliknite na postavené cesty a označte ich pre nový materiál alebo zasypanie dier, Shift+klik označí cesty medzi nimi</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairPrefix" xml:space="preserve">
+    <value>Oprava: {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairQuoting" xml:space="preserve">
+    <value>Oprava: dopyt na server...</value>
+  </data>
+  <data name="HighwayEngineer_Status_RoadStillLoading" xml:space="preserve">
+    <value>táto cesta sa stále načítava z voxel API; skúste to o chvíľu</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsBridge" xml:space="preserve">
+    <value>Úsek {0} je most</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsRoad" xml:space="preserve">
+    <value>Úsek {0} je cesta</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewLoading" xml:space="preserve">
+    <value>3D pohľad nie je pripravený: terén sa stále načítava</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOff" xml:space="preserve">
+    <value>Plochá mapa</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOn" xml:space="preserve">
+    <value>3D pohľad: ťahaním stredným tlačidlom myši otáčajte a nakláňajte kameru</value>
+  </data>
+  <data name="HighwayEngineer_Status_TangentHint" xml:space="preserve">
+    <value>Ťahajte azúrový úchyt VSTUP alebo zelený VÝSTUP; pravý klik na terén natočí vybranú stranu</value>
+  </data>
+  <data name="HighwayEngineer_Status_Undo" xml:space="preserve">
+    <value>Vrátiť (vrátiť: {0} - zopakovať: {1})</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoDynamicTextures" xml:space="preserve">
+    <value>Dynamické textúry nie sú v tomto rendereri dostupné.</value>
+  </data>
+  <data name="HighwayEngineer_Ui_Missing" xml:space="preserve">
+    <value>Plánovač ciest potrebuje mod Acrux UI. Pridajte ho do tohto sveta.</value>
+  </data>
+</root>

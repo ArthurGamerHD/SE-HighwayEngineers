@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName_HighwayEngineer_Asphalt" xml:space="preserve">
+    <value>Asphalte</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Concrete" xml:space="preserve">
+    <value>Béton</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_Gravel" xml:space="preserve">
+    <value>Gravier</value>
+  </data>
+  <data name="DisplayName_HighwayEngineer_RoadConstruction" xml:space="preserve">
+    <value>Construction de route</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeBuilding" xml:space="preserve">
+    <value>Construction du pont...</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_Many" xml:space="preserve">
+    <value>{0} cartes de voxels de pont ont été supprimées.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_None" xml:space="preserve">
+    <value>Il n'y a aucun pont à supprimer.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeClear_One" xml:space="preserve">
+    <value>{0} carte de voxels de pont a été supprimée.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_BridgeMalformed" xml:space="preserve">
+    <value>La demande de pont est invalide.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_Many" xml:space="preserve">
+    <value>{0} contrats de route ont été terminés et seront construits.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_None" xml:space="preserve">
+    <value>Aucun contrat de route n'attend de livraison ou de paiement.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_ForceComplete_One" xml:space="preserve">
+    <value>{0} contrat de route a été terminé et sera construit.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOff" xml:space="preserve">
+    <value>Routes gratuites désactivées : les devis sont facturés normalement.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_FreeOn" xml:space="preserve">
+    <value>Routes gratuites activées : les devis ne coûtent ni crédits ni matériaux.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_NotAdmin" xml:space="preserve">
+    <value>Seuls les administrateurs peuvent utiliser /road {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Admin_UnknownCommand" xml:space="preserve">
+    <value>Commande de route inconnue : « {0} ».</value>
+  </data>
+  <data name="HighwayEngineer_Api_Incompatible" xml:space="preserve">
+    <value>La Voxel Cubemap API {0} est incompatible. Construire et supprimer des routes nécessite la version {1} ou plus récente.</value>
+  </data>
+  <data name="HighwayEngineer_Api_NotFound" xml:space="preserve">
+    <value>La Voxel Cubemap API est introuvable. Activez la Procedural Voxel Cubemap API ({0} ou plus récente) pour construire ou supprimer des routes.</value>
+  </data>
+  <data name="HighwayEngineer_Api_Ready" xml:space="preserve">
+    <value>HighwayEngineer : Voxel Cubemap API {0} prête</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnavailableSeeChat" xml:space="preserve">
+    <value>HighwayEngineer : Voxel API indisponible ; voir le chat</value>
+  </data>
+  <data name="HighwayEngineer_Api_UnknownVersion" xml:space="preserve">
+    <value>La Voxel Cubemap API (version inconnue) est incompatible. Construire et supprimer des routes nécessite la version {0} ou plus récente.</value>
+  </data>
+  <data name="HighwayEngineer_Api_ValidateFailed" xml:space="preserve">
+    <value>Impossible de valider la Voxel Cubemap API : {0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Distance" xml:space="preserve">
+    <value>Distance {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Earthwork" xml:space="preserve">
+    <value>Terrassement {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_AutoRoute_Inclination" xml:space="preserve">
+    <value>Inclinaison {0:0.0}</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Arch" xml:space="preserve">
+    <value>Arc</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Auto" xml:space="preserve">
+    <value>Auto (le moins cher)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDesign_Beam" xml:space="preserve">
+    <value>Poutre</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegment" xml:space="preserve">
+    <value>Le pont du segment {0} {1} ; envoi désactivé</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_ErrorSegments" xml:space="preserve">
+    <value>Le pont des segments {0}-{1} {2} ; envoi désactivé</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_IntoTerrain" xml:space="preserve">
+    <value>traverse le terrain sur le segment {0} (surélevez un nœud)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooHigh" xml:space="preserve">
+    <value>est à plus de {0} m au-dessus du terrain pour des piles (utilisez un arc)</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooShort" xml:space="preserve">
+    <value>fait moins de {0} m</value>
+  </data>
+  <data name="HighwayEngineer_BridgeDraft_TooSteep" xml:space="preserve">
+    <value>monte de plus de {0:0.#}°</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_PavementMaterial" xml:space="preserve">
+    <value>Matériau de la chaussée</value>
+  </data>
+  <data name="HighwayEngineer_BridgeSettings_Style" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_ArchNoFit" xml:space="preserve">
+    <value>Un pont en arc ne tient pas ici : {0}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Bends" xml:space="preserve">
+    <value>le tablier se courbe trop au-dessus du vide pour un arc (flèche de {0:0.00} de sa portée ; {1}-{2} conviennent)</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Shallow" xml:space="preserve">
+    <value>le vide est trop peu profond pour un arc</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_ShallowNarrow" xml:space="preserve">
+    <value>le vide est trop peu profond ou trop étroit pour un arc</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Arch_Terrain" xml:space="preserve">
+    <value>le terrain empiète sur l'emplacement de l'arc</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BendTooTight" xml:space="preserve">
+    <value>La route tourne trop serré sur le pont pour un tablier aussi large.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuildFailed" xml:space="preserve">
+    <value>Le pont n'a pas pu être construit : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_BuiltWithSummary" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_Many" xml:space="preserve">
+    <value>Pont en arc en {2} construit : {0} m de long, {1} m de large, rempli de {3}, descendant à {4} m sous le tablier, en {5} segments.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Arch_One" xml:space="preserve">
+    <value>Pont en arc en {2} construit : {0} m de long, {1} m de large, rempli de {3}, descendant à {4} m sous le tablier, en {5} segment.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_Many" xml:space="preserve">
+    <value>Pont à poutres en {2} construit : {0} m de long, {1} m de large, rempli de {3}, descendant à {4} m sous le tablier, en {5} segments.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Built_Beam_One" xml:space="preserve">
+    <value>Pont à poutres en {2} construit : {0} m de long, {1} m de large, rempli de {3}, descendant à {4} m sous le tablier, en {5} segment.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Busy" xml:space="preserve">
+    <value>Un pont est déjà en construction ; réessayez dans un instant.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_DeckTooSteep" xml:space="preserve">
+    <value>Le tablier est trop raide entre les nœuds {0} et {1} du pont ; ce pont peut monter d'au plus {2:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_EndsTooSteep" xml:space="preserve">
+    <value>Les extrémités sont trop différentes en hauteur ; ce pont peut monter d'au plus {0:0.#}°.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_IntoTerrain" xml:space="preserve">
+    <value>Le tablier traverse le terrain à {0} m le long du pont ; surélevez un nœud à cet endroit.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_MillionCubicMeters" xml:space="preserve">
+    <value>{0:0.0} millions de m³</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoLength" xml:space="preserve">
+    <value>Le pont n'a aucune longueur.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoMaterial" xml:space="preserve">
+    <value>Aucun matériau de voxel n'est défini.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoPlanet" xml:space="preserve">
+    <value>Les ponts ne peuvent être construits que sur une planète.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurface" xml:space="preserve">
+    <value>Impossible de lire la hauteur du terrain sous le pont ; la planète n'y signale aucune surface.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_NoSurfaceEnds" xml:space="preserve">
+    <value>Impossible de lire la hauteur du terrain aux extrémités du pont ; la planète n'y signale aucune surface.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_PlanFailed" xml:space="preserve">
+    <value>Le pont n'a pas pu être planifié : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperArch" xml:space="preserve">
+    <value>Conception : arc, le moins cher ({0} de béton sous le tablier).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_CheaperBeam" xml:space="preserve">
+    <value>Conception : poutres, le moins cher ({0} de béton sous le tablier).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenArch" xml:space="preserve">
+    <value>Conception : arc, comme choisi ({0} de béton sous le tablier).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_ChosenBeam" xml:space="preserve">
+    <value>Conception : poutres, comme choisi ({0} de béton sous le tablier).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Summary_NoArch" xml:space="preserve">
+    <value>Conception : poutres, car aucun arc ne tient ici ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHigh" xml:space="preserve">
+    <value>Le tablier est à plus de {0} m au-dessus du terrain à {1} m le long du pont</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighForBeam" xml:space="preserve">
+    <value>{0}, trop haut pour les piles d'un pont à poutres ; un arc peut le franchir.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooHighNoArch" xml:space="preserve">
+    <value>{0}, trop haut pour des piles, et un arc ne tient pas ici : {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_TooShort" xml:space="preserve">
+    <value>Un pont doit mesurer au moins {0} m ; celui-ci mesure {1} m.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_UnknownDesign" xml:space="preserve">
+    <value>Conception de pont inconnue : « {0} » ; utilisez beam, arch ou auto.</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Arch" xml:space="preserve">
+    <value>arc {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volume_Beam" xml:space="preserve">
+    <value>poutres {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bridge_Volumes" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ApiFailed" xml:space="preserve">
+    <value>La voxel API n'a pas pu supprimer les routes : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Busy" xml:space="preserve">
+    <value>Une autre démolition est en cours ; réessayez dans un instant.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_CannotTitle" xml:space="preserve">
+    <value>Démolition impossible</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Charged" xml:space="preserve">
+    <value>{0} {1:N0} SC facturés.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmBody" xml:space="preserve">
+    <value>Supprimer {0} de la planète ?
+
+Le terrain sous les routes redevient tel qu'il était avant elles ; les routes construites plus tard qui les croisaient peuvent changer de hauteur. Les ponts sont supprimés en entier.
+
+{1}
+
+Cela modifie le monde et peut prendre un moment.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmButton" xml:space="preserve">
+    <value>Démolir</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_ConfirmTitle" xml:space="preserve">
+    <value>Démolir ?</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Costs" xml:space="preserve">
+    <value>La démolition coûte {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Done" xml:space="preserve">
+    <value>{0} supprimé(s).</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Expired" xml:space="preserve">
+    <value>Le devis de démolition a expiré ; confirmez à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_NoRecord" xml:space="preserve">
+    <value>Une route marquée n'a pas d'enregistrement dans la voxel API.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceCost" xml:space="preserve">
+    <value>Cela coûte {0:N0} SC.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceFree" xml:space="preserve">
+    <value>Cela ne coûte rien.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_PriceRefund" xml:space="preserve">
+    <value>Vous récupérez {0:N0} SC (elles ont été construites récemment).</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Refunded" xml:space="preserve">
+    <value>{0} {1:N0} SC remboursés.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Running" xml:space="preserve">
+    <value>Démolition...</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningBody" xml:space="preserve">
+    <value>Le serveur supprime les routes marquées. Vous pouvez fermer ce message pendant qu'il travaille.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_RunningTitle" xml:space="preserve">
+    <value>Démolition</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_TooMany" xml:space="preserve">
+    <value>Au plus {0} segments peuvent être démolis à la fois.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableBody" xml:space="preserve">
+    <value>Sélectionnez une planète et marquez les routes à supprimer.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnavailableTitle" xml:space="preserve">
+    <value>Démolition indisponible</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_UnknownQuote" xml:space="preserve">
+    <value>Le devis de démolition est inconnu ; marquez à nouveau les routes.</value>
+  </data>
+  <data name="HighwayEngineer_Bulldoze_Wait" xml:space="preserve">
+    <value>Attendez {0} s avant de démolir à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_Failed" xml:space="preserve">
+    <value>La cartographie a échoué pour ce type de planète et ce calque.</value>
+  </data>
+  <data name="HighwayEngineer_Cartography_OreNoResult" xml:space="preserve">
+    <value>Le scan de minerais n'a donné aucun résultat.</value>
+  </data>
+  <data name="HighwayEngineer_Chat_Sender" xml:space="preserve">
+    <value>HighwayEngineer</value>
+  </data>
+  <data name="HighwayEngineer_Command_AimGround" xml:space="preserve">
+    <value>Visez le sol à moins de {0} m.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeClear" xml:space="preserve">
+    <value>Supprime tous les ponts de test (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeEndMarked" xml:space="preserve">
+    <value>Fin du pont marquée, à {0:0} m du début.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeMark" xml:space="preserve">
+    <value>Pont de test (admin) : exécutez une fois en visant une extrémité puis à nouveau sur l'autre ; conception facultative (beam, arch, auto), matériau de chaussée et matériau de structure.</value>
+  </data>
+  <data name="HighwayEngineer_Command_BridgeStartMarked" xml:space="preserve">
+    <value>Début du pont marqué. Visez l'autre extrémité et exécutez à nouveau /road bridgemark.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DebugDropoff" xml:space="preserve">
+    <value>Affiche ou masque les zones de livraison de vos contrats de route.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffHidden" xml:space="preserve">
+    <value>Zones de livraison masquées.</value>
+  </data>
+  <data name="HighwayEngineer_Command_DropoffShown" xml:space="preserve">
+    <value>Zones de livraison affichées.</value>
+  </data>
+  <data name="HighwayEngineer_Command_ForceComplete" xml:space="preserve">
+    <value>Termine tous les contrats de route en attente de livraison ou de paiement (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Command_Free" xml:space="preserve">
+    <value>Active ou désactive les routes gratuites, ou bascule sans argument (admin).</value>
+  </data>
+  <data name="HighwayEngineer_Common_And" xml:space="preserve">
+    <value>{0} et {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_BridgeMaterial" xml:space="preserve">
+    <value>Matériau du pont</value>
+  </data>
+  <data name="HighwayEngineer_Common_Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="HighwayEngineer_Common_Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="HighwayEngineer_Common_CubicMeters" xml:space="preserve">
+    <value>{0:N0} m³</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListPair" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="HighwayEngineer_Common_ListSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="HighwayEngineer_Common_Material" xml:space="preserve">
+    <value>Matériau</value>
+  </data>
+  <data name="HighwayEngineer_Common_RepaintGuideLines" xml:space="preserve">
+    <value>Repeindre le marquage</value>
+  </data>
+  <data name="HighwayEngineer_Common_Unknown" xml:space="preserve">
+    <value>Inconnu</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Abandoned" xml:space="preserve">
+    <value>Contrat abandonné.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Bridge" xml:space="preserve">
+    <value>Un administrateur a terminé le contrat ; le pont est en construction.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AdminCompleted_Road" xml:space="preserve">
+    <value>Un administrateur a terminé le contrat ; la route est en construction.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_AwaitingPayment" xml:space="preserve">
+    <value>Livraison terminée. En attente du paiement : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BridgeEndsMissing" xml:space="preserve">
+    <value>La planète ou les extrémités du pont sont introuvables.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Bridge" xml:space="preserve">
+    <value>Le pont n'a pas pu être construit : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_BuildFailed_Road" xml:space="preserve">
+    <value>La route n'a pas pu être construite : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Bridge" xml:space="preserve">
+    <value>Le pont a été construit.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Built_Road" xml:space="preserve">
+    <value>La route a été construite.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Bridge" xml:space="preserve">
+    <value>Livraison terminée ; le pont est en construction.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Delivered_Road" xml:space="preserve">
+    <value>Livraison terminée ; la route est en construction.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotDestroyed" xml:space="preserve">
+    <value>Le terminal de contrats du Dépôt logistique routier a été détruit ; le contrat a échoué. Les crédits payés ne sont pas remboursés.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_DepotGone" xml:space="preserve">
+    <value>Le Dépôt logistique routier de ce devis n'existe plus ; vérifiez à nouveau la route.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Description" xml:space="preserve">
+    <value>{0}. Livrez {1} au Dépôt logistique routier indiqué par le GPS de livraison. Les livraisons partielles comptent ; le nom du GPS indique la quantité reçue. Détruire le terminal de contrats du dépôt fait échouer le contrat.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Failed" xml:space="preserve">
+    <value>Contrat échoué.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_GameContractGone" xml:space="preserve">
+    <value>Le contrat du jeu n'existe plus.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemCount" xml:space="preserve">
+    <value>{0:N0} {1}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_ItemKg" xml:space="preserve">
+    <value>{0:N0} kg de {1}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_LimitReached" xml:space="preserve">
+    <value>Vous avez atteint la limite de contrats actifs.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoIdentity" xml:space="preserve">
+    <value>Votre identité est introuvable.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NoProvider" xml:space="preserve">
+    <value>Aucune station de faction n'est disponible pour prendre le contrat de route.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotAccepted" xml:space="preserve">
+    <value>Le contrat n'a pas pu être accepté ({0}).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPosted" xml:space="preserve">
+    <value>La faction n'a pas pu publier le contrat.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_NotPostedBy" xml:space="preserve">
+    <value>{0} n'a pas pu publier le contrat.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Notification" xml:space="preserve">
+    <value>Contrat de route : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayNotEnough" xml:space="preserve">
+    <value>Pas assez de Space Credits ({0:N0} SC nécessaires).</value>
+  </data>
+  <data name="HighwayEngineer_Contract_PayOffline" xml:space="preserve">
+    <value>Vous devez être en ligne pour payer.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_QuoteExpired" xml:space="preserve">
+    <value>Le devis a expiré ; vérifiez à nouveau la route.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Received" xml:space="preserve">
+    <value>Reçu {0}</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Refunded" xml:space="preserve">
+    <value>{0} Les crédits payés ont été remboursés.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Bridge" xml:space="preserve">
+    <value>Construction de pont</value>
+  </data>
+  <data name="HighwayEngineer_Contract_Title_Road" xml:space="preserve">
+    <value>Construction de route</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TooManyOpen" xml:space="preserve">
+    <value>Vous avez déjà {0} contrats de route ouverts.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_TypeMissing" xml:space="preserve">
+    <value>Le type de contrat de route est manquant.</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_ArchBridge" xml:space="preserve">
+    <value>Construire un pont en arc</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_BeamBridge" xml:space="preserve">
+    <value>Construire un pont à poutres</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridge" xml:space="preserve">
+    <value>Construire un pont</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Bridges" xml:space="preserve">
+    <value>Construire {0} ponts</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_Road" xml:space="preserve">
+    <value>Construire une route ({0} segments)</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridge" xml:space="preserve">
+    <value>Construire une route ({0} segments, avec un pont)</value>
+  </data>
+  <data name="HighwayEngineer_Contract_What_RoadWithBridges" xml:space="preserve">
+    <value>Construire une route ({0} segments, avec {1} ponts)</value>
+  </data>
+  <data name="HighwayEngineer_Depot_Label" xml:space="preserve">
+    <value>Dépôt logistique routier
+{0}</value>
+  </data>
+  <data name="HighwayEngineer_Depot_LabelForDraft" xml:space="preserve">
+    <value>Dépôt logistique routier
+{0}
+Livraison pour cette route</value>
+  </data>
+  <data name="HighwayEngineer_Error_NoTemplate" xml:space="preserve">
+    <value>La planète n'a pas de modèle de modification.</value>
+  </data>
+  <data name="HighwayEngineer_Error_PlanetGone" xml:space="preserve">
+    <value>La planète n'existe plus.</value>
+  </data>
+  <data name="HighwayEngineer_Error_TooManyRequests" xml:space="preserve">
+    <value>Trop de demandes ; réessayez sous peu.</value>
+  </data>
+  <data name="HighwayEngineer_Error_UnknownMaterial" xml:space="preserve">
+    <value>Matériau de voxel inconnu : « {0} ».</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Crossing" xml:space="preserve">
+    <value>l'itinéraire se croise lui-même</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoCurve" xml:space="preserve">
+    <value>le segment {0} n'a pas de courbe valide</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_NoPlanet" xml:space="preserve">
+    <value>aucune planète n'est sélectionnée</value>
+  </data>
+  <data name="HighwayEngineer_Invalid_Slope" xml:space="preserve">
+    <value>le segment {0} dépasse les limites de {1:0.#}° de pente/segment</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_BridgeStructure" xml:space="preserve">
+    <value>Structure du pont</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_EarthMovement" xml:space="preserve">
+    <value>Mouvement de terre</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ExistingDepot" xml:space="preserve">
+    <value>Dépôt existant</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Infrastructure" xml:space="preserve">
+    <value>Infrastructure de construction routière</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_NotCharged" xml:space="preserve">
+    <value>Non facturé</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_Pavement" xml:space="preserve">
+    <value>Matériau de chaussée</value>
+  </data>
+  <data name="HighwayEngineer_Invoice_ServerQuote" xml:space="preserve">
+    <value>Devis du serveur</value>
+  </data>
+  <data name="HighwayEngineer_Item_SteelRebar" xml:space="preserve">
+    <value>Barre d'armature en acier</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Biomes" xml:space="preserve">
+    <value>Biomes</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Materials" xml:space="preserve">
+    <value>Matériaux</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Satellite" xml:space="preserve">
+    <value>Satellite</value>
+  </data>
+  <data name="HighwayEngineer_Layer_Terrain" xml:space="preserve">
+    <value>Terrain</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTitle" xml:space="preserve">
+    <value>Échelle du planificateur</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScaleTooltip" xml:space="preserve">
+    <value>Taille des boutons et du texte du planificateur de routes sur cette surface.</value>
+  </data>
+  <data name="HighwayEngineer_Lcd_ScriptTitle" xml:space="preserve">
+    <value>Planificateur de routes</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Intersection" xml:space="preserve">
+    <value>Intersection</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Gps" xml:space="preserve">
+    <value>GPS</value>
+  </data>
+  <data name="HighwayEngineer_Marker_GpsSignals" xml:space="preserve">
+    <value>{0} signaux</value>
+  </data>
+  <data name="HighwayEngineer_Marker_Node" xml:space="preserve">
+    <value>Nœud {0}</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Details" xml:space="preserve">
+    <value>Détails</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Hide" xml:space="preserve">
+    <value>Masquer</value>
+  </data>
+  <data name="HighwayEngineer_Menu_Show" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="HighwayEngineer_Planner_CartographyError" xml:space="preserve">
+    <value>Cartographie : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Decoding" xml:space="preserve">
+    <value>décodage de la cartographie</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Footer" xml:space="preserve">
+    <value>{0}  |  {1}  |  {2}  |  {3} nœuds  |  {4}</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Header" xml:space="preserve">
+    <value>PLANIFICATEUR DE ROUTES</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapReady" xml:space="preserve">
+    <value>carte prête</value>
+  </data>
+  <data name="HighwayEngineer_Planner_MapNotReady" xml:space="preserve">
+    <value>La carte n'est pas encore prête.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoPlanet" xml:space="preserve">
+    <value>Aucune planète détectée.</value>
+  </data>
+  <data name="HighwayEngineer_Planner_StreetViewActive" xml:space="preserve">
+    <value>Street View actif</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoBridge" xml:space="preserve">
+    <value>Ponts automatiques : les segments du brouillon au-dessus d'un vide deviennent des ponts (violet) ; cliquez sur le badge à côté d'un segment pour le basculer (réglages : bouton engrenage)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_AutoRoute" xml:space="preserve">
+    <value>Itinéraire automatique du premier au dernier nœud (remplace les nœuds intermédiaires)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Bulldoze" xml:space="preserve">
+    <value>Démolir : cliquez sur des routes construites pour les marquer à supprimer</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Cancel" xml:space="preserve">
+    <value>Annuler le brouillon (les routes existantes sont conservées)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmBulldoze" xml:space="preserve">
+    <value>Supprimer les segments de route marqués</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_ConfirmRepair" xml:space="preserve">
+    <value>Réparer les segments de route marqués</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardBulldoze" xml:space="preserve">
+    <value>Effacer les marques de démolition</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_DiscardRepair" xml:space="preserve">
+    <value>Effacer les marques de réparation</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Push" xml:space="preserve">
+    <value>Confirmer et envoyer cette route</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Repair" xml:space="preserve">
+    <value>Réparer : cliquez sur des routes construites pour les marquer pour un nouveau matériau ou le comblement des trous</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Roads" xml:space="preserve">
+    <value>Afficher/masquer les routes superposées (le terrain ne change pas)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Settings" xml:space="preserve">
+    <value>Réglages de la route</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_StreetView" xml:space="preserve">
+    <value>Faites glisser sur la planète pour Street View (nécessite la permission spectateur)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Water" xml:space="preserve">
+    <value>Afficher/masquer l'eau superposée (nécessite des données d'eau)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Tip_Gps" xml:space="preserve">
+    <value>Afficher/masquer les marqueurs GPS</value>
+  </data>
+  <data name="HighwayEngineer_Planner_Title" xml:space="preserve">
+    <value>CARTE PLANÉTAIRE</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Accepting" xml:space="preserve">
+    <value>Acceptation du contrat…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_BridgeStyle" xml:space="preserve">
+    <value>Style de pont</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotBody" xml:space="preserve">
+    <value>Sélectionnez une planète et ajoutez au moins deux nœuds de route.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_CannotTitle" xml:space="preserve">
+    <value>Impossible d'envoyer la route</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ConstructionCost" xml:space="preserve">
+    <value>Coût de construction</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Depth" xml:space="preserve">
+    <value>Profondeur</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignBridges" xml:space="preserve">
+    <value>{0}, {1} ponts</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignCheapest" xml:space="preserve">
+    <value>{0} (le moins cher)</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_DesignMixed" xml:space="preserve">
+    <value>Poutres et arc</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_EmbankmentAngle" xml:space="preserve">
+    <value>Angle du talus</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice" xml:space="preserve">
+    <value>Facture n° {0}, {1:N0} SC d'avance.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_InvoiceExempt" xml:space="preserve">
+    <value>Facture n° {0}, {1:N0} SC d'avance - rien n'est facturé.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Item" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Quantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Invoice_UnitPrice" xml:space="preserve">
+    <value>Prix unitaire</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_MaxSlope" xml:space="preserve">
+    <value>Pente maximale</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NoDeliveryEstimate" xml:space="preserve">
+    <value>Estimation de livraison indisponible</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NodeCount" xml:space="preserve">
+    <value>{0} nœuds</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Nodes" xml:space="preserve">
+    <value>Nœuds</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_NotAccepted" xml:space="preserve">
+    <value>Contrat non accepté : {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Push" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRejected" xml:space="preserve">
+    <value>Le serveur a rejeté la route : {0}</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteRequesting" xml:space="preserve">
+    <value>Demande du devis au serveur…</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_QuoteUnavailable" xml:space="preserve">
+    <value>Devis du serveur indisponible ; affichage de l'estimation locale.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_SegmentDistance" xml:space="preserve">
+    <value>Distance entre segments</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ServiceProvider" xml:space="preserve">
+    <value>Prestataire</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Bridge" xml:space="preserve">
+    <value>Facture pour un projet de construction de pont.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_Road" xml:space="preserve">
+    <value>Facture pour un projet de construction de route.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Summary_RoadAndBridge" xml:space="preserve">
+    <value>Facture pour un projet de construction de route et de pont.</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Title" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_TotalLength" xml:space="preserve">
+    <value>Longueur totale</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_UnavailableTitle" xml:space="preserve">
+    <value>Envoi de route indisponible</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_ValidUntil" xml:space="preserve">
+    <value>Valable jusqu'au</value>
+  </data>
+  <data name="HighwayEngineer_PushRoad_Width" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeDone" xml:space="preserve">
+    <value>Routes supprimées</value>
+  </data>
+  <data name="HighwayEngineer_Push_BulldozeFailed" xml:space="preserve">
+    <value>Échec de la démolition</value>
+  </data>
+  <data name="HighwayEngineer_Push_FailedStatus" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="HighwayEngineer_Push_Notify" xml:space="preserve">
+    <value>HighwayEngineer : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Push_NotifySeeChat" xml:space="preserve">
+    <value>HighwayEngineer : {0} ; voir le chat</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairDone" xml:space="preserve">
+    <value>Routes réparées</value>
+  </data>
+  <data name="HighwayEngineer_Push_RepairFailed" xml:space="preserve">
+    <value>Échec de la réparation</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadCommitted" xml:space="preserve">
+    <value>Route validée</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadDone" xml:space="preserve">
+    <value>Route envoyée</value>
+  </data>
+  <data name="HighwayEngineer_Push_RoadFailed" xml:space="preserve">
+    <value>Échec de l'envoi de la route</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeGeometryMalformed" xml:space="preserve">
+    <value>La géométrie du pont est invalide.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeMismatch" xml:space="preserve">
+    <value>Les segments du pont ne correspondent pas à la route.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegment" xml:space="preserve">
+    <value>Le pont sur le segment {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeOverSegments" xml:space="preserve">
+    <value>Le pont sur les segments {0}-{1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeProblem" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_BridgeSettingsRange" xml:space="preserve">
+    <value>Les réglages du pont sont hors des plages autorisées.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Busy" xml:space="preserve">
+    <value>Le serveur est occupé à chiffrer d'autres routes.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Crossing" xml:space="preserve">
+    <value>Le segment {0} croise le segment {1}.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_GeometryMalformed" xml:space="preserve">
+    <value>La géométrie de la route est invalide.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_LiftTooHigh" xml:space="preserve">
+    <value>Les nœuds de pont peuvent être surélevés d'au plus {0} m.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_NotStone" xml:space="preserve">
+    <value>{0} ne produit pas de pierre ; il ne peut être utilisé qu'en mode créatif.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetNotFound" xml:space="preserve">
+    <value>La planète est introuvable.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PlanetRemoved" xml:space="preserve">
+    <value>La planète a été supprimée.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_PricingFailed" xml:space="preserve">
+    <value>La route n'a pas pu être chiffrée : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RateLimited" xml:space="preserve">
+    <value>Trop de demandes de devis ; réessayez sous peu.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_RoadSettingsRange" xml:space="preserve">
+    <value>Les réglages de la route sont hors des plages autorisées.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SegmentDegenerate" xml:space="preserve">
+    <value>Le segment {0} est dégénéré ou ne prolonge pas la route.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_SlopeExceeded" xml:space="preserve">
+    <value>Le segment {0} dépasse les limites de {1:0.#}° de pente/segment.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_Superseded" xml:space="preserve">
+    <value>Remplacé par une demande de devis plus récente.</value>
+  </data>
+  <data name="HighwayEngineer_Quote_TooManySegments" xml:space="preserve">
+    <value>Les routes peuvent avoir au plus {0} segments.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ApiUnavailable" xml:space="preserve">
+    <value>La voxel API est indisponible.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ContractRejected" xml:space="preserve">
+    <value>Le contrat n'a pas pu être créé.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Default" xml:space="preserve">
+    <value>Demande rejetée.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InsufficientCredits" xml:space="preserve">
+    <value>Pas assez de Space Credits.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_InvalidGeometry" xml:space="preserve">
+    <value>La géométrie de la route est invalide.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_MaterialNotAllowed" xml:space="preserve">
+    <value>Ce matériau n'est pas autorisé ici.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoPermission" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à faire cela.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_NoServiceProvider" xml:space="preserve">
+    <value>Aucune station de faction n'est disponible pour prendre le contrat.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_OutOfLimits" xml:space="preserve">
+    <value>La route dépasse les limites du serveur.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_PushFailed" xml:space="preserve">
+    <value>La route n'a pas pu être construite.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_QuoteExpired" xml:space="preserve">
+    <value>Le devis a expiré.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RateLimited" xml:space="preserve">
+    <value>Trop de demandes.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_RetryIn" xml:space="preserve">
+    <value>{0} (réessayez dans {1} s)</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SelfCrossing" xml:space="preserve">
+    <value>La route se croise elle-même.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_ServerBusy" xml:space="preserve">
+    <value>Le serveur est occupé.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_SlopeExceeded" xml:space="preserve">
+    <value>Un segment dépasse les limites de pente.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_Superseded" xml:space="preserve">
+    <value>Remplacé par une demande plus récente.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_TooManyContracts" xml:space="preserve">
+    <value>Vous avez trop de contrats de route ouverts.</value>
+  </data>
+  <data name="HighwayEngineer_Reject_UnknownContract" xml:space="preserve">
+    <value>Ce contrat n'existe plus.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ApiFailed" xml:space="preserve">
+    <value>La voxel API n'a pas pu refaire le revêtement des routes : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeNoRecord" xml:space="preserve">
+    <value>Un pont marqué n'a aucun enregistrement de sa construction ; il ne peut donc pas être reconstruit.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeReplanFailed" xml:space="preserve">
+    <value>Un pont n'a pas pu être replanifié : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_BridgeUnreadable" xml:space="preserve">
+    <value>La géométrie d'un pont marqué n'a pas pu être lue.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Busy" xml:space="preserve">
+    <value>Une autre réparation est en cours ; réessayez dans un instant.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_CannotTitle" xml:space="preserve">
+    <value>Réparation impossible</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Confirm" xml:space="preserve">
+    <value>Réparer</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmBody" xml:space="preserve">
+    <value>Réparer {0} ?
+
+Cela modifie le monde et peut prendre un moment.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_ConfirmTitle" xml:space="preserve">
+    <value>Réparer ?</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_Many" xml:space="preserve">
+    <value>{0} ponts</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Bridges_One" xml:space="preserve">
+    <value>{0} pont</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_GuideLines" xml:space="preserve">
+    <value>marquage repeint</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Holes" xml:space="preserve">
+    <value>trous comblés</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Paved" xml:space="preserve">
+    <value>revêtu de {0}</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_Many" xml:space="preserve">
+    <value>{0} segments de route</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Desc_Segments_One" xml:space="preserve">
+    <value>{0} segment de route</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Done" xml:space="preserve">
+    <value>{0}.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Expired" xml:space="preserve">
+    <value>La réparation a expiré ; confirmez à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_FillHoles" xml:space="preserve">
+    <value>Combler les trous</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Help" xml:space="preserve">
+    <value>Combler les trous rend au sol le long des routes (2 m au-delà de leurs bords, 12 m vers le bas et 8 m vers le haut) sa forme construite : tout ce qui a été creusé ou entassé là avec des voxels disparaît, et les ponts sont reconstruits. Un nouveau matériau repose les routes, par-dessus les routes construites après elles là où elles se croisent.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NewMaterial" xml:space="preserve">
+    <value>Nouveau matériau</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NotListedYet" xml:space="preserve">
+    <value>Une route marquée n'est pas encore dans la liste de la voxel API ; réessayez dans un instant.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_NothingChosen" xml:space="preserve">
+    <value>Choisissez un nouveau matériau ou le comblement des trous.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Running" xml:space="preserve">
+    <value>Réparation...</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningBody" xml:space="preserve">
+    <value>Le serveur répare les routes marquées. Vous pouvez fermer ce message pendant qu'il travaille.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_RunningTitle" xml:space="preserve">
+    <value>Réparation</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_Many" xml:space="preserve">
+    <value>{0} segments de route sont marqués. Les ponts sont reconstruits en entier lors de la réparation.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Summary_One" xml:space="preserve">
+    <value>{0} segment de route est marqué. Les ponts sont reconstruits en entier lors de la réparation.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Title" xml:space="preserve">
+    <value>Réparation</value>
+  </data>
+  <data name="HighwayEngineer_Repair_TooMany" xml:space="preserve">
+    <value>Au plus {0} segments peuvent être réparés à la fois.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableBody" xml:space="preserve">
+    <value>Sélectionnez une planète et marquez les routes à réparer.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnavailableTitle" xml:space="preserve">
+    <value>Réparation indisponible</value>
+  </data>
+  <data name="HighwayEngineer_Repair_UnknownQuote" xml:space="preserve">
+    <value>La réparation est inconnue ; marquez à nouveau les routes.</value>
+  </data>
+  <data name="HighwayEngineer_Repair_Wait" xml:space="preserve">
+    <value>Attendez {0} s avant de réparer à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_AverageHeight" xml:space="preserve">
+    <value>Hauteur moyenne</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Depth" xml:space="preserve">
+    <value>Profondeur (m)</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_FillSides" xml:space="preserve">
+    <value>Déblai/remblai latéral</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_GuideLines" xml:space="preserve">
+    <value>Marquage</value>
+  </data>
+  <data name="HighwayEngineer_RoadSettings_Width" xml:space="preserve">
+    <value>Largeur (m)</value>
+  </data>
+  <data name="HighwayEngineer_Route_InvalidPlanet" xml:space="preserve">
+    <value>Planète invalide</value>
+  </data>
+  <data name="HighwayEngineer_Route_NegativeWeights" xml:space="preserve">
+    <value>Les poids de l'itinéraire ne peuvent pas être négatifs</value>
+  </data>
+  <data name="HighwayEngineer_Route_NoPlanet" xml:space="preserve">
+    <value>Aucune planète n'est sélectionnée</value>
+  </data>
+  <data name="HighwayEngineer_Route_NotFound" xml:space="preserve">
+    <value>Aucun itinéraire trouvé entre A et B</value>
+  </data>
+  <data name="HighwayEngineer_Route_SamePoints" xml:space="preserve">
+    <value>Les points A et B sont identiques</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeRange" xml:space="preserve">
+    <value>La pente maximale doit être comprise entre 0° et 90°</value>
+  </data>
+  <data name="HighwayEngineer_Route_SlopeUnreachable" xml:space="preserve">
+    <value>Aucun itinéraire ne garde tous les segments sous {0:0.#}° de pente maximale ; augmentez la pente maximale, réduisez le segment ou déplacez A/B</value>
+  </data>
+  <data name="HighwayEngineer_Route_TooFar" xml:space="preserve">
+    <value>Les points A et B sont trop éloignés pour tracer un itinéraire</value>
+  </data>
+  <data name="HighwayEngineer_Route_WidthPositive" xml:space="preserve">
+    <value>La largeur de la route et l'angle de l'accotement doivent être positifs</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Changed" xml:space="preserve">
+    <value>Une route marquée a changé ou a disparu ; rouvrez la carte et marquez-la à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_Gone" xml:space="preserve">
+    <value>Une route marquée n'existe plus ; rouvrez la carte et marquez-la à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_ListingUnreadable" xml:space="preserve">
+    <value>La liste des routes de la voxel API n'a pas pu être lue.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_MarksChanged" xml:space="preserve">
+    <value>Les routes marquées ont changé ; marquez-les à nouveau.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoListing" xml:space="preserve">
+    <value>La voxel API ne répertorie aucune route sur cette planète.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NoneMarked" xml:space="preserve">
+    <value>Aucune route n'est marquée.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Bulldoze" xml:space="preserve">
+    <value>Une route marquée n'a pas été construite par un contrat de route ; seul un administrateur ou l'hôte peut la démolir.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_NotContract_Repair" xml:space="preserve">
+    <value>Une route marquée n'a pas été construite par un contrat de route ; seul un administrateur ou l'hôte peut la réparer.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Bulldoze" xml:space="preserve">
+    <value>Une route marquée a été construite par un autre joueur ; seul ce joueur ou un administrateur peut la démolir.</value>
+  </data>
+  <data name="HighwayEngineer_Selection_OtherOwner_Repair" xml:space="preserve">
+    <value>Une route marquée a été construite par un autre joueur ; seul ce joueur ou un administrateur peut la réparer.</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Header" xml:space="preserve">
+    <value>RÉGLAGES</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_CenterMap" xml:space="preserve">
+    <value>Centrer la carte</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_LowerNode" xml:space="preserve">
+    <value>Abaisser le nœud de pont</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_OpenMap" xml:space="preserve">
+    <value>Ouvrir la carte</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RaiseNode" xml:space="preserve">
+    <value>Surélever le nœud de pont</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollLeft" xml:space="preserve">
+    <value>Rouler à gauche</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_RollRight" xml:space="preserve">
+    <value>Rouler à droite</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_SurfaceView" xml:space="preserve">
+    <value>Basculer la vue 3D</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomIn" xml:space="preserve">
+    <value>Zoom +</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Key_ZoomOut" xml:space="preserve">
+    <value>Zoom -</value>
+  </data>
+  <data name="HighwayEngineer_Settings_KeybindHeading" xml:space="preserve">
+    <value>TOUCHES</value>
+  </data>
+  <data name="HighwayEngineer_Settings_MaterialPlaceholder" xml:space="preserve">
+    <value>Matériau de voxel</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadMarkings" xml:space="preserve">
+    <value>Marquage routier</value>
+  </data>
+  <data name="HighwayEngineer_Settings_RoadsHeading" xml:space="preserve">
+    <value>ROUTES</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SegmentLabel" xml:space="preserve">
+    <value>Segment {0}m</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShoulderLabel" xml:space="preserve">
+    <value>Accotement {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowGps" xml:space="preserve">
+    <value>Afficher mes GPS</value>
+  </data>
+  <data name="HighwayEngineer_Settings_ShowRadio" xml:space="preserve">
+    <value>Afficher les signaux radio</value>
+  </data>
+  <data name="HighwayEngineer_Settings_SlopeLabel" xml:space="preserve">
+    <value>Pente max. {0}°</value>
+  </data>
+  <data name="HighwayEngineer_Settings_Theme" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="HighwayEngineer_Settings_WindowTitle" xml:space="preserve">
+    <value>Réglages</value>
+  </data>
+  <data name="HighwayEngineer_Station_DefaultName" xml:space="preserve">
+    <value>Station commerciale</value>
+  </data>
+  <data name="HighwayEngineer_Station_Details" xml:space="preserve">
+    <value>Station : {0}
+Faction : {1}
+Relation : {2}
+Réputation : {3}</value>
+  </data>
+  <data name="HighwayEngineer_Station_DetailsTitle" xml:space="preserve">
+    <value>Détails de la station</value>
+  </data>
+  <data name="HighwayEngineer_Station_MoreSignals" xml:space="preserve">
+    <value>{0}
+{1} signaux de plus</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOff" xml:space="preserve">
+    <value>Ponts automatiques désactivés : utilisez le badge de pont d'un segment pour en faire un pont</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoBridgeOn" xml:space="preserve">
+    <value>Ponts automatiques activés : les segments au-dessus d'un vide deviennent des ponts (violet)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoad" xml:space="preserve">
+    <value>Route automatique : {0} segments, {1:0.##} km, {2:0} m de montée, {3:0} m³ de terrassement</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRaised" xml:space="preserve">
+    <value>{0} (poids de l'inclinaison augmenté pour respecter la pente)</value>
+  </data>
+  <data name="HighwayEngineer_Status_AutoRoadRejected" xml:space="preserve">
+    <value>Route automatique rejetée : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeHint" xml:space="preserve">
+    <value>Démolir : cliquez sur des routes construites pour les marquer à supprimer, Maj+clic pour marquer les routes entre elles</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozePrefix" xml:space="preserve">
+    <value>Démolir : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_BulldozeQuoting" xml:space="preserve">
+    <value>Démolir : demande d'un devis au serveur...</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Bridge" xml:space="preserve">
+    <value>Contrat de pont accepté ; le pont est en construction</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractBuilding_Road" xml:space="preserve">
+    <value>Contrat de route accepté ; la route est en construction</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Bridge" xml:space="preserve">
+    <value>Contrat de pont accepté : livrez {0} à la zone de livraison au début du pont</value>
+  </data>
+  <data name="HighwayEngineer_Status_ContractDeliver_Road" xml:space="preserve">
+    <value>Contrat de route accepté : livrez {0} à la zone de livraison au début de la route</value>
+  </data>
+  <data name="HighwayEngineer_Status_CrossesItself" xml:space="preserve">
+    <value>La route se croise elle-même ; envoi désactivé</value>
+  </data>
+  <data name="HighwayEngineer_Status_DefaultHint" xml:space="preserve">
+    <value>Clic sur le terrain : ajouter - clic gauche sur un nœud : sélectionner - clic droit sur un nœud : supprimer</value>
+  </data>
+  <data name="HighwayEngineer_Status_DraftCancelled" xml:space="preserve">
+    <value>Brouillon annulé ; les routes existantes sont inchangées</value>
+  </data>
+  <data name="HighwayEngineer_Status_EnterMaterial" xml:space="preserve">
+    <value>Saisissez un sous-type de matériau de voxel</value>
+  </data>
+  <data name="HighwayEngineer_Status_EntranceUpdated" xml:space="preserve">
+    <value>Direction d'entrée mise à jour</value>
+  </data>
+  <data name="HighwayEngineer_Status_ExitUpdated" xml:space="preserve">
+    <value>Direction de sortie mise à jour</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_Many" xml:space="preserve">
+    <value>{0} - {1} intersections</value>
+  </data>
+  <data name="HighwayEngineer_Status_Intersections_One" xml:space="preserve">
+    <value>{0} - {1} intersection</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarkNotConnected" xml:space="preserve">
+    <value>{0} (non relié à la dernière route cliquée)</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_Many" xml:space="preserve">
+    <value>{0} segments marqués</value>
+  </data>
+  <data name="HighwayEngineer_Status_Marked_One" xml:space="preserve">
+    <value>{0} segment marqué</value>
+  </data>
+  <data name="HighwayEngineer_Status_MarksDiscarded" xml:space="preserve">
+    <value>marques effacées</value>
+  </data>
+  <data name="HighwayEngineer_Status_MayExceedSlope" xml:space="preserve">
+    <value>Le segment {0} peut dépasser les limites de pente/distance</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeAdded" xml:space="preserve">
+    <value>Nœud ajouté</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeInserted" xml:space="preserve">
+    <value>Nœud inséré dans le segment</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLifted" xml:space="preserve">
+    <value>Nœud {0} surélevé de {1:0} m au-dessus du terrain (pont)</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeLowered" xml:space="preserve">
+    <value>Nœud {0} revenu sur le terrain</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeMoved" xml:space="preserve">
+    <value>Nœud déplacé</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeRemoved" xml:space="preserve">
+    <value>Nœud supprimé</value>
+  </data>
+  <data name="HighwayEngineer_Status_NodeSnapped" xml:space="preserve">
+    <value>Nœud aimanté à une route existante</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToRedo" xml:space="preserve">
+    <value>Rien à rétablir</value>
+  </data>
+  <data name="HighwayEngineer_Status_NothingToUndo" xml:space="preserve">
+    <value>Rien à annuler</value>
+  </data>
+  <data name="HighwayEngineer_Status_Redo" xml:space="preserve">
+    <value>Rétablir ({0} à annuler - {1} à rétablir)</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairHint" xml:space="preserve">
+    <value>Réparer : cliquez sur des routes construites pour les marquer pour un nouveau matériau ou le comblement des trous, Maj+clic pour marquer les routes entre elles</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairPrefix" xml:space="preserve">
+    <value>Réparer : {0}</value>
+  </data>
+  <data name="HighwayEngineer_Status_RepairQuoting" xml:space="preserve">
+    <value>Réparer : interrogation du serveur...</value>
+  </data>
+  <data name="HighwayEngineer_Status_RoadStillLoading" xml:space="preserve">
+    <value>cette route est encore en chargement depuis la voxel API ; réessayez dans un instant</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsBridge" xml:space="preserve">
+    <value>Le segment {0} est un pont</value>
+  </data>
+  <data name="HighwayEngineer_Status_SegmentIsRoad" xml:space="preserve">
+    <value>Le segment {0} est une route</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewLoading" xml:space="preserve">
+    <value>La vue 3D n'est pas prête : le terrain est encore en cours de chargement</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOff" xml:space="preserve">
+    <value>Vue carte à plat</value>
+  </data>
+  <data name="HighwayEngineer_Status_SurfaceViewOn" xml:space="preserve">
+    <value>Vue 3D : faites glisser avec le bouton central de la souris pour tourner et incliner la caméra</value>
+  </data>
+  <data name="HighwayEngineer_Status_TangentHint" xml:space="preserve">
+    <value>Faites glisser la poignée cyan ENTRÉE ou verte SORTIE ; clic droit sur le terrain oriente le côté sélectionné</value>
+  </data>
+  <data name="HighwayEngineer_Status_Undo" xml:space="preserve">
+    <value>Annuler ({0} à annuler - {1} à rétablir)</value>
+  </data>
+  <data name="HighwayEngineer_Planner_NoDynamicTextures" xml:space="preserve">
+    <value>Les textures dynamiques ne sont pas disponibles avec ce moteur de rendu.</value>
+  </data>
+  <data name="HighwayEngineer_Ui_Missing" xml:space="preserve">
+    <value>Le planificateur de routes nécessite le mod Acrux UI. Ajoutez-le à ce monde.</value>
+  </data>
+</root>

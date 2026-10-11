@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The road settings flyout, bound to RoadSettingsViewModel. Values are kept on this machine
+  between sessions; a right click on a row resets it to its default (ContextRequested).
+-->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.RoadSettings"
+    xmlns:ext="using:HighwayEngineer.Client.Apps.Views.Extensions"
+    xmlns:layout="using:Acrux.Layout"
+    x:Class="HighwayEngineer.Client.Apps.RoadSettings.RoadSettingsPanel"
+    x:DataType="local:RoadSettingsViewModel">
+  <Border Classes="road-settings" HorizontalAlignment="Left"
+          Width="{Binding Width}" Height="{Binding Height}" Padding="{Binding Padding}">
+    <Grid ColumnDefinitions="0.46*,0.54*" RowDefinitions="*,*,*,*,*,*,*,*,*">
+      <TextBlock Grid.Row="0" Text="{ext:loc HighwayEngineer_Common_Material}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetMaterial}" />
+      <!-- ComboBox<T> is built in code; this slot hosts it. -->
+      <layout:Panel x:Name="_materialSlot" Grid.Column="1" Grid.Row="0" ContextRequested="{Binding ResetMaterial}" />
+
+      <TextBlock Grid.Row="1" Text="{ext:loc HighwayEngineer_RoadSettings_Width}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetWidth}" />
+      <NumericUpDown Grid.Column="1" Grid.Row="1" Minimum="{Binding MinWidth}" Maximum="{Binding MaxWidth}"
+                     Value="{Binding WidthMeters, Mode=TwoWay}" ContextRequested="{Binding ResetWidth}" />
+
+      <TextBlock Grid.Row="2" Text="{ext:loc HighwayEngineer_RoadSettings_Depth}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetDepth}" />
+      <!-- Step: 1 m, 0.1 m holding Ctrl, 10 m holding Shift (the +/- labels show it). -->
+      <NumericUpDown Grid.Column="1" Grid.Row="2" Minimum="{Binding MinDepth}" Maximum="{Binding MaxDepth}" FormatString="0.#" Increment="{Binding DepthStep}"
+                     Value="{Binding DepthMeters, Mode=TwoWay}" ContextRequested="{Binding ResetDepth}" />
+
+      <TextBlock Grid.Row="3" Text="{Binding SlopeLabel}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" ContextRequested="{Binding ResetSlope}" />
+      <Slider Grid.Column="1" Grid.Row="3" Minimum="{Binding MinSlope}" Maximum="{Binding MaxSlopeLimit}" Value="{Binding MaxSlope, Mode=TwoWay}"
+              SmallChange="1" IsSnapToTickEnabled="True" TickFrequency="1" ContextRequested="{Binding ResetSlope}" />
+
+      <TextBlock Grid.Row="4" Text="{Binding ShoulderLabel}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" ContextRequested="{Binding ResetShoulder}" />
+      <Slider Grid.Column="1" Grid.Row="4" Minimum="{Binding MinShoulder}" Maximum="{Binding MaxShoulder}" Value="{Binding ShoulderAngle, Mode=TwoWay}"
+              IsEnabled="{Binding ShoulderEnabled}"
+              SmallChange="1" IsSnapToTickEnabled="True" TickFrequency="1" ContextRequested="{Binding ResetShoulder}" />
+
+      <TextBlock Grid.Row="5" Text="{Binding SegmentLabel}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" ContextRequested="{Binding ResetSegment}" />
+      <Slider Grid.Column="1" Grid.Row="5" Minimum="{Binding MinSegment}" Maximum="{Binding MaxSegment}" Value="{Binding SegmentDistance, Mode=TwoWay}"
+              SmallChange="10" IsSnapToTickEnabled="True" TickFrequency="10" ContextRequested="{Binding ResetSegment}" />
+
+      <TextBlock Grid.Row="6" Text="{ext:loc HighwayEngineer_RoadSettings_AverageHeight}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetAverageHeight}" />
+      <ToggleSwitch Grid.Column="1" Grid.Row="6" IsChecked="{Binding AverageHeight, Mode=TwoWay}"
+                    ContextRequested="{Binding ResetAverageHeight}" />
+
+      <TextBlock Grid.Row="7" Text="{ext:loc HighwayEngineer_RoadSettings_FillSides}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetFillShoulders}" />
+      <ToggleSwitch Grid.Column="1" Grid.Row="7" IsChecked="{Binding FillShoulders, Mode=TwoWay}"
+                    ContextRequested="{Binding ResetFillShoulders}" />
+
+      <TextBlock Grid.Row="8" Text="{ext:loc HighwayEngineer_RoadSettings_GuideLines}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetGuideLines}" />
+      <ToggleSwitch Grid.Column="1" Grid.Row="8" IsChecked="{Binding GuideLines, Mode=TwoWay}"
+                    ContextRequested="{Binding ResetGuideLines}" />
+    </Grid>
+  </Border>
+</UserControl>

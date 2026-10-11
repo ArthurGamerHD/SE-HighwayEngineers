@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Road planner chrome shared by both themes (screen and LCD). -->
+<Styles xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- Button icons are masks tinted by their Background; a button's states recolor them. -->
+  <Style Selector="Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource onSurfaceColor}" />
+  </Style>
+  <Style Selector="Button:disabled Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource disabledColor}" />
+  </Style>
+  <Style Selector="ToggleButton.circular.bulldoze:checked Border.map-icon">
+    <Setter Property="Background" Value="#1b1305" />
+  </Style>
+  <Style Selector="ToggleButton.circular.roads:checked Border.map-icon">
+    <Setter Property="Background" Value="#06222b" />
+  </Style>
+  <Style Selector="ToggleButton.circular.gps:checked Border.map-icon">
+    <Setter Property="Background" Value="#0a2414" />
+  </Style>
+
+  <!-- Icon buttons: the icon is sized in code, so no padding eats into it. The sizes below are the unscaled
+       defaults (700 px tall); RoadPlannerView.ApplyLayout replaces them with scaled ones, and the IDE preview,
+       which runs no code-behind, shows these. -->
+  <Style Selector="Button.circular">
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="Width" Value="44" />
+    <Setter Property="Height" Value="44" />
+  </Style>
+  <Style Selector="ToggleButton.circular">
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="Width" Value="44" />
+    <Setter Property="Height" Value="44" />
+  </Style>
+  <Style Selector="Button.circular Border.map-icon">
+    <Setter Property="Width" Value="33" />
+    <Setter Property="Height" Value="33" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style Selector="Button.map-toggle Border.map-icon">
+    <Setter Property="Width" Value="33" />
+    <Setter Property="Height" Value="33" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style Selector="Button.close-button Border.map-icon">
+    <Setter Property="Width" Value="24" />
+    <Setter Property="Height" Value="24" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+
+  <!-- A pill of buttons, as on the Minimap's planetary map: one surface and outline around buttons that draw none
+       of their own until hovered or checked. Width, padding and corner radius are set in code (ConfigureButtonGroup). -->
+  <Style Selector="Border.map-multi-button">
+    <Setter Property="Width" Value="44" />
+    <Setter Property="Padding" Value="1" />
+    <Setter Property="CornerRadius" Value="22" />
+    <Setter Property="Background" Value="{DynamicResource surfaceContainerHighColor}" />
+    <Setter Property="BorderBrush" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="1" />
+  </Style>
+  <Style Selector="Border.map-multi-button:pointerover">
+    <Setter Property="BorderBrush" Value="{DynamicResource borderVariantColor}" />
+  </Style>
+  <!-- Tiny buttons as in the LCD mod (Maps.xaml): a 38 px transparent circle in a 42 px pill, its icon inset 9 px;
+       hover recolors the icon instead of filling the button. Here 40 in 44 (the planner's base button), icon 21;
+       ConfigureButtonGroup scales them. -->
+  <Style Selector="Button.map-button-tiny">
+    <Setter Property="Width" Value="40" />
+    <Setter Property="Height" Value="40" />
+    <Setter Property="Background" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="CornerRadius" Value="20" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny">
+    <Setter Property="Width" Value="40" />
+    <Setter Property="Height" Value="40" />
+    <Setter Property="Background" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="CornerRadius" Value="20" />
+  </Style>
+  <Style Selector="Button.map-button-tiny Border.map-icon">
+    <Setter Property="Width" Value="21" />
+    <Setter Property="Height" Value="21" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny Border.map-icon">
+    <Setter Property="Width" Value="21" />
+    <Setter Property="Height" Value="21" />
+  </Style>
+  <!-- After the plain tiny button: a checked toggle (follow) shows an accent icon, as on the Minimap; roads, GPS
+       and the road tools keep their own fills below. -->
+  <Style Selector="ToggleButton.map-button-tiny:checked Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource accentColor}" />
+  </Style>
+  <Style Selector="Button.map-button-tiny:pointerover Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource onAccentColor}" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny:pointerover Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource onAccentColor}" />
+  </Style>
+  <!-- Road visibility: road-cyan fill while roads are shown (the default). -->
+  <Style Selector="ToggleButton.map-button-tiny.roads:checked">
+    <Setter Property="Background" Value="#55cdeb" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny.roads:checked Border.map-icon">
+    <Setter Property="Background" Value="#06222b" />
+  </Style>
+  <!-- GPS markers: a waypoint-green fill while the player's GPS points are shown. -->
+  <Style Selector="ToggleButton.map-button-tiny.gps:checked">
+    <Setter Property="Background" Value="#6fd38c" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny.gps:checked Border.map-icon">
+    <Setter Property="Background" Value="#0a2414" />
+  </Style>
+  <!-- Bridge, bulldoze, repair: a construction-amber fill makes the active tool obvious. -->
+  <Style Selector="ToggleButton.map-button-tiny.bulldoze:checked">
+    <Setter Property="Background" Value="#e0a030" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny.bulldoze:checked Border.map-icon">
+    <Setter Property="Background" Value="#1b1305" />
+  </Style>
+  <Style Selector="Button.map-button-tiny:disabled Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource disabledColor}" />
+  </Style>
+  <Style Selector="ToggleButton.map-button-tiny:disabled Border.map-icon">
+    <Setter Property="Background" Value="{DynamicResource disabledColor}" />
+  </Style>
+
+  <!-- The selected map layer's button: an accent outline over its preview. -->
+  <Style Selector="Border.layer-selection">
+    <Setter Property="BorderBrush" Value="{DynamicResource accentColor}" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+
+  <!-- Full screen only: LCDs show the panel's own background and grid. -->
+  <Style Selector="Panel.planner-backdrop">
+    <Setter Property="Background" Value="{DynamicResource surfaceColor}" />
+  </Style>
+
+  <!-- Status notice on LCDs (no footer there). -->
+  <Style Selector="Border.planner-notice">
+    <Setter Property="Background" Value="#D8101418" />
+    <Setter Property="BorderBrush" Value="#FF5A6970" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="6" />
+    <Setter Property="Padding" Value="12 6 12 6" />
+  </Style>
+  <Style Selector="Border.planner-notice TextBlock">
+    <Setter Property="Foreground" Value="#FFFFFFFF" />
+  </Style>
+
+  <!-- Road settings flyout. -->
+  <Style Selector="Border.road-settings">
+    <Setter Property="Background" Value="#EB191F26" />
+    <Setter Property="BorderBrush" Value="#FF5A6970" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="5" />
+  </Style>
+
+  <!-- Push confirmation dialog and the backdrop that dims the planner behind it. -->
+  <Style Selector="Border.road-dialog">
+    <Setter Property="Background" Value="#F2151A20" />
+    <Setter Property="BorderBrush" Value="#FF5A6970" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="6" />
+  </Style>
+  <Style Selector="Border.road-dialog-separator">
+    <Setter Property="Background" Value="#FF52626B" />
+  </Style>
+  <Style Selector="Border.road-dialog-backdrop">
+    <Setter Property="Background" Value="#90000000" />
+  </Style>
+  <Style Selector="TextBlock.road-dialog-title">
+    <Setter Property="Foreground" Value="#FFFFFFFF" />
+  </Style>
+  <Style Selector="Border.road-invoice">
+    <Setter Property="Background" Value="#3C000000" />
+    <Setter Property="CornerRadius" Value="4" />
+  </Style>
+  <Style Selector="TextBlock.road-invoice-header">
+    <Setter Property="FontSize" Value="0.5" />
+    <Setter Property="Foreground" Value="#FFAAB6BE" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style Selector="Border.road-invoice-rule">
+    <Setter Property="Background" Value="#FF3E4A52" />
+  </Style>
+  <Style Selector="Button.road-dialog-button">
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="CornerRadius" Value="4" />
+  </Style>
+
+  <!-- Frame around voxel material thumbnails (push dialog, material list). -->
+  <Style Selector="Border.material-thumb-frame">
+    <Setter Property="Background" Value="#00000000" />
+    <Setter Property="BorderBrush" Value="#FF8A99A2" />
+  </Style>
+
+  <!-- Confirm/cancel next to the draft's last node; confirm takes the faction accent in code. -->
+  <Style Selector="Button.road-action">
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="CornerRadius" Value="4" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+  <Style Selector="Button.road-action.cancel">
+    <Setter Property="Background" Value="#FFBE2D2D" />
+  </Style>
+  <Style Selector="Button.road-action.auto">
+    <Setter Property="Background" Value="#FF2D6FBE" />
+  </Style>
+
+  <!-- Bare icon toggles beside the layer previews (water overlay). -->
+  <Style Selector="Button.map-toggle">
+    <Setter Property="Width" Value="44" />
+    <Setter Property="Height" Value="44" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="#00000000" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+</Styles>

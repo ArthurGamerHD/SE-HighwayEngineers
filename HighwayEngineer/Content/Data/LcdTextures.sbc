@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LCD sprite names for the planner icons. They match the TransparentMaterial names, so
+     the same texture keys work on the full-screen map and on LCD panels. -->
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <LCDTextures>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Road"/>
+            <SpritePath>Textures/Sprites/Road.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Lock"/>
+            <SpritePath>Textures/Sprites/Lock.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_CompassIcon"/>
+            <SpritePath>Textures/Sprites/CompassIcon.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_GpsArrow"/>
+            <SpritePath>Textures/Sprites/GpsArrow.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_North"/>
+            <SpritePath>Textures/Sprites/North.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_OrbitOn"/>
+            <SpritePath>Textures/Sprites/OrbitOn.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_OrbitOff"/>
+            <SpritePath>Textures/Sprites/OrbitOff.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_StreetView"/>
+            <SpritePath>Textures/Sprites/StreetView.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Bulldoze"/>
+            <SpritePath>Textures/Sprites/Bulldoze.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Roller"/>
+            <SpritePath>Textures/Sprites/Roller.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Bridge"/>
+            <SpritePath>Textures/Sprites/Bridge.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Width"/>
+            <SpritePath>Textures/Sprites/Width.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Height"/>
+            <SpritePath>Textures/Sprites/Height.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Angle"/>
+            <SpritePath>Textures/Sprites/Angle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Distance"/>
+            <SpritePath>Textures/Sprites/Distance.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Nodes"/>
+            <SpritePath>Textures/Sprites/Nodes.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Embankment"/>
+            <SpritePath>Textures/Sprites/Embankment.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <!-- Game icons: the path is not in this mod, so it resolves to the game's content. -->
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_SpaceCredits"/>
+            <SpritePath>Textures\GUI\Icons\SpaceCredits.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Gravel"/>
+            <SpritePath>Textures\GUI\Icons\ingot\gravel_ingot.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_WaterIcon"/>
+            <SpritePath>Textures/Sprites/WaterIcon.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_WaypointIcon"/>
+            <SpritePath>Textures/Sprites/WaypointIcon.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_MissingIcon"/>
+            <SpritePath>Textures/Sprites/MissingIcon.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Settings"/>
+            <SpritePath>Textures/Sprites/Settings.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Cross"/>
+            <SpritePath>Textures/Models/Cross.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_RotationPlane"/>
+            <SpritePath>Textures/GUI/Icons/HUD 2017/RotationPlane.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Iron"/>
+            <SpritePath>Textures/GUI/Icons/ore_Fe_iron.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Nickel"/>
+            <SpritePath>Textures/GUI/Icons/ore_Ni_nickel.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Cobalt"/>
+            <SpritePath>Textures/GUI/Icons/ore_Co_cobalt.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Magnesium"/>
+            <SpritePath>Textures/GUI/Icons/ore_Mg_magnesium.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Silicon"/>
+            <SpritePath>Textures/GUI/Icons/ore_Si_silicon.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Silver"/>
+            <SpritePath>Textures/GUI/Icons/ore_Ag_silver.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Gold"/>
+            <SpritePath>Textures/GUI/Icons/ore_Au_gold.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Platinum"/>
+            <SpritePath>Textures/GUI/Icons/ore_Pt_platinum.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Uranium"/>
+            <SpritePath>Textures/GUI/Icons/ore_UO2_uraninite.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="HighwayEngineer_Icon_Ore_Ice"/>
+            <SpritePath>Textures/GUI/Icons/ore_H2O_ice.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+    </LCDTextures>
+</Definitions>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The repair tool's options for the marked roads (a new material, filling holes), hosted in a
+  non-dismissable Popup centred on the planner like the push dialog. Bound to RepairDialogViewModel.
+-->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.Repair"
+    xmlns:ext="using:HighwayEngineer.Client.Apps.Views.Extensions"
+    xmlns:layout="using:Acrux.Layout"
+    x:Class="HighwayEngineer.Client.Apps.Repair.RepairDialog"
+    x:DataType="local:RepairDialogViewModel">
+  <Border Classes="road-dialog" Width="{Binding DialogWidth}" Padding="{Binding Padding}">
+    <StackPanel Spacing="{Binding Spacing}">
+      <TextBlock Classes="road-dialog-title" Text="{ext:loc HighwayEngineer_Repair_Title}" FontSize="0.8" />
+      <Border Classes="road-dialog-separator" Height="1" />
+      <TextBlock Text="{Binding Summary}" FontSize="0.55" TextWrapping="Wrap" Foreground="#FFD6DEE3" />
+
+      <Grid ColumnDefinitions="0.46*,0.54*" RowDefinitions="Auto,Auto,Auto,Auto">
+        <TextBlock Grid.Row="0" Text="{ext:loc HighwayEngineer_Repair_NewMaterial}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                   Height="{Binding RowHeight}" />
+        <ToggleSwitch Grid.Column="1" Grid.Row="0" IsChecked="{Binding ReplaceMaterial, Mode=TwoWay}" />
+        <!-- ComboBox<T> is built in code; this slot hosts it. -->
+        <layout:Panel x:Name="_materialSlot" Grid.ColumnSpan="2" Grid.Row="1" IsVisible="{Binding ReplaceMaterial}" />
+        <TextBlock Grid.Row="2" Text="{ext:loc HighwayEngineer_Repair_FillHoles}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                   Height="{Binding RowHeight}" />
+        <ToggleSwitch Grid.Column="1" Grid.Row="2" IsChecked="{Binding RepairHoles, Mode=TwoWay}" />
+        <TextBlock Grid.Row="3" Text="{ext:loc HighwayEngineer_Common_RepaintGuideLines}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                   Height="{Binding RowHeight}" />
+        <ToggleSwitch Grid.Column="1" Grid.Row="3" IsChecked="{Binding RepaintGuideLines, Mode=TwoWay}" />
+      </Grid>
+
+      <TextBlock FontSize="0.5" TextWrapping="Wrap" Foreground="#FFAAB6BE"
+                 Text="{ext:loc HighwayEngineer_Repair_Help}" />
+
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+        <Button Classes="road-dialog-button" Command="{Binding CancelCommand}"
+                Width="{Binding ButtonWidth}" Height="{Binding ButtonHeight}">
+          <TextBlock Text="{ext:loc HighwayEngineer_Common_Cancel}" FontSize="0.6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+        <Button Classes="road-dialog-button accent" Command="{Binding RepairCommand}" IsEnabled="{Binding CanRepair}"
+                Background="{Binding RepairBackground}" Width="{Binding ButtonWidth}" Height="{Binding ButtonHeight}">
+          <TextBlock Text="{ext:loc HighwayEngineer_Repair_Confirm}" FontSize="0.6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+      </StackPanel>
+    </StackPanel>
+  </Border>
+</UserControl>

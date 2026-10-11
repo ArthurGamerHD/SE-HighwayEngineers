@@ -1,0 +1,106 @@
+ADK Video - supported formats
+=============================
+
+Primary format: Matroska (.mkv / .webm) with MPEG-1 video, MS-ADPCM or PCM audio and
+SRT subtitles, all in one file. Decoding happens fully in managed code that fits the
+Space Engineers mod whitelist (no MemoryStream; everything works on byte[]).
+
+
+1. Container - Adk.Video.Matroska.MatroskaFile
+----------------------------------------------
+  * EBML DocType "matroska" or "webm".
+  * Segment and Cluster may have unknown size (streamed files); every other element
+    must have a known size.
+  * SimpleBlock and BlockGroup (Block + BlockDuration; key frame = no ReferenceBlock).
+  * Lacing: none, Xiph, EBML and fixed-size.
+  * Timestamps use the file's TimestampScale.
+  * NOT supported: ContentEncodings (track compression / header stripping / encryption).
+    ffmpeg does not write them unless asked.
+
+  Codec IDs read by the decoders below:
+    V_MPEG1         video
+    A_MS/ACM        audio, CodecPrivate = WAVEFORMATEX (format tag 2 = MS-ADPCM)
+    A_PCM/INT/LIT   audio, 16-bit little-endian PCM
+    S_TEXT/UTF8     subtitles (SRT text, one cue per block, duration from BlockDuration)
+
+
+2. Video - Adk.Video.Mpeg1.Mpeg1VideoDecoder
+--------------------------------------------
+  * ISO/IEC 11172-2 (MPEG-1 video), 4:2:0, up to 4095x4095.
+  * I, P and B pictures (D pictures are skipped). Half-pel and full-pel motion,
+    all f_codes, custom intra / non-intra quantizer matrices.
+  * B pictures are reordered by the decoder (set LowDelay = false). Streams without
+    B pictures can use LowDelay = true (default): each frame is shown as soon as it is
+    decoded, which is cheaper and makes seeking simpler. Prefer -bf 0.
+  * Any frame rate: playback follows the Matroska timestamps, so non-standard rates such
+    as 10 fps work (ffmpeg needs -strict unofficial to write them).
+  * Output colour: BT.601 limited range (Y 16-235), converted to RGBA by
+    Mpeg1Picture.ToRgba via Adk.Image.YCbCrConverter.
+  * IDCT: Adk.Image.InverseDct (libjpeg integer "islow"), passes IEEE 1180. Output
+    differs from ffmpeg by at most a few levels (IDCT mismatch, reset at every I frame).
+  * NOT supported: MPEG-2 (V_MPEG2), interlaced/field pictures, D pictures.
+
+
+3. Audio - Adk.Audio.Adpcm.MsAdpcmDecoder / raw PCM
+---------------------------------------------------
+  * MS-ADPCM (4-bit, WAVEFORMATEX tag 2) or 16-bit PCM, mono or stereo.
+  * Space Engineers can only play 24000 Hz, 16-bit, MONO PCM
+    (MyEntity3DSoundEmitter.PlaySound(byte[])), so encode audio as -ar 24000 -ac 1.
+    MS-ADPCM is ~4x smaller than PCM at that rate (about 12 KB/s vs 48 KB/s).
+  * The last ADPCM block is padded; decoded audio can run a few ms past the video.
+
+
+4. Subtitles
+------------
+  * SRT muxed as S_TEXT/UTF8. One cue per block: text = block payload, start = block
+    time, end = start + BlockDuration. Multi-line cues keep their '\n'.
+
+
+5. Text transport - Adk.Video.Text.Char15Encoding
+-------------------------------------------------
+  For storing a file in strings (PB Storage, CustomData, mod messages, world saves):
+  15 bits per UTF-16 char = 93.75% of each char used (base64 uses 37.5%).
+
+    [optional header text] U+8020
+    char 0: byte count bits 29..15      char 1: byte count bits 14..0
+    then the bytes as one MSB-first bit stream, 15 bits per char, last char zero-padded.
+
+  Values 0x00-0x1F (invalid in XML saves) are written as value + 0x8000. Data chars
+  never reach U+8000 on their own, never form surrogate pairs, and U+8020 and up are
+  free for markers. Anything before the first U+8020 is a header (e.g. Movie Night's
+  INI block) and is skipped by Char15Encoding.Decode. Max payload: 2^30 - 1 bytes.
+
+
+6. Example ffmpeg commands
+--------------------------
+  Any video -> the recommended format (1024x576, 10 fps, q4, ADPCM 24 kHz mono, subtitles):
+
+    ffmpeg -i input.mp4 -i input.srt \
+        -map 0:v -map 0:a -map 1:s \
+        -vf "scale=1024:576:flags=lanczos,fps=10,scale=out_color_matrix=bt601:out_range=tv,format=yuv420p" \
+        -c:v mpeg1video -strict unofficial -q:v 4 -bf 0 -g 30 \
+        -c:a adpcm_ms -ar 24000 -ac 1 \
+        -c:s srt \
+        output.mkv
+
+  Without subtitles, drop "-i input.srt", "-map 1:s" and "-c:s srt".
+
+  Size/quality knobs: -q:v 2..31 (lower = better/larger; 4 is a good default),
+  resolution in scale=W:H, fps=N, and -g N (key frame interval: a seek decodes from the
+  previous key frame, so smaller -g seeks faster but costs size).
+
+  Text for the 15-bit transport (Python 3, no dependencies; in the VideoAccelerationMod
+  repository):
+
+    tools/char15-encode.py output.mkv output.txt [--header "[Video]\nName = My video\n"]
+
+  The .txt is UTF-16 LE; load it as a string and pass it to Char15Encoding.Decode.
+
+
+7. Other formats in ADK
+-----------------------
+  * Adk.Video.Apng.ApngVideo - Animated PNG (and plain PNG), all dispose/blend ops,
+    seeking via key frames. Optional private chunks carry audio and captions:
+    vaAh (WAVEFORMATEX), vaAu (u32 first sample + PCM/ADPCM data), vaCp (u32 start ms,
+    u32 end ms, UTF-8 text). Lossless, so far larger than MPEG-1 for real video.
+  * Adk.Image.Jpeg.JpegDecoder - baseline and progressive JPEG (still images).

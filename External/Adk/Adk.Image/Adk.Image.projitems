@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>87fdc905-a339-4758-885f-0b2b5199f7e7</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Dds\Bc7Encoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dds\DdsEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dds\DdsDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dds\SpaceEngineersTextureProfiles.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\ContentTexturePath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\DdsAverageColor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\InverseDct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\RawRgbaBitmap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\YCbCrConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jpeg\JpegDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Png\PlanarPngBitmap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Png\PngEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Png\RawPngBitmap.cs" />
+  </ItemGroup>
+</Project>

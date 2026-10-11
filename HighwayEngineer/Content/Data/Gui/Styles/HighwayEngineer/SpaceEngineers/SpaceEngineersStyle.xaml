@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Styles xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- The Space Engineers theme ships with Acrux UI; the planner adds its own controls on top. -->
+  <StyleInclude Source="/Data/Gui/Styles/Acrux/SpaceEngineers/SpaceEngineersStyle.xaml" />
+  <StyleInclude Source="/Data/Gui/Styles/Acrux/Addons/SpaceEngineers/KeySelector.xaml" />
+  <StyleInclude Source="./Controls/Settings.xaml" />
+  <StyleInclude Source="./Controls/Planner.xaml" />
+  <!-- Last: setters apply in order, so these refine the theme. -->
+  <StyleInclude Source="/Data/Gui/Styles/HighwayEngineer/RoadPlanner.xaml" />
+</Styles>

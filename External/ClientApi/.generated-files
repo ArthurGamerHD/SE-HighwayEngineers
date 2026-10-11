@@ -1,0 +1,10 @@
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/ApiProvider.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/EnvironmentPresetProvider.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/FeatureTemplate.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/ModificationTemplate.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/NoiseProvider.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/NoiseSamplingQuality.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/PlanetMetadataProvider.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/ProceduralCubemapApiClient.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/RadialFieldProfile.cs
+/home/arthur/RiderProjects/ProceduralVoxelCubemapApi/ClientApi/WaterUtil.cs

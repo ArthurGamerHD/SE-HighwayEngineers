@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The road planner, hosted full screen (RoadPlannerScreen) and on LCDs
+  (RoadPlannerSurfaceScript). Row/column sizes and icon sizes scale with the
+  host's bounds and are set from code-behind in ApplyLayout.
+-->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.RoadPlanner"
+    xmlns:controls="using:HighwayEngineer.Client.Gui.UserControls"
+    xmlns:ext="using:HighwayEngineer.Client.Apps.Views.Extensions"
+    xmlns:layout="using:Acrux.Layout"
+    x:Class="HighwayEngineer.Client.Apps.RoadPlanner.RoadPlannerView"
+    x:DataType="local:RoadPlannerViewModel"
+    Design.DataContext="{x:Static local:RoadPlannerViewModelPreview.Default}"
+    Design.Width="1244"
+    Design.Height="700">
+  <!-- Transparent on LCDs, over the panel's own background; the full-screen host adds a backdrop. -->
+  <layout:Panel x:Name="_root">
+    <Grid x:Name="_screenGrid" ColumnDefinitions="*" RowDefinitions="*,Auto">
+      <controls:TextureView x:Name="_mapView" Grid.RowSpan="2" DrawBackground="False" DrawBorder="False"
+                       Texture="{Binding MapTexture}" />
+
+      <Grid x:Name="_mapGrid" ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
+        <controls:PlanetWaypointsControl x:Name="_planetWaypoints" Grid.ColumnSpan="3" Grid.RowSpan="3" />
+        <controls:RoadTangentOverlay x:Name="_tangentOverlay" Grid.ColumnSpan="3" Grid.RowSpan="3" />
+        <!-- Bulldoze/repair cursor: the tool icon follows the pointer over the map. -->
+        <controls:CursorToolBadge x:Name="_cursorBadge" Grid.ColumnSpan="3" Grid.RowSpan="3" Color="#FFE0A030" />
+
+        <StackPanel x:Name="_titlePanel" VerticalAlignment="Top" Margin="12 12 0 0">
+          <TextBlock x:Name="_title" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="0.92"
+                     Text="{Binding TitleText}" Foreground="{Binding TitleColor}" />
+        </StackPanel>
+
+
+        <StackPanel x:Name="_topRightControls" Grid.Column="2" VerticalAlignment="Top" Spacing="8" Margin="0 12 12 0">
+          <!-- Space Engineers theme close; Fluent uses the caption button placed in the slot below. -->
+          <Button x:Name="_closeButton" Classes="close-button" HorizontalAlignment="Right"
+                  Command="{Binding CloseCommand}">
+            <Border Classes="map-icon" OpacityMask="{Binding CloseIcon, Converter={StaticResource iconMask}}" />
+          </Button>
+          <layout:Panel x:Name="_captionCloseSlot" HorizontalAlignment="Right" />
+          <Button x:Name="_settingsButton" Classes="circular" HorizontalAlignment="Right"
+                  ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Settings}">
+            <Border Classes="map-icon" OpacityMask="{Binding SettingsIcon, Converter={StaticResource iconMask}}" />
+          </Button>
+          <!-- The map's toggles share one pill, as on the Minimap's planetary map. -->
+          <Border x:Name="_displayGroup" Classes="map-multi-button" HorizontalAlignment="Right">
+            <StackPanel x:Name="_displayButtons">
+              <ToggleButton x:Name="_roadsButton" Classes="circular map-button-tiny roads" HorizontalAlignment="Right"
+                            IsChecked="{Binding RoadsVisible}" Command="{Binding RoadsCommand}"
+                            ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Roads}">
+                <Border Classes="map-icon">
+                  <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Road" Stretch="Uniform" /></Border.OpacityMask>
+                </Border>
+              </ToggleButton>
+              <ToggleButton x:Name="_waypointsButton" Classes="circular map-button-tiny gps" HorizontalAlignment="Right"
+                            IsVisible="{Binding WaypointsVisible}" IsChecked="{Binding WaypointsSelected}"
+                            Command="{Binding WaypointsCommand}"
+                            ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Gps}">
+                <Border Classes="map-icon" OpacityMask="{Binding WaypointsIcon, Converter={StaticResource iconMask}}" />
+              </ToggleButton>
+              <ToggleButton x:Name="_bridgeButton" Classes="circular map-button-tiny bulldoze" HorizontalAlignment="Right"
+                            IsChecked="{Binding AutoBridge}"
+                            Command="{Binding BridgeCommand}"
+                            ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_AutoBridge}">
+                <Border Classes="map-icon">
+                  <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Bridge" Stretch="Uniform" /></Border.OpacityMask>
+                </Border>
+              </ToggleButton>
+              <ToggleButton x:Name="_followButton" Classes="circular map-button-tiny" HorizontalAlignment="Right"
+                            IsVisible="{Binding FollowVisible}" IsChecked="{Binding FollowSelected}"
+                            Command="{Binding FollowCommand}">
+                <Border Classes="map-icon" OpacityMask="{Binding FollowIcon, Converter={StaticResource iconMask}}" />
+              </ToggleButton>
+            </StackPanel>
+          </Border>
+        </StackPanel>
+
+        <StackPanel x:Name="_bottomLeftControls" Grid.Row="2" VerticalAlignment="Bottom" Spacing="8" Margin="12 0 0 12">
+          <controls:StreetViewControl x:Name="_streetViewControl" HorizontalAlignment="Left"
+                                 IsVisible="{Binding StreetViewVisible}" IsEnabled="{Binding StreetViewEnabled}"
+                                 ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_StreetView}" />
+          <StackPanel x:Name="_layerControls" Orientation="Horizontal" HorizontalAlignment="Left">
+            <!-- The layer buttons, as on the Minimap: the selected layer, and the others while the selector is open. -->
+            <ItemsControl x:Name="_layerItems" ItemsSource="{Binding LayerItems}">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                  <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+              <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="local:MapLayerItem">
+                  <Button Classes="layer-preview" Command="{Binding Command}" IsVisible="{Binding IsShown}"
+                          Width="{Binding Size}" Height="{Binding Size}" Margin="{Binding Margin}"
+                          ToolTip.Tip="{Binding Name}" ToolTip.Placement="Top">
+                    <Grid>
+                      <controls:LayerPreview Cubemap="{Binding Cubemap}" Face="{Binding Face}" />
+                      <Border Classes="layer-selection" IsVisible="{Binding IsSelected}" />
+                    </Grid>
+                  </Button>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <Button x:Name="_waterButton" Classes="map-toggle" HorizontalAlignment="Left"
+                    IsVisible="{Binding WaterVisible}" IsEnabled="{Binding WaterEnabled}"
+                    Command="{Binding WaterCommand}"
+                    ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Water}">
+              <Border Classes="map-icon" OpacityMask="{Binding WaterIcon, Converter={StaticResource iconMask}}" />
+            </Button>
+          </StackPanel>
+        </StackPanel>
+
+        <StackPanel x:Name="_bottomRightControls" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Spacing="8" Margin="0 0 12 12">
+          <!-- The road tools share one pill; north lock sits apart under them. -->
+          <Border x:Name="_toolsGroup" Classes="map-multi-button" HorizontalAlignment="Right"
+                  IsVisible="{Binding FollowVisible}">
+            <StackPanel x:Name="_toolButtons">
+              <ToggleButton x:Name="_bulldozeButton" Classes="circular map-button-tiny bulldoze" HorizontalAlignment="Right"
+                            IsChecked="{Binding BulldozeMode}"
+                            Command="{Binding BulldozeCommand}"
+                            ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Bulldoze}">
+                <Border Classes="map-icon">
+                  <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Bulldoze" Stretch="Uniform" /></Border.OpacityMask>
+                </Border>
+              </ToggleButton>
+              <ToggleButton x:Name="_repairButton" Classes="circular map-button-tiny bulldoze" HorizontalAlignment="Right"
+                            IsChecked="{Binding RepairMode}"
+                            Command="{Binding RepairCommand}"
+                            ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Repair}">
+                <Border Classes="map-icon">
+                  <Border.OpacityMask><ImageBrush Source="HighwayEngineer_Icon_Roller" Stretch="Uniform" /></Border.OpacityMask>
+                </Border>
+              </ToggleButton>
+            </StackPanel>
+          </Border>
+          <Button x:Name="_orientationButton" Classes="circular" HorizontalAlignment="Right"
+                  IsVisible="{Binding OrientationVisible}" Command="{Binding OrientationCommand}">
+            <Border Classes="map-icon" OpacityMask="{Binding OrientationIcon, Converter={StaticResource iconMask}}"
+                    RenderTransform="{Binding OrientationRotation, Converter={StaticResource iconRotation}}" />
+          </Button>
+        </StackPanel>
+      </Grid>
+
+      <TextBlock x:Name="_status" Grid.Row="1" FontSize="0.52" TextAlignment="Center" VerticalAlignment="Center"
+                 Text="{Binding FooterText}" Foreground="{Binding FooterColor}" />
+    </Grid>
+
+    <!-- Confirm/cancel (and auto-route between the draft's first and last node), placed next to the draft's last node (or the last road marked for bulldoze or repair). -->
+    <controls:AnchorPanel x:Name="_roadActions">
+      <Button x:Name="_pushRoadButton" Classes="road-action" IsVisible="False" IsEnabled="False"
+              ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Push}">
+        <controls:RoadActionGlyph x:Name="_confirmRoadGlyph" />
+      </Button>
+      <Button x:Name="_cancelRoadButton" Classes="road-action cancel" IsVisible="False"
+              ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_Cancel}">
+        <controls:RoadActionGlyph x:Name="_cancelRoadGlyph" />
+      </Button>
+      <Button x:Name="_autoRoadButton" Classes="road-action auto" IsVisible="False"
+              ToolTip.Tip="{ext:loc HighwayEngineer_Planner_Tip_AutoRoute}">
+        <controls:RoadActionGlyph x:Name="_autoRoadGlyph" />
+      </Button>
+    </controls:AnchorPanel>
+
+    <!-- Dims the planner while the push dialog (a Popup over everything) is open. -->
+    <Border x:Name="_dialogBackdrop" Classes="road-dialog-backdrop" IsVisible="False" />
+
+    <!-- LCDs have no footer: editor status shows as a short notice centered at 80% height. -->
+    <Grid x:Name="_noticeLayer" RowDefinitions="8*,Auto,2*" IsVisible="False">
+      <Border x:Name="_notice" Grid.Row="1" Classes="planner-notice" HorizontalAlignment="Center" IsVisible="False">
+        <TextBlock x:Name="_noticeText" FontSize="0.6" TextAlignment="Center" />
+      </Border>
+    </Grid>
+  </layout:Panel>
+</UserControl>

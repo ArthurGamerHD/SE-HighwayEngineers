@@ -1,0 +1,15 @@
+[generators]
+# Import Adk.CodeGeneration.props from the consuming project. It creates this
+# file when absent and adds missing switches using the value of all. Set all
+# first, then override individual features.
+all = true
+
+api = true
+chat = true
+client-server-boundary = true
+constants = true
+mdk-pack-test = true
+modules = true
+network = true
+singleton = true
+terminal-controls = true

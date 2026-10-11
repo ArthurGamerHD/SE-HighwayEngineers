@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ContractTypes>
+        <!--
+          Road construction ordered from the HighwayEngineer planner. Created only by the mod's
+          server (custom contract, posted from the nearest faction station and accepted for
+          the player); no ChancesPerFactionType, so stations never offer it on their own.
+        -->
+        <ContractType xsi:type="MyObjectBuilder_ContractTypeDefinition">
+            <Id>
+                <TypeId>ContractTypeDefinition</TypeId>
+                <SubtypeId>HighwayEngineer_RoadConstruction</SubtypeId>
+            </Id>
+            <StrategyType>None</StrategyType>
+            <DisplayName>DisplayName_HighwayEngineer_RoadConstruction</DisplayName>
+            <EnableForPlayerBlock>false</EnableForPlayerBlock>
+            <Icon>Textures\Sprites\Road.dds</Icon>
+            <Icon>Textures\Sprites\Road.dds</Icon>
+            <MinimumReputation>0</MinimumReputation>
+            <FailReputationPrice>0</FailReputationPrice>
+            <MinimumMoney>0</MinimumMoney>
+            <MinStartingDeposit>0</MinStartingDeposit>
+            <MaxStartingDeposit>0</MaxStartingDeposit>
+            <DurationMultiplier>1</DurationMultiplier>
+            <MinReputationRequirement>-1500</MinReputationRequirement>
+        </ContractType>
+    </ContractTypes>
+</Definitions>

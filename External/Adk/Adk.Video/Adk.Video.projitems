@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f094edff-e173-4a31-932e-901485d6cc9d</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Apng\ApngFrameDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apng\ApngMediaTracks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Apng\ApngVideo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Matroska\MatroskaAudioDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Matroska\MatroskaChunkIndex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Matroska\MatroskaFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Matroska\MatroskaMpeg1Video.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MediaProbe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mpeg1\Mpeg1BitReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mpeg1\Mpeg1Tables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mpeg1\Mpeg1VideoDecoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Char15Encoding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)note.txt" />
+  </ItemGroup>
+</Project>

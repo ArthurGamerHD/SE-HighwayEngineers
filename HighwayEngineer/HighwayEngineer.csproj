@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netframework48</TargetFramework>
+    <RootNamespace>HighwayEngineer</RootNamespace>
+    <LangVersion>6</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Configurations>Release;Debug</Configurations>
+    <Platforms>x64</Platforms>
+    <PackageId>HighwayEngineer</PackageId>
+    <!-- The intermod route API's generated client mirror is exported for other mods (see ExportGeneratedClientApi). -->
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>obj\$(Configuration)\$(TargetFramework)\Generated</CompilerGeneratedFilesOutputPath>
+    <ClientApiOutputPath>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\ClientApi'))</ClientApiOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="9.0.0" PrivateAssets="all" />
+    <PackageReference Include="System.Collections.Immutable" Version="9.0.0" PrivateAssets="all" />
+    <PackageReference Include="Mal.Mdk2.ModAnalyzers" Version="2.1.16" PrivateAssets="all" />
+    <PackageReference Include="Mal.Mdk2.ModPackager" Version="2.2.11" PrivateAssets="all" />
+    <PackageReference Include="Mal.Mdk2.References" Version="2.2.9" PrivateAssets="all" />
+  </ItemGroup>
+  <Import Project="..\External\Adk\Adk.Compression\Adk.Compression.projitems" Label="Shared" />
+  <Import Project="..\External\Adk\Adk.Image\Adk.Image.projitems" Label="Shared" />
+  <Import Project="..\External\Adk\Adk.Utils\Adk.Utils.projitems" Label="Shared" />
+  <!-- UI comes from the Acrux UI mod: ClientApi (thin generated wrappers + bridge runtime) and the Acrux / ADK
+       generators come from the Acrux.Sdk package in ../packages (update with ../update-acrux.sh / .bat). -->
+  <ItemGroup>
+    <PackageReference Include="Acrux.Sdk" Version="0.0.2" PrivateAssets="all" />
+  </ItemGroup>
+  <Import Project="..\External\ClientApi\ClientApi.projitems" Label="Shared" />
+  <!-- IDE preview (dev-time only): the planner's theme colors, converters and Fluent stylesheet, as MinimapStyles
+       attaches them to the planner's roots in game. -->
+  <PropertyGroup>
+    <AcruxPreviewDesignResources>HighwayEngineer.Client.Gui.Styling.DesignThemeResources</AcruxPreviewDesignResources>
+    <AcruxPreviewDesignStyles>/Data/Gui/Styles/HighwayEngineer/Fluent/FluentStyle.xaml</AcruxPreviewDesignStyles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\External\SE-Water\API\WaterModAPI.cs" Link="External\WaterModAPI.cs" />
+    <AdditionalFiles Include="Client\**\*.acrux.xaml" />
+    <AdditionalFiles Include="Content\*\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <!-- MyTexts*.resx are read by the game from the packed Data\Localization folder, not compiled into satellite assemblies. -->
+    <EmbeddedResource Remove="Content\**\*.resx" />
+    <!-- Rider's resx editor does not know the game's zh-CN culture: the source is MyTexts.zh.resx, packed as zh-CN (as the LCD mod). -->
+    <AdditionalFiles Remove="Content\Data\Localization\MyTexts.zh.resx" />
+  </ItemGroup>
+  <Target Name="RemoveMissingLegacyRendererReference" AfterTargets="SpaceEngineers" BeforeTargets="ResolveAssemblyReferences" Condition="!Exists('$(SpaceEngineersBinPath)\VRage.Render11.dll')">
+    <ItemGroup><Reference Remove="VRage.Render11" /></ItemGroup>
+  </Target>
+  <Target Name="MapZhToZhCN" BeforeTargets="PostBuildEvent">
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Content\Data\Localization\MyTexts.zh.resx" DestinationFiles="$(MSBuildProjectDirectory)\Content\Data\Localization\MyTexts.zh-CN.resx" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="RemoveZhCnResxAlias" AfterTargets="MdkPack;MdkDidNotPack">
+    <Delete Files="$(MSBuildProjectDirectory)\Content\Data\Localization\MyTexts.zh-CN.resx" />
+  </Target>
+  <!--
+    Copies the client mirror the ADK API generator makes for HighwayEngineerApiServer into ..\ClientApi,
+    a shared project other mods (LCD mod, Minimap) import to call our route API.
+  -->
+  <Target Name="ExportGeneratedClientApi" AfterTargets="CoreCompile">
+    <ReadLinesFromFile File="$(ClientApiOutputPath)\.generated-files" Condition="Exists('$(ClientApiOutputPath)\.generated-files')">
+      <Output TaskParameter="Lines" ItemName="PreviousGeneratedClientApi" />
+    </ReadLinesFromFile>
+    <ItemGroup>
+      <GeneratedClientApiRunMarker Include="$(CompilerGeneratedFilesOutputPath)\Adk.Analyzer\Adk.Analyzer.ApiProviderGenerator\ApiProviderAttributes.g.cs" />
+      <GeneratedClientApi Include="$(CompilerGeneratedFilesOutputPath)\Adk.Analyzer\Adk.Analyzer.ApiProviderGenerator\*.cs" Exclude="$(CompilerGeneratedFilesOutputPath)\Adk.Analyzer\Adk.Analyzer.ApiProviderGenerator\*.g.cs" />
+      <GeneratedClientApiDestination Include="@(GeneratedClientApi->'$(ClientApiOutputPath)\%(Filename)%(Extension)')" />
+    </ItemGroup>
+    <MakeDir Directories="$(ClientApiOutputPath)" Condition="Exists('@(GeneratedClientApiRunMarker)')" />
+    <Delete Files="@(PreviousGeneratedClientApi)" Condition="Exists('@(GeneratedClientApiRunMarker)')" />
+    <Copy SourceFiles="@(GeneratedClientApi)" DestinationFiles="@(GeneratedClientApiDestination)" SkipUnchangedFiles="true" Condition="Exists('@(GeneratedClientApiRunMarker)')" />
+    <WriteLinesToFile File="$(ClientApiOutputPath)\.generated-files" Lines="@(GeneratedClientApiDestination)" Overwrite="true" Condition="Exists('@(GeneratedClientApiRunMarker)')" />
+    <RemoveDir Directories="$(CompilerGeneratedFilesOutputPath)\Adk.Analyzer\Adk.Analyzer.ApiProviderGenerator" Condition="Exists('@(GeneratedClientApiRunMarker)')" />
+  </Target>
+</Project>

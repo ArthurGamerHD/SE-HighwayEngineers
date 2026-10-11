@@ -1,0 +1,3 @@
+The .cs files here are generated on build by the ADK API generator from
+HighwayEngineer/Common/Api/RoadCrafterApiServer.cs; do not edit them.
+Other mods import RoadCrafterClientApi.projitems and call RoadCrafterClient.TryGet(replyChannel).

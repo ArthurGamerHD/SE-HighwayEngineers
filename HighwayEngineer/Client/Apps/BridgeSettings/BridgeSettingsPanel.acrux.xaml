@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The bridge settings (under the road settings, behind the settings button), bound to
+  BridgeSettingsViewModel. Values are kept on this machine between sessions; a right click on a
+  row resets it to its default (ContextRequested). Width and fill depth are the road settings'.
+-->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.BridgeSettings"
+    xmlns:ext="using:HighwayEngineer.Client.Apps.Views.Extensions"
+    xmlns:layout="using:Acrux.Layout"
+    x:Class="HighwayEngineer.Client.Apps.BridgeSettings.BridgeSettingsPanel"
+    x:DataType="local:BridgeSettingsViewModel">
+  <Border Classes="road-settings" HorizontalAlignment="Left"
+          Width="{Binding Width}" Height="{Binding Height}" Padding="{Binding Padding}">
+    <Grid ColumnDefinitions="0.46*,0.54*" RowDefinitions="*,*,*,*">
+      <TextBlock Grid.Row="0" Text="{ext:loc HighwayEngineer_Common_BridgeMaterial}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetStructureMaterial}" />
+      <!-- ComboBox<T> is built in code; these slots host them. -->
+      <layout:Panel x:Name="_structureSlot" Grid.Column="1" Grid.Row="0" ContextRequested="{Binding ResetStructureMaterial}" />
+
+      <TextBlock Grid.Row="1" Text="{ext:loc HighwayEngineer_BridgeSettings_PavementMaterial}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetPavementMaterial}" />
+      <layout:Panel x:Name="_pavementSlot" Grid.Column="1" Grid.Row="1" ContextRequested="{Binding ResetPavementMaterial}" />
+
+      <TextBlock Grid.Row="2" Text="{Binding SegmentLabel}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" ContextRequested="{Binding ResetSegment}" />
+      <Slider Grid.Column="1" Grid.Row="2" Minimum="{Binding MinSegment}" Maximum="{Binding MaxSegment}" Value="{Binding SegmentMeters, Mode=TwoWay}"
+              SmallChange="10" IsSnapToTickEnabled="True" TickFrequency="10" ContextRequested="{Binding ResetSegment}" />
+
+      <TextBlock Grid.Row="3" Text="{ext:loc HighwayEngineer_BridgeSettings_Style}" FontSize="0.6" Foreground="#FFFFFFFF" VerticalAlignment="Center"
+                 ContextRequested="{Binding ResetDesign}" />
+      <layout:Panel x:Name="_designSlot" Grid.Column="1" Grid.Row="3" ContextRequested="{Binding ResetDesign}" />
+    </Grid>
+  </Border>
+</UserControl>

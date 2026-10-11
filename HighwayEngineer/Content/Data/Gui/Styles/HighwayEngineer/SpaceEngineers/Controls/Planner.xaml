@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The planner's additions to the Space Engineers theme (Acrux UI's /Data/Gui/Styles/Acrux/SpaceEngineers). -->
+<Styles xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Style Selector="Button.caption-button">
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="#00000000" />
+      </ControlTemplate>
+    </Setter>
+    <Setter Property="Foreground" Value="#ffffff" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+  <!-- Bulldoze is destructive: a construction-amber fill makes the active tool obvious. -->
+  <Style Selector="ToggleButton.circular.bulldoze:checked">
+    <Setter Property="Background" Value="#e0a030" />
+  </Style>
+  <!-- GPS markers: a waypoint-green fill while the player's GPS points are shown. -->
+  <Style Selector="ToggleButton.circular.gps:checked">
+    <Setter Property="Background" Value="#6fd38c" />
+  </Style>
+</Styles>

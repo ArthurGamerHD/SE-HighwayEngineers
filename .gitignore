@@ -1,0 +1,19 @@
+# Visual Studio / MDK build output
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+# Platform and IDE metadata
+.DS_Store
+.idea/
+.vscode/
+# Generated mod packages
+*.sbmi
+*.zip
+*.log
+/.codex
+HighwayEngineer/Content/Data/Localization/MyTexts.zh-CN.resx

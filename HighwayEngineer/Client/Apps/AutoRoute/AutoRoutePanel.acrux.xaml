@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The auto-route flyout: A* weights, rerouting live as they change and saved on this machine;
+     right click a row to reset it. Bound to AutoRoutePanelViewModel. -->
+<UserControl
+    xmlns="https://github.com/ArthurGamerHD/AcruxUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HighwayEngineer.Client.Apps.AutoRoute"
+    x:Class="HighwayEngineer.Client.Apps.AutoRoute.AutoRoutePanel"
+    x:DataType="local:AutoRoutePanelViewModel">
+  <Border Classes="road-settings" HorizontalAlignment="Left"
+          Width="{Binding Width}" Height="{Binding Height}" Padding="{Binding Padding}">
+    <Grid ColumnDefinitions="0.46*,0.54*" RowDefinitions="*,*,*,*">
+      <TextBlock Grid.Row="0" Text="{Binding DistanceLabel}" ContextRequested="{Binding ResetDistance}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" />
+      <Slider Grid.Column="1" Grid.Row="0" Minimum="{Binding MinWeight}" Maximum="{Binding MaxDistance}" Value="{Binding Distance, Mode=TwoWay}" ContextRequested="{Binding ResetDistance}"
+              SmallChange="0.1" IsSnapToTickEnabled="True" TickFrequency="0.1" />
+
+      <TextBlock Grid.Row="1" Text="{Binding InclinationLabel}" ContextRequested="{Binding ResetInclination}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" />
+      <Slider Grid.Column="1" Grid.Row="1" Minimum="{Binding MinWeight}" Maximum="{Binding MaxInclination}" Value="{Binding Inclination, Mode=TwoWay}" ContextRequested="{Binding ResetInclination}"
+              SmallChange="0.5" IsSnapToTickEnabled="True" TickFrequency="0.5" />
+
+      <TextBlock Grid.Row="2" Text="{Binding EarthworkLabel}" ContextRequested="{Binding ResetEarthwork}" FontSize="0.6" Foreground="#FFFFFFFF"
+                 VerticalAlignment="Center" />
+      <Slider Grid.Column="1" Grid.Row="2" Minimum="{Binding MinWeight}" Maximum="{Binding MaxEarthwork}" Value="{Binding Earthwork, Mode=TwoWay}" ContextRequested="{Binding ResetEarthwork}"
+              SmallChange="0.5" IsSnapToTickEnabled="True" TickFrequency="0.5" />
+
+      <TextBlock Grid.Row="3" Grid.ColumnSpan="2" Text="{Binding Status}" FontSize="0.5" Foreground="#FFFFFFFF"
+                 TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+    </Grid>
+  </Border>
+</UserControl>
