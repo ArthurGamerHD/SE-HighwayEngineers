@@ -5,6 +5,7 @@ using HighwayEngineer.Server;
 using Sandbox.ModAPI;
 using VRage.Game;
 using VRage.Game.Components;
+using Constants = HighwayEngineer.Common.Helpers.Constants;
 
 namespace HighwayEngineer
 {

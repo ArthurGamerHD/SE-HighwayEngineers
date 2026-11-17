@@ -88,7 +88,9 @@ namespace HighwayEngineer.Common.Roads
             profile = new double[steps + 1];
             var gradeSteps = new double[steps + 1];
             for (int i = 1; i <= steps; i++)
-                gradeSteps[i] = grade * (points[i].Distance - points[i - 1].Distance);
+                gradeSteps[i] = grade * (points[i].Distance - points[i - 1].Distance) *
+                    RoadGeometry.GradeRamp(points[i - 1].Distance, points[i].Distance, total,
+                        parameters.SegmentDistanceMeters);
             profile[0] = startHeight;
             profile[steps] = endHeight;
             for (int i = 1; i < steps; i++)

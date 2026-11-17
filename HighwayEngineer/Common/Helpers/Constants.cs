@@ -2,6 +2,10 @@ namespace HighwayEngineer.Common.Helpers
 {
     public static class Constants
     {
+        public static System.Version Version => Generated.Constants.Version;
+        public static string BuildConfiguration => Generated.Constants.BuildConfiguration;
+        public static string VersionName => Generated.Constants.VersionName;
+
         /// <summary>
         /// Secure message channel; unique to this mod. Packet IDs on it: 1–19 build and
         /// bulldoze, 20–39 road library, 40–49 settings, 50–59 admin; 127 is reserved by

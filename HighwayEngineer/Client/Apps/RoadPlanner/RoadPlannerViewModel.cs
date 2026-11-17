@@ -1437,7 +1437,7 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
             WaypointsClicked = ToggleWaypoints;
             WaterClicked = ToggleWater;
             RefreshPresentation();
-            _mapRenderer.UpdateRequests(_mapData, MapMode.PlanetaryMap, _viewState);
+            UpdateMapRequests();
         }
 
         public void ApplyLocalConfig()
@@ -1476,8 +1476,7 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
 
             UpdateAutoRoute();
             RefreshDepots();
-            if (_mapRenderer != null)
-                _mapRenderer.UpdateRequests(_mapData, MapMode.PlanetaryMap, _viewState);
+            UpdateMapRequests();
             RefreshPresentation();
             UpdateSurfaceView();
             if (_textureDirty)
@@ -1495,8 +1494,7 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
             }
             _mapBounds = bounds;
             EnsureMapTextureForBounds();
-            if (_mapRenderer != null)
-                _mapRenderer.UpdateRequests(_mapData, MapMode.PlanetaryMap, _viewState);
+            UpdateMapRequests();
             if (_textureDirty)
                 RenderMapTexture();
             RefreshPresentation();
@@ -1622,8 +1620,7 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
             {
                 _viewState.Layer = layer;
                 _textureDirty = true;
-                if (_mapRenderer != null)
-                    _mapRenderer.UpdateRequests(_mapData, MapMode.PlanetaryMap, _viewState);
+                UpdateMapRequests();
             }
             _layerSelectorExpanded = false;
             UpdateLayerItems();
@@ -2387,6 +2384,9 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
             public double Length;
             /// <summary>Terrain height at evenly spaced points along the segment, both ends included.</summary>
             public double[] Heights;
+            public double StartSurface, EndSurface;
+            public bool SlopeKnown, SlopeBesideBridge, ExceedsSlope;
+            public double SlopeMaxDegrees, SlopeSegmentDistance;
         }
 
         // Terrain profile of each segment (by end node), kept while its curve is unchanged.
@@ -2534,7 +2534,12 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
                 cached.Curve.StartTangent == curve.StartTangent && cached.Curve.EndTangent == curve.EndTangent)
                 return cached;
             int steps = (int)Math.Max(8, Math.Min(96, Math.Ceiling(curve.Arc * planet.Radius / 4.0)));
-            var profile = new SegmentProfile { Curve = curve, Heights = new double[steps + 1] };
+            var profile = new SegmentProfile
+            {
+                Curve = curve, Heights = new double[steps + 1],
+                StartSurface = RoadGeometry.SurfaceHeight(planet.Planet, curve.Start),
+                EndSurface = RoadGeometry.SurfaceHeight(planet.Planet, curve.End)
+            };
             Vector3D previous = curve.Start;
             for (int i = 0; i <= steps; i++)
             {
@@ -2947,10 +2952,29 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
 
         bool RoadCurveExceedsSlope(PlanetSnapshot planet, RoadCurve curve, int segment)
         {
-            return RoadGeometry.ExceedsSlope(curve, planet.Radius,
-                Vector3D.Distance(_roadNodes[segment - 1], planet.Position) - planet.Radius,
-                Vector3D.Distance(_roadNodes[segment], planet.Position) - planet.Radius,
-                CurrentRoadParameters());
+            UpdateBridges(planet);
+            bool besideBridge = IsBridgeSegment(segment - 1) || IsBridgeSegment(segment + 1);
+            RoadBuildParameters parameters = CurrentRoadParameters();
+            SegmentProfile profile = segment < _segmentProfiles.Count ? _segmentProfiles[segment] : null;
+            if (profile == null || planet.Planet == null || profile.Curve.Start != curve.Start ||
+                profile.Curve.End != curve.End || profile.Curve.StartTangent != curve.StartTangent ||
+                profile.Curve.EndTangent != curve.EndTangent)
+                return RoadGeometry.ExceedsSlope(curve, planet.Radius,
+                    Vector3D.Distance(_roadNodes[segment - 1], planet.Position) - planet.Radius,
+                    Vector3D.Distance(_roadNodes[segment], planet.Position) - planet.Radius,
+                    parameters, besideBridge);
+            if (!profile.SlopeKnown || profile.SlopeBesideBridge != besideBridge ||
+                profile.SlopeMaxDegrees != parameters.MaxSlopeDegrees ||
+                profile.SlopeSegmentDistance != parameters.SegmentDistanceMeters)
+            {
+                profile.ExceedsSlope = RoadGeometry.ExceedsSlope(curve, planet.Planet.AverageRadius,
+                    profile.StartSurface, profile.EndSurface, parameters, besideBridge);
+                profile.SlopeKnown = true;
+                profile.SlopeBesideBridge = besideBridge;
+                profile.SlopeMaxDegrees = parameters.MaxSlopeDegrees;
+                profile.SlopeSegmentDistance = parameters.SegmentDistanceMeters;
+            }
+            return profile.ExceedsSlope;
         }
 
         static Vector3D ToPlanetLocal(PlanetSnapshot planet, Vector3D worldDirection)
@@ -4088,10 +4112,26 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
             return start * (float)Math.Pow(end / start, MathHelper.Clamp(amount, 0f, 1f));
         }
 
+        bool MapPlanetsReady()
+        {
+            bool ready = true;
+            for (int i = 0; i < _mapData.Planets.Count; i++)
+                if (!PlanetMetadataWarmup.IsReady(_mapData.Planets[i].EntityId))
+                    ready = false;
+            return ready;
+        }
+
+        void UpdateMapRequests()
+        {
+            if (_mapRenderer != null && MapPlanetsReady())
+                _mapRenderer.UpdateRequests(_mapData, MapMode.PlanetaryMap, _viewState);
+        }
+
         void RenderMapTexture()
         {
+            // Not ready: the texture stays dirty, so the map is drawn on the first frame it is.
             if (_mapTexture == null ||
-                !_mapTexture.IsAvailable || _mapRenderer == null)
+                !_mapTexture.IsAvailable || _mapRenderer == null || !MapPlanetsReady())
                 return;
             try
             {

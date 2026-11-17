@@ -155,6 +155,7 @@ namespace HighwayEngineer.Client
             Gui.VoxelMaterialThumbnails.Clear();
             Gui.GameIconSprites.Clear();
             Gui.Styling.MinimapStyles.Unload();
+            Maps.PlanetMetadataWarmup.Unload();
             UiAvailable = false;
             Lcd.LcdEyeTracking.Reset();
             Lcd.PlannerTerminalControls.Unregister();

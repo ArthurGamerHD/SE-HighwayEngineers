@@ -51,7 +51,7 @@ namespace HighwayEngineer.Client.Apps.RoadPlanner
         bool EnterSurfaceView()
         {
             PlanetSnapshot planet = ResolveFocusedPlanet();
-            if (planet == null || planet.Radius <= 0f)
+            if (planet == null || planet.Radius <= 0f || !MapPlanetsReady())
                 return false;
             float zoom = Math.Max(_viewState.Zoom, 0.0001f);
             _viewState.MaximumZoom = SURFACE_VIEW_FARTHEST_ZOOM;

@@ -64,7 +64,6 @@ namespace HighwayEngineer.Server.Quotes
         readonly MyPlanet _planet;
         readonly Vector3D _center;
         readonly double _radius;
-        readonly double _maximumRadius;
         readonly List<RoadCurve> _curves;
         readonly int[] _steps;
         readonly double[] _heights;
@@ -99,7 +98,6 @@ namespace HighwayEngineer.Server.Quotes
             _planet = planet;
             _center = planet.PositionComp.GetPosition();
             _radius = planet.AverageRadius;
-            _maximumRadius = Math.Max(planet.AverageRadius, planet.MaximumRadius);
             _curves = curves;
             _steps = steps;
             _heights = new double[curves.Count + 1];
@@ -130,6 +128,9 @@ namespace HighwayEngineer.Server.Quotes
         /// <summary>Whether a segment (0-based) is part of a bridge rather than built as road.</summary>
         public bool IsBridged(int segment) => Request.Bridge != null && Request.Bridge.IsBridged(segment);
 
+        bool BesideBridge(int segment) =>
+            segment > 0 && IsBridged(segment - 1) || segment + 1 < _curves.Count && IsBridged(segment + 1);
+
         /// <summary>Whether any segment is built as road (and so needs the voxel API).</summary>
         public bool HasRoad
         {
@@ -146,8 +147,7 @@ namespace HighwayEngineer.Server.Quotes
 
         public double HeightAt(Vector3D direction)
         {
-            return Vector3D.Distance(_planet.GetClosestSurfacePointGlobal(
-                _center + direction * _maximumRadius), _center) - _radius;
+            return RoadGeometry.SurfaceHeight(_planet, direction);
         }
 
         /// <summary>Validates everything that needs no terrain; null with a reason when rejected.</summary>
@@ -307,7 +307,7 @@ namespace HighwayEngineer.Server.Quotes
                 case Stage.Slope:
                     // A bridge does not follow the terrain: its own grade is checked when it is planned.
                     if (!IsBridged(_index) && RoadGeometry.ExceedsSlope(_curves[_index], _radius, _heights[_index],
-                            _heights[_index + 1], Request.Parameters))
+                            _heights[_index + 1], Request.Parameters, BesideBridge(_index)))
                         return Reject(RoadRejectReason.SlopeExceeded, LocHelper.Message("HighwayEngineer_Quote_SlopeExceeded",
                             _index + 1, Request.Parameters.MaxSlopeDegrees), _index + 1);
                     if (++_index >= _curves.Count)
