@@ -7,7 +7,7 @@
     <Configurations>Release;Debug</Configurations>
     <Platforms>x64</Platforms>
     <PackageId>HighwayEngineer</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <!-- The intermod route API's generated client mirror is exported for other mods (see ExportGeneratedClientApi). -->
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>obj\$(Configuration)\$(TargetFramework)\Generated</CompilerGeneratedFilesOutputPath>
@@ -26,7 +26,7 @@
   <!-- UI comes from the Acrux UI mod: ClientApi (thin generated wrappers + bridge runtime) and the Acrux / ADK
        generators come from the Acrux.Sdk package in ../packages (update with ../update-acrux.sh / .bat). -->
   <ItemGroup>
-    <PackageReference Include="Acrux.Sdk" Version="0.0.2" PrivateAssets="all" />
+    <PackageReference Include="Acrux.Sdk" Version="0.0.4" PrivateAssets="all" />
   </ItemGroup>
   <Import Project="..\External\ClientApi\ClientApi.projitems" Label="Shared" />
   <!-- IDE preview (dev-time only): the planner's theme colors, converters and Fluent stylesheet, as MinimapStyles

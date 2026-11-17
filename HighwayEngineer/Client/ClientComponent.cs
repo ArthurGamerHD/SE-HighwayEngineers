@@ -98,11 +98,31 @@ namespace HighwayEngineer.Client
             ValidateStartupApi();
             // The Open Map key from settings (ADK Key codes are the same virtual-key codes as MyKeys).
             if (!MyAPIGateway.Input.IsNewKeyPressed((MyKeys)MinimapLocalConfig.Current.OpenMapKey)) return;
-            if (MyAPIGateway.Gui.ChatEntryVisible ||
-                (!_screen.IsOpen && (MyAPIGateway.Gui.IsCursorVisible ||
-                MyAPIGateway.Gui.GetCurrentScreen != MyTerminalPageEnum.None))) return;
-            if (_screen.IsOpen) _screen.Close();
-            else _screen.Open();
+            if (MyAPIGateway.Gui.ChatEntryVisible) return;
+            if (_screen.IsOpen)
+            {
+                // Only the topmost screen owns input: while another screen sits above the planner (its settings
+                // screen, a Keen dialog, another mod's screen) the key belongs to it. A focused text control of
+                // the planner owns printable keys too.
+                if (_screen.HasFocus && !_screen.HasKeyboardFocus) _screen.Close();
+                return;
+            }
+            if (IsOtherScreenOpen(MyAPIGateway.Gui)) return;
+            _screen.Open();
+        }
+
+        /// <summary>
+        /// Whether some screen other than gameplay owns input while the planner is closed: the terminal, a Keen
+        /// gameplay screen (toolbar config, help, players...), any screen that shows the cursor, or an Acrux mod's
+        /// keyboard claim (the LCD mod's text entry, Wristpad and Doom screens hide the cursor). ModAPI exposes no
+        /// screen stack, so a cursorless mod screen that does not claim the keyboard cannot be detected.
+        /// </summary>
+        static bool IsOtherScreenOpen(IMyGui gui)
+        {
+            return gui.IsCursorVisible ||
+                   gui.GetCurrentScreen != MyTerminalPageEnum.None ||
+                   gui.ActiveGamePlayScreen != null ||
+                   Acrux.ScreenSpace.KeyboardCapture.IsCaptured;
         }
 
         /// <summary>Once, a few seconds in: the world has HighwayEngineer but not the Acrux UI mod its planner needs.</summary>
